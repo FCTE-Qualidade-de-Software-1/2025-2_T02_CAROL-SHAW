@@ -40,7 +40,7 @@
       </td>
        <td align="center">
         <a href="https://github.com/MylenaTrindade">
-          <img style="border-radius: 20%; border: 3px solid #526fff;" src="https://avatars.githubusercontent.com/u/144967061?v=4" width="160px" alt="Imagem de perfil"/>
+          <img style="border-radius: 20%; border: 3px solid #7a7f9cff;" src="https://avatars.githubusercontent.com/u/144967061?v=4" width="160px" alt="Imagem de perfil"/>
           <br /><sub><b>Mylena Trindade de Mendonca</b></sub>
         </a><br />
       </td>
