@@ -33,8 +33,8 @@
         </a><br />
       </td>
       <td align="center">
-        <a href="https://github.com/">
-          <img style="border-radius: 20%; border: 3px solid #526fff;" src="https://avatars.githubusercontent.com/u/" width="160px" alt="Imagem de perfil"/>
+        <a href="https://github.com/Bittarx">
+          <img style="border-radius: 20%; border: 3px solid #526fff;" src="https://avatars.githubusercontent.com/u/71234052?v=4" width="160px" alt="Imagem de perfil"/>
           <br /><sub><b>Marcos Santos Bittar</b></sub>
         </a><br />
       </td>
@@ -45,8 +45,8 @@
         </a><br />
       </td>
        <td align="center">
-        <a href="https://github.com/">
-          <img style="border-radius: 20%; border: 3px solid #ff52f1ff;" src="https://avatars.githubusercontent.com/u/" width="160px" alt="Imagem de perfil"/>
+        <a href="https://github.com/pedrobarbosaocb">
+          <img style="border-radius: 20%; border: 3px solid #ff52f1ff;" src="https://avatars.githubusercontent.com/u/78980796?v=4" width="160px" alt="Imagem de perfil"/>
           <br /><sub><b>Pedro de Oliveira Campos Barbosa</b></sub>
         </a><br />
       </td>
