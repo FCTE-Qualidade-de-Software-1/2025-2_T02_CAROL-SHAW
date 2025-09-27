@@ -9,7 +9,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | Nome do Membro | Contribuição | Porcentagem de Contribuição | Comprobatórios Claros (com link) |
 |----------------|--------------|----------------------------------------------|-----------------------------------|
 | [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) |  |  | []() |
-| [Felipe das Neves](https://github.com/FelipeFreire-gf) | Desenvolvimento de toda a fase 1 |  | []() |
+| [Felipe das Neves](https://github.com/FelipeFreire-gf) | |  | []() |
 | [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | |  | []() |
 | [Marcos Santos Bittar](https://github.com/leozinlima) |  | | []() |
 | [Mylena Trindade de Mendonca](https://github.com/MateuSansete)|  |  | []() |
