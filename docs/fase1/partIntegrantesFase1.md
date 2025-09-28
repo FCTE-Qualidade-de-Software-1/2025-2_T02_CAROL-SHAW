@@ -13,7 +13,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | |  | []() |
 | [Marcos Santos Bittar](https://github.com/leozinlima) |  | | []() |
 | [Mylena Trindade de Mendonca](https://github.com/MateuSansete)|  |  | []() |
-| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | | | []() |
+| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | Participação da discussão de definição do software e características, e desenvolvimento da seção de especificação do modelo | | [Especificação do Modelo de Qualidade](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao?id=especifica%c3%a7%c3%a3o-do-modelo-de-qualidade) |
 | Total: | | 100% | []() |
 
 <div align="center"> 
@@ -35,3 +35,5 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------------: |
 | `1.0` | Modelagem inicial do documento. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
 | `1.1` | Inserção da contribuição do Felipe das Neves. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
+| `1.2` | Inserção da contribuição do Pedro Barbosa. | [Felipe das Neves](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
+
