@@ -68,7 +68,49 @@ O domínio da aplicação abrange a gestão de contratos de energia, a otimizaç
 
 ## Especificação do Modelo de Qualidade
 
-Para avaliar a qualidade da aplicação AgroMart, adotaremos um modelo baseado na ISO/IEC 25000, com foco na característica de Usabilidade e Confiabilidade. A abordagem será complementada pelas metodologias GQM (Goal-Question-Metric) e PSM (Practical Software Measurement) para garantir uma análise estruturada e orientada a dados. O GQM nos permitirá definir objetivos claros de usabilidade. Já o PSM apoiará na seleção de métricas viáveis e acionáveis. A combinação dessas metodologias assegurará uma avaliação abrangente, alinhando os critérios técnicos da ISO 25000 com as necessidades reais dos usuários e stakeholders.
+Com o intuito de avaliar a qualidade do software MEPA Energia, o grupo adotou uma adaptação do modelo de qualidade de produto presente na ISO/IEC 25010. O modelo define a qualidade do produto a partir do conjunto oito características e suas respectivas subcaracterísticas conforme ilustrado pela Figura 1. Segundo a ISO 25010, a escolha das características a serem avaliadas em um software dependem dos objetivos de alto nível do projeto a fim de realizar um escopo realista de avaliação da qualidade. Nesse sentido, como foco da avaliação deste trabalho a partir da análise de público-alvo e domínio da aplicação, foram escolhidas três características de qualidade: Adequação Funcional (Functional Suitability), Confiabilidade (Reliability) e Manuntenabilidade (Maintainability). 
+
+![productQualityModel](../assets/productQualityModel.png)
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 1:</b> Modelo de Qualidade de Produto.
+        <br>
+        <b>Fonte:</b> 
+        ISO/IEC 25010.
+    </p>
+</font>
+
+A seguir, são apresentadas as definições das características escolhidas e suas respectivas subcaracterísticas.
+
+#### Adequação Funcional (Functional Suitability)
+Refere-se à capacidade do software de fornecer funções que atendam às necessidades explícitas e implícitas dos usuários. A tabela abaixo detalha as subcaracterísticas associadas:
+
+| **Subcaracterística**   | **Descrição**| **Medidas Comuns** |
+|-|-|-|
+| **Completude Funcional** | Grau em que o conjunto de funções cobre as tarefas e objetivos do usuário      | • Cobertura da Implementação Funcional: Funções especificadas X Funções ausentes/incorretas |
+| **Correção Funcional**   | Grau em que o produto fornece os resultados corretos com a precisão necessária | • Precisão Computacional: frequência de resultados imprecisos durante operação     |
+| **Apropriação Funcional**| Grau em que funções facilitam a realização de tarefas e objetivos específicos  | • Apropriação Funcional: proporção de funções implementadas que são apropriadas para tarefas específicas, subtraindo aquelas que apresentam problemas |
+
+#### Confiabilidade (Reliability)
+Refere-se à capacidade do software de manter seu nível de desempenho sob condições específicas por um período determinado. As subcaracterísticas incluem:
+
+| **Subcaracterística**   | **Descrição**| **Medidas Comuns** |
+|-|-|-|
+| **Maturidade** | Grau de confiabilidade do software em operação normal | • Remoção de falhas: Defeitos Detectados X Defeitos Corrigidos; <br>• Cobertura de testes: A extensão em que os casos de testes foram executados; <br>• Tempo médio entre falhas: a frequencia em que o sistema falha durante operação. |
+| **Disponibilidade** | Grau em que o sistema está operacional e acessível quando necessário para uso | • Proporção de tempo de serviço: Tempo Real x Tempo Planejado; <br>• Tempo médio de inatividade: Tempo médio em que o sistema fica indisponível. |
+| **Tolerância a Falhas** | Grau em que o sistema funciona apesar da presença de falhas | • Prevenção de falhas: capacidade de controlar padrões de falha para evitar falhas criticas; <br>• Redundância: quantidade de componentes que são instalados de forma redundante para evitar falhas totais. |
+| **Recuperabilidade** | Grau em que o sistema consiga retornar a operação normal após a ocorrência de uma falha | • Tempo médio de Recuperação |
+
+#### Manutenibilidade (Maintainability)
+Refere-se à facilidade com que o software pode ser modificado para corrigir defeitos, melhorar o desempenho ou adaptar-se a um ambiente em mudança. As subcaracterísticas são:
+
+| **Subcaracterística**   | **Descrição**| **Medidas Comuns** |
+|-|-|-|
+| **Modularidade** | Grau de acoplamento entre os componentes do software | • Condensabilidade |
+| **Reusabilidade** | Grau em que um componente pode ser reutilizado em outras partes do sistema | • Execução da reusabilidade |
+| **Analisabilidade** | Grau de eficácia e eficiência para a avaliação de impacto de uma mudança pretendida em uma ou mais partes do sistema | • Suficiência da função de diagnóstico <br>• Capacidade de trilha de auditoria |
+| **Modificabilidade** | Grau de eficiência em se alterar parte do produto sem a introdução de defeitos ou degradação da qualidade | • Taxa de sucesso da modificação <br>• Complexidade da modificação |
 
 ## Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU
 
@@ -136,3 +178,4 @@ Para verificar a contribuição, acesse o documento de [Participação dos Integ
 | `1.1` | Desenvolvimento dos tópicos: Contextualização do Problema, Aplicação Escolhida, Classificação e Ênfase das Características de Qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
 | `1.2` | Desenvolvimento dos tópicos: Proposta de Avaliação e Melhoria de Qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
 | `1.3` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade e Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
+| `1.4` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
