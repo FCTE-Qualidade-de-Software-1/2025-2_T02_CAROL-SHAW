@@ -175,58 +175,36 @@ Temos os diagramas de casos de uso, arquitetura e infra estrutura. Pode ajudar n
 
 Nosso segundo plano na ausencia desses diagramas, vamos utilizar de reuniões com os desenvolvedores, delimitaremos funcionalidades específicas e fecharemos o escopo para modelarmos de maneira adequada a Adequação Funcional.
 
-###### Insumos
-- Diagrama de casos de uso já presente na documentação.  
-- Possível coleta de dados via entrevistas ou questionários com desenvolvedores para suprir lacunas.  
+| Categoria            | Descrição |
+|-----------------------|-----------|
+| **Insumos**           | - Diagrama de casos de uso já presente na documentação.<br>- Possível coleta de dados via entrevistas ou questionários com desenvolvedores para suprir lacunas. |
+| **Abordagem de análise** | - Verificar se as **funções explícitas** (descritas nos casos de uso) atendem às necessidades do usuário.<br>- Restringir o escopo da análise a um módulo específico (ex.: análise dos quadros de força na parte fotovoltaica do ICC Sul).<br>- Complementar a análise com pesquisas junto a usuários e desenvolvedores, quando faltar documentação sobre requisitos implícitos. |
+| **Limitações**        | - Ausência de diagramas que representem as **características implícitas** e requisitos não funcionais.<br>- A análise tende a permanecer em um **nível abstrato** e parcial. |
 
-###### Abordagem de análise
-- Verificar se as **funções explícitas** (descritas nos casos de uso) atendem às necessidades do usuário.  
-- Restringir o escopo da análise a um módulo específico (ex.: análise dos quadros de força na parte fotovoltaica do ICC Sul).  
-- Complementar a análise com pesquisas junto a usuários e desenvolvedores, quando faltar documentação sobre requisitos implícitos.  
-
-###### Limitações
-- Ausência de diagramas que representem as **características implícitas** e requisitos não funcionais.  
-- A análise tende a permanecer em um **nível abstrato** e parcial.  
 
 ##### Confiabilidade
 
-######  Insumos
-- Código-fonte para revisão e análise de maturidade.  
-- Documentação arquitetural disponível na documentação do MEPA (decisões arquiteturais, diagramas de arquitetura).  
-- Histórico de testes (quando acessível).  
+Temos insumos relevantes como o código-fonte, documentação arquitetural e parte do histórico de testes. Esses elementos permitem uma análise consistente sobre redundância, disponibilidade e maturidade do sistema. 
 
-######  Abordagem de análise
-- Revisão de código para identificar boas práticas de resiliência e tolerância a falhas.  
-- Análise de cobertura de testes e evidências de disponibilidade.  
-- Estudo da arquitetura para avaliar redundância e robustez.  
+| Categoria            | Descrição |
+|-----------------------|-----------|
+| **Insumos**           | - Código-fonte para revisão e análise de maturidade.<br>- Documentação arquitetural disponível na documentação do MEPA (decisões arquiteturais, diagramas de arquitetura).<br>- Histórico de testes (quando acessível). |
+| **Abordagem de análise** | - Revisão de código para identificar boas práticas de resiliência e tolerância a falhas.<br>- Análise de cobertura de testes e evidências de disponibilidade.<br>- Estudo da arquitetura para avaliar redundância e robustez. |
+| **Limitações**        | - Dependência do nível de detalhamento do código e da documentação de testes. |
 
-######  Limitações
-- Dependência do nível de detalhamento do código e da documentação de testes.  
 
 ##### Manutenibilidade
 
-###### Insumos
-- Código-fonte para avaliação de modularidade e boas práticas.  
-- Testes automatizados e sua cobertura.  
-- Documentação arquitetural (suporte à modularidade e extensibilidade).  
+Dispomos do código-fonte, testes automatizados (quando disponíveis) e documentação de arquitetura, que servem como base para avaliar modularidade, extensibilidade e boas práticas. Esse conjunto possibilita verificar a testabilidade do sistema e o grau de aderência a princípios de engenharia de software.
 
-###### Abordagem de análise
-- Avaliar **testabilidade** por meio da qualidade e cobertura dos testes automatizados.  
-- Verificar aderência a princípios de **modificabilidade** (ex.: inversão de dependência, baixo acoplamento).  
-- Analisar a arquitetura quanto à **modularidade** e clareza da separação de responsabilidades.  
+| Categoria            | Descrição |
+|-----------------------|-----------|
+| **Insumos**           | - Código-fonte para avaliação de modularidade e boas práticas.<br>- Testes automatizados e sua cobertura.<br>- Documentação arquitetural (suporte à modularidade e extensibilidade). |
+| **Abordagem de análise** | - Avaliar **testabilidade** por meio da qualidade e cobertura dos testes automatizados.<br>- Verificar aderência a princípios de **modificabilidade** (ex.: inversão de dependência, baixo acoplamento).<br>- Analisar a arquitetura quanto à **modularidade** e clareza da separação de responsabilidades. |
+| **Limitações**        | - Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa. |
+ 
 
-###### Limitações
-- Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa.  
-
-#### Documentos Analisados para a Definição do Escopo:
-
-[Diagrama de Caso de Uso](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/casos_de_uso)
-
-[Diagrama de Arquitetura](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura)
-
-[Diagrama de Infraestrutura](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infra)
-
-[Documentação Completa](https://gitlab.com/lappis-unb/projetos-energia)
+#### Link para as discuções realizadas para a definição desse escopo:
 
 [Ata 1](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/atas/ata1)
 
