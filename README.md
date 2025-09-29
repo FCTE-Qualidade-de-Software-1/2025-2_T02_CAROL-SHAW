@@ -56,41 +56,23 @@
   <p>Autor: <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>.</p>
 </div>
 
+---
 
-## Sobre  
+## Sobre o Projeto
 
-### O Projeto: Mepa Energia  
-
-O **Mepa Energia** é uma iniciativa dedicada a promover o uso de **energia limpa, acessível e sustentável**, conectando produtores e consumidores em uma mesma plataforma de software livre. O projeto se destaca por sua proposta de **responsabilidade social e ambiental**, buscando impactar positivamente comunidades e o meio ambiente. Onde é aplicado com ênfase em todos os campus da Universidade de Brasília. 
-
-Nossa equipe relacionou o projeto diretamente a diversos **Objetivos de Desenvolvimento Sustentável (ODS)** definidos pela ONU:  
-
-- **ODS 4 – Educação de Qualidade**, pois aplica metodologias acadêmicas e científicas em um **caso real**, fortalecendo a formação prática e crítica dos envolvidos. 
-- **ODS 7 – Energia Acessível e Limpa:** ao mostrar na plataforma a qualidade da energia que está sendo fornecida pela distribuidora e pela geração própria "fotovoltaica".  
-- **ODS 11 – Cidades e Comunidades Sustentáveis:** ao apoiar soluções energéticas que fortalecem comunidades mais resilientes e inclusivas  (melhorar esses texto).  
-- **ODS 12 – Consumo e Produção Responsáveis:** ao promover um ecossistema que estimula escolhas conscientes e sustentáveis (melhorar esses texto).  
+MEPA , uma plataforma avançada e de software livre desenvolvida por pesquisadores da Universidade de Brasília. Sua finalidade é apoiar a gestão de recursos públicos por meio da análise de contratos de energia com uso de Inteligência Artificial, visando identificar a opção mais vantajosa para as instituições. Trata-se de uma plataforma com interface web, pela qual os usuários inserem dados das faturas para receberem recomendações, relatórios e análises gráficas. O domínio de aplicação do MEPA abrange temas como gestão de energia no setor público , eficiência energética , otimização de custos e sustentabilidade na administração pública.
  
-### A Análise de Qualidade de Software  
-
-Paralelamente ao desenvolvimento do projeto, realizamos uma **análise de qualidade de software** do sistema **Mepa Energia**, fundamentada no modelo **ISO/IEC 25010**. O objetivo é identificar pontos fortes e oportunidades de melhoria, de forma a garantir que a plataforma cumpra seu papel social e tecnológico com alto nível de excelência.  
-
-As **características de qualidade que nossa equipe irá analisar** seram:  
-
-- **Confiabilidade:** assegura que o sistema funcione de forma estável e previsível, reduzindo falhas que possam comprometer serviços essenciais.  
-  - Relaciona-se ao **ODS 11**, uma vez que sistemas confiáveis contribuem para comunidades mais resilientes e seguras.  
-
-- **Adequação Funcional:** verifica se as funcionalidades entregues atendem às necessidades dos usuários e promovem valor real.  
-  - Relaciona-se ao **ODS 12**, pois funcionalidades bem alinhadas incentivam práticas mais responsáveis de consumo e produção de energia.  
-
-- **Manutenibilidade:** avalia a facilidade de corrigir, atualizar e expandir o software conforme novos contextos ou necessidades.  
-  - Relaciona-se ao **ODS 7**, já que sistemas de fácil manutenção favorecem a evolução contínua de soluções em energia limpa e acessível.  
-
+Nós alunos de Qualidade de Software do curso de engenharia de software da Universidade de Brasília nos propomos em fazer uma análise de qualidade do software com base na ISO 25000 e 25010 da série SQuaRE. 
+ 
+- **Link oficial:** [Mepa Energia](https://mepaenergia.org)
+- **Documentação:** [Gitlab](https://gitlab.com/lappis-unb/projetos-energia/mec-energia)
+---
 
 ## Informações Complementares 
 
 Para executar a documentação em ambiente local siga os seguintes passos:
 
-### Instale o docsify
+#### Instale o docsify
 
 Execute o comando:
 
@@ -98,7 +80,7 @@ Execute o comando:
 npm i docsify-cli -g
 ```
 
-### Executando localmente
+#### Executando localmente
 
 Para iniciar o site localmente, utilize o comando:
 
@@ -112,3 +94,4 @@ docsify serve ./docs
 | Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
 | `1.0` | Modelagem inicial do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
+| `1.1` | Atualização do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 29/09/2025 | | | |
