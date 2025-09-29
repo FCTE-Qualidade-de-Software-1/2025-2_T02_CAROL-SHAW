@@ -65,6 +65,14 @@ Definir o escopo de trabalho para as análises de três características de qual
 
 ---
 
+## 5. Link da gravação
+
+<div style="text-align: center;">
+  <p><strong>Vídeo 1:</strong> <a href="https://youtu.be/RskfxnBy39Y">Reunião 01</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/RskfxnBy39Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+---
 
 ## Histórico de Versões
 
