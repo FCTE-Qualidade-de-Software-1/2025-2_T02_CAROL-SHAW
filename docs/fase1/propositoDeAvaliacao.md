@@ -23,13 +23,21 @@ Este trabalho foi elaborado e desenvolvido no contexto da disciplina de Qualidad
 
 MEPA, uma plataforma avançada e de software livre desenvolvida por pesquisadores da Universidade de Brasília. Sua finalidade é apoiar a gestão de recursos públicos por meio da análise de contratos de energia com uso de Inteligência Artificial, visando identificar a opção mais vantajosa para as instituições. Trata-se de uma plataforma com interface web, pela qual os usuários inserem dados das faturas para receberem recomendações, relatórios e análises gráficas. O domínio de aplicação do MEPA abrange temas como gestão de energia no setor público , eficiência energética , otimização de custos e sustentabilidade na administração pública.
 
-Apesar de ter funcionalidades voltadas para a gestão de contratos e otimização financeira, o MEPA não foi concebido como um software comercial no sentido tradicional, uma vez que foi desenvolvido em ambiente acadêmico, financiado pelo Governo Federal e distribuído como software livre, com foco no benefício público e sem fins lucrativos.
-
-No entanto, de acordo com a norma IEEE 1062, o MEPA pode ser classificado como um COTS (Commercial Off-The-Shelf Software), pois é um produto padronizado e reconhecido como uma solução de referência para um público amplo (as Instituições Federais de Ensino Superior), e não uma ferramenta personalizada para um cliente individual.
-
 O objetivo estratégico da plataforma é se consolidar como referência em gestão de energia para as instituições públicas, garantindo economia, sustentabilidade e maior eficiência na aplicação dos recursos.
 
 Por fim, a avaliação da qualidade tem como objetivos principais identificar e priorizar as características mais relevantes para seu público-alvo (gestores e técnicos); orientar a melhoria contínua do sistema; e assegurar que o produto esteja alinhado às boas práticas e aos padrões de confiabilidade exigidos para sistemas que apoiam a gestão de recursos públicos.
+
+### Classificação do tipo de produto
+
+O MEPA, embora desenvolvido em ambiente acadêmico, se enquadra na categoria de **COTS (Commercial Off-The-Shelf Software) ou Software Comercial de Prateleira**, conforme a norma IEEE 1062.
+
+A tabela a seguir detalha os critérios para essa classificação:
+
+| Critério de Classificação | Justificativa para o MEPA |
+| :--- | :--- |
+| **Produto Padronizado** | O MEPA não é uma solução customizada para um cliente específico, mas sim um produto padronizado, projetado para atender a um público amplo (Instituições Federais de Ensino Superior). |
+| **Disponibilidade Geral** | É uma solução de referência, distribuída como software livre e acessível a qualquer instituição que se enquadre no seu público-alvo. |
+| **Foco no Benefício Público** | Embora não seja "comercial" no sentido de visar lucro, ele compete por adoção e se posiciona como uma solução de prateleira para a gestão de energia no setor público. |
 
 ---
 
@@ -163,6 +171,27 @@ Refere-se à facilidade com que o software pode ser modificado para corrigir def
 | **Analisabilidade** | Grau de eficácia e eficiência para a avaliação de impacto de uma mudança pretendida em uma ou mais partes do sistema | • Suficiência da função de diagnóstico <br>• Capacidade de trilha de auditoria |
 | **Modificabilidade** | Grau de eficiência em se alterar parte do produto sem a introdução de defeitos ou degradação da qualidade | • Taxa de sucesso da modificação <br>• Complexidade da modificação |
 
+#### Modelo Final Adaptado
+
+O diagrama 1 a seguir representa o foco que a equipe terá ao desenvolver os modelos de qualidade:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Diagrama 1:</b> Diagrama (Visão geral).
+        <br>
+    </p>
+</font>
+
+![productQualityModel](../assets/diagramaV.png)
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Modelo Adaptado Fonte:</b> 
+        ISO/IEC 25010.
+    </p>
+</font>
+
+
 ---
 
 ### Escopo de trabalho 
@@ -171,7 +200,7 @@ Neste tópico vamos explicitar o que conseguimos analisar no tocante a documenta
 
 ##### Adequação Funcional 
 
-Temos os diagramas de casos de uso, arquitetura e infra estrutura. Pode ajudar na vista geral da aplicação, contudo, pode faltar insumos sobre requisitos implícitos e não funcionais; risco de análise incompleta e vista somente sob o ponto de vista do usuário final caso não conseguirmos os diagramas mais completos do sistema, como o de requisitos, diagrama de atividades para que seja analisada a aplicação toda.
+Temos os diagramas de [casos de uso](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/casos_de_uso) <sup>[4]</sup>, [arquitetura](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura) <sup>[5]</sup> e [infra estrutura](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infrao) <sup>[6]</sup>. Pode ajudar na vista geral da aplicação, contudo, pode faltar insumos sobre requisitos implícitos e não funcionais; risco de análise incompleta e vista somente sob o ponto de vista do usuário final caso não conseguirmos os diagramas mais completos do sistema, como o de requisitos, diagrama de atividades para que seja analisada a aplicação toda.
 
 Nosso segundo plano na ausencia desses diagramas, vamos utilizar de reuniões com os desenvolvedores, delimitaremos funcionalidades específicas e fecharemos o escopo para modelarmos de maneira adequada a Adequação Funcional.
 
@@ -264,22 +293,14 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 
 ---
 
-## Contribuição da Equipe
-
-Para verificar a contribuição, acesse o documento de [Participação dos Integrantes na Fase 1](fase1/partIntegrantesFase1.md).
-
----
-
 ## Bibliografia
 > \- ISO/IEC 25000 SQuaRE series Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE). Disponível em: <https://committee.iso.org/sites/jtc1sc7/home/projects/flagship-standards/iso-25000-square-series.html>. Acesso em: 26 de setembro de 2025. 
  
 > \- ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 26 de setembro de 2025.
 
-> \- Documentação do Mepa Diagramas de Casos de Uso. Disponível em: <https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/casos_de_uso>. Acesso em: 26 de setembro de 2025.
-
 > \- Documentação do Mepa. Disponível em: <https://gitlab.com/lappis-unb/projetos-energia>. Acesso em: 26 de setembro de 2025.
 
-> \- Documentação do Mepa Diagramas de Arquitetura. Disponível em: <https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura>. Acesso em: 26 de setembro de 2025.
+
 
 ## Referências Bibliográficas
 
@@ -288,6 +309,12 @@ Para verificar a contribuição, acesse o documento de [Participação dos Integ
 > [2] ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 26 de setembro de 2025.
 
 > [3] ONU. Objetivos de Desenvolvimento Sustentável. Disponível em: <https://brasil.un.org/pt-br/sdgs>. Acesso em: 26 de setembro de 2025.
+
+> [4] Documentação do Mepa Diagramas de Casos de Uso. Disponível em: <https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/casos_de_uso>. Acesso em: 29 de setembro de 2025.
+
+> [5] Documentação do Mepa Diagramas de Arquitetura. Disponível em: <https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura>. Acesso em: 29 de setembro de 2025.
+
+> [6] Documentação do Mepa Diagramas de Infra. Disponível em: <https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infra>. Acesso em: 29 de setembro de 2025.
 
 ---
 
