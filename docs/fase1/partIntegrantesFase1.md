@@ -9,7 +9,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | Nome do Membro | Contribuição | Porcentagem de Contribuição | Comprobatórios Claros (com link) |
 |----------------|--------------|----------------------------------------------|-----------------------------------|
 | [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | Participação da discussão de definição do software e características | 6,66 | []() |
-| [Felipe das Neves](https://github.com/FelipeFreire-gf) | | 36,66 | [Propósito da avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao) e [Identificação do tipo de produto](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao)  |
+| [Felipe das Neves](https://github.com/FelipeFreire-gf) | Participação da discussão de definição do software e características, e desenvolvimento da seções: de proposito de avaliação e identificação do produto | 36,66 | [Propósito da avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao) e [Identificação do tipo de produto](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao)  |
 | [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | Participação da discussão de definição do software e características | 6,66 | []() |
 | [Marcos Santos Bittar](https://github.com/leozinlima) | Participação da discussão de definição do software e características | 6,66 | []() |
 | [Mylena Trindade de Mendonca](https://github.com/MateuSansete)| Participação da discussão de definição do software e características | 6,66 | []() |
