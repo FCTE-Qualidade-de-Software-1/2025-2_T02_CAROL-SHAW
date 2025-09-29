@@ -31,28 +31,63 @@ Por fim, a avaliação da qualidade tem como objetivos principais identificar e 
 
 ## Classificação e Ênfase das Características de Qualidade
 
-Nesta etapa inicial do processo de avaliação, foram definidos as características de qualidade a serem considerados com base nos objetivos da avaliação e no perfil do público-alvo. A análise levou em conta tanto as necessidades dos usuários finais quanto os interesses da equipe de desenvolvimento, com o propósito de identificar características críticas para a experiência de uso e o desempenho do sistema.
+Nesta etapa inicial do processo de avaliação, foram definidos as características de qualidade a serem considerados com base nos objetivos da avaliação e no perfil do público-alvo. A análise levou em conta tanto as necessidades dos usuários finais quanto os interesses da equipe de desenvolvimento, com o propósito de identificar características para a experiência de uso e o desempenho do sistema.
 
-A seguir, apresenta-se a classificação das características de qualidade com suas respectivas ênfases, conforme os critérios da abordagem SQuaRE (ISO/IEC 25010)<sup>[2]</sup>, em uma escala de 1 a 5. A SQuaRE (Software Product Quality Requirements and Evaluation) é uma norma internacional que define um modelo de qualidade para produtos de software, estabelecendo características e subcaracterísticas que servem como referência para avaliação e especificação da qualidade de sistemas.
+A seguir, apresenta-se a classificação das características de qualidade com suas respectivas ênfases, conforme os critérios da abordagem SQuaRE (ISO/IEC 25010)<sup>[2]</sup>, em uma escala de 1 (nenhum interesse) a 5 (grande interesse). A SQuaRE (Software Product Quality Requirements and Evaluation) é uma norma internacional que define um modelo de qualidade para produtos de software, estabelecendo características e subcaracterísticas que servem como referência para avaliação e especificação da qualidade de sistemas.
 
 <div align="center">
 
-| Característica | Ênfase (1-5) |
-|---|---|
-| Adequação Funcional | 5 – grande interesse  |
-| Eficiência de Desempenho | 1 – baixo interesse |
-| Compatibilidade | 1 – baixo interesse |
-| Usabilidade | 5 – grande interesse / Não pode ser escolhida |
-| Confiabilidade | 5 – grande interesse |
-| Segurança | 4 – largo interesse |
-| Manutenibilidade | 5 – grande interesse |
-| Portabilidade | 1 – nenhum interesse |
+  <caption>Tabela 01 - Características de qualidade</caption>
 
-<font size="3"><p style="text-align: center"><b>Autor:</b> <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>, 2025</p></font>
+<table>
+
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Ênfase (1-5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adequação Funcional</td>
+      <td>5 – grande interesse</td>
+    </tr>
+    <tr>
+      <td>Eficiência de Desempenho</td>
+      <td>1 – baixo interesse</td>
+    </tr>
+    <tr>
+      <td>Compatibilidade</td>
+      <td>1 – baixo interesse</td>
+    </tr>
+    <tr>
+      <td>Usabilidade</td>
+      <td>5 – grande interesse / Não pode ser escolhida</td>
+    </tr>
+    <tr>
+      <td>Confiabilidade</td>
+      <td>5 – grande interesse</td>
+    </tr>
+    <tr>
+      <td>Segurança</td>
+      <td>4 – largo interesse</td>
+    </tr>
+    <tr>
+      <td>Manutenibilidade</td>
+      <td>5 – grande interesse</td>
+    </tr>
+    <tr>
+      <td>Portabilidade</td>
+      <td>1 – nenhum interesse</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
-Portanto, foram priorizadas as características de **Adequação Funcional**, **Confiabilidade** e **Manutenibilidade**. A escolha se justifica pela natureza do público-alvo: gestores e equipes técnicas do setor público. A **Adequação Funcional** garante a precisão das análises e recomendações , a **Confiabilidade** assegura a estabilidade e a integridade dos dados para a tomada de decisão sobre recursos públicos , e a **Manutenibilidade** viabiliza a evolução e adaptação do sistema, um software livre  que precisa se manter relevante frente às mudanças regulatórias do setor elétrico."
+<font size="3"><p style="text-align: center"><b>Autor:</b> <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>, 2025</p></font>
+
+Portanto, foram priorizadas as características de **Adequação Funcional**, **Confiabilidade** e **Manutenibilidade**. A escolha se justifica pela natureza do público-alvo: gestores e equipes técnicas do setor público. A **Adequação Funcional** garante a precisão das análises e recomendações dentro da proposta da funcionalidade da aplicação, a **Confiabilidade** assegura a estabilidade e a integridade dos dados para a tomada de decisão sobre recursos públicos , e a **Manutenibilidade** viabiliza a evolução e adaptação do sistema, um software livre  que precisa se manter relevante frente às mudanças regulatórias do setor elétrico."
 
 Essa priorização servirá como base para a especificação das métricas, definição dos critérios de julgamento e planejamento da avaliação, garantindo foco nas qualidades mais relevantes para a experiência e confiança dos usuários no produto avaliado.
 
@@ -70,12 +105,17 @@ O domínio da aplicação abrange a gestão de contratos de energia, a otimizaç
 
 Com o intuito de avaliar a qualidade do software MEPA Energia, o grupo adotou uma adaptação do modelo de qualidade de produto presente na ISO/IEC 25010. O modelo define a qualidade do produto a partir do conjunto oito características e suas respectivas subcaracterísticas conforme ilustrado pela Figura 1. Segundo a ISO 25010, a escolha das características a serem avaliadas em um software dependem dos objetivos de alto nível do projeto a fim de realizar um escopo realista de avaliação da qualidade. Nesse sentido, como foco da avaliação deste trabalho a partir da análise de público-alvo e domínio da aplicação, foram escolhidas três características de qualidade: Adequação Funcional (Functional Suitability), Confiabilidade (Reliability) e Manuntenabilidade (Maintainability). 
 
-![productQualityModel](../assets/productQualityModel.png)
-
 <font size="3">
     <p style="text-align: center">
         <b>Figura 1:</b> Modelo de Qualidade de Produto.
         <br>
+    </p>
+</font>
+
+![productQualityModel](../assets/productQualityModel.png)
+
+<font size="3">
+    <p style="text-align: center">
         <b>Fonte:</b> 
         ISO/IEC 25010.
     </p>
@@ -112,9 +152,27 @@ Refere-se à facilidade com que o software pode ser modificado para corrigir def
 | **Analisabilidade** | Grau de eficácia e eficiência para a avaliação de impacto de uma mudança pretendida em uma ou mais partes do sistema | • Suficiência da função de diagnóstico <br>• Capacidade de trilha de auditoria |
 | **Modificabilidade** | Grau de eficiência em se alterar parte do produto sem a introdução de defeitos ou degradação da qualidade | • Taxa de sucesso da modificação <br>• Complexidade da modificação |
 
+---
+
 ## Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU
 
-A aplicação avaliada apresenta forte alinhamento com diversos Objetivos de Desenvolvimento Sustentável (ODS) propostos pela Organização das Nações Unidas (ONU)<sup>[3]</sup>, demonstrando seu potencial de impacto positivo em múltiplas dimensões sociais, econômicas e ambientais. A seguir, destacam-se os ODS com os quais a aplicação se conecta diretamente:
+A aplicação avaliada apresenta forte alinhamento com diversos Objetivos de Desenvolvimento Sustentável (ODS) propostos pela Organização das Nações Unidas (ONU) <sup>[3]</sup>, demonstrando seu potencial de impacto positivo em múltiplas dimensões sociais, econômicas e ambientais. A seguir, destacam-se os ODS com os quais a aplicação se conecta diretamente:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 2:</b> ODS associadas à aplicação MEPA.
+        <br>
+    </p>
+</font>
+
+![ODS](../assets/odsMepa.png)
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Nações Unidas Brasil <sup>[3]</sup>
+    </p>
+</font>
 
 #### **ODS 4: Educação de Qualidade**
 
@@ -142,8 +200,6 @@ As instituições de ensino são componentes vitais das cidades, e sua gestão i
 O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 **Gestão Baseada em Dados:** Ao exigir o cadastro de faturas e analisar os dados de consumo e demanda, a plataforma capacita as instituições a entenderem profundamente seus perfis de consumo. Esse entendimento é o primeiro passo para um consumo responsável, permitindo que os gestores saiam de um modelo passivo para um modelo ativo e estratégico de uso da energia.
 **Otimização e Redução de Desperdício:** A análise comparativa entre o cenário atual e o proposto pelo sistema expõe ineficiências e oportunidades de melhoria. Ao recomendar o contrato ideal, o MEPA não apenas reduz custos, mas incentiva um consumo alinhado à real necessidade da instituição, combatendo o desperdício e promovendo uma utilização mais racional e sustentável dos recursos energéticos.
-
-<font size="3"><p style="text-align: center"><b>Autor:</b> <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>, 2025</p></font>
 
 ---
 
@@ -177,5 +233,5 @@ Para verificar a contribuição, acesse o documento de [Participação dos Integ
 | `1.0` | Modelagem inicial do documento. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
 | `1.1` | Desenvolvimento dos tópicos: Contextualização do Problema, Aplicação Escolhida, Classificação e Ênfase das Características de Qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
 | `1.2` | Desenvolvimento dos tópicos: Proposta de Avaliação e Melhoria de Qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
-| `1.3` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade e Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | | | |
+| `1.3` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade e Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/25 | Correção do tópico do modelo de qualidade, fiz o ajusto considerando um alinhamento com a ISO |
 | `1.4` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |

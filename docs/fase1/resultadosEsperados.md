@@ -15,11 +15,15 @@
 Requisitante e partes interessadas (comprador, fornecedor, desenvolvedor,
 operador, etc);
 
- Descrição estruturada do software selecionado para avaliação
+ Descrição estruturada do software selecionado para avaliação ok
 
- Classificação do tipo de produto
+ Classificação do tipo de produto ok
 
- Propósito da avaliação e uso pretendido dos resultados.
+
+
+ Propósito da avaliação e uso pretendido dos resultados. 
+
+
 
  Modelo de qualidade com descrição e representação gráfica;
 
