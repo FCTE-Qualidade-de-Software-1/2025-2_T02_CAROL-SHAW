@@ -171,6 +171,27 @@ Refere-se à facilidade com que o software pode ser modificado para corrigir def
 | **Analisabilidade** | Grau de eficácia e eficiência para a avaliação de impacto de uma mudança pretendida em uma ou mais partes do sistema | • Suficiência da função de diagnóstico <br>• Capacidade de trilha de auditoria |
 | **Modificabilidade** | Grau de eficiência em se alterar parte do produto sem a introdução de defeitos ou degradação da qualidade | • Taxa de sucesso da modificação <br>• Complexidade da modificação |
 
+#### Modelo Final Adaptado
+
+O diagrama 1 a seguir representa o foco que a equipe terá ao desenvolver os modelos de qualidade:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Diagrama 1:</b> Diagrama (Visão geral).
+        <br>
+    </p>
+</font>
+
+![productQualityModel](../assets/diagramaV.png)
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Modelo Adaptado Fonte:</b> 
+        ISO/IEC 25010.
+    </p>
+</font>
+
+
 ---
 
 ### Escopo de trabalho 
@@ -294,7 +315,6 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 > [5] Documentação do Mepa Diagramas de Arquitetura. Disponível em: <https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura>. Acesso em: 29 de setembro de 2025.
 
 > [6] Documentação do Mepa Diagramas de Infra. Disponível em: <https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infra>. Acesso em: 29 de setembro de 2025.
-
 
 ---
 
