@@ -94,3 +94,4 @@ docsify serve ./docs
 | Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
 | `1.0` | Modelagem inicial do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
+| `1.1` | Atualização do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 29/09/2025 | | | |

@@ -60,7 +60,7 @@
 
 ## Sobre o Projeto
 
-MEPA , uma plataforma avançada e de software livre desenvolvida por pesquisadores da Universidade de Brasília. Sua finalidade é apoiar a gestão de recursos públicos por meio da análise de contratos de energia com uso de Inteligência Artificial, visando identificar a opção mais vantajosa para as instituições. Trata-se de uma plataforma com interface web, pela qual os usuários inserem dados das faturas para receberem recomendações, relatórios e análises gráficas. O domínio de aplicação do MEPA abrange temas como gestão de energia no setor público , eficiência energética , otimização de custos e sustentabilidade na administração pública.
+MEPA, uma plataforma avançada e de software livre desenvolvida por pesquisadores da Universidade de Brasília. Sua finalidade é apoiar a gestão de recursos públicos por meio da análise de contratos de energia com uso de Inteligência Artificial, visando identificar a opção mais vantajosa para as instituições. Trata-se de uma plataforma com interface web, pela qual os usuários inserem dados das faturas para receberem recomendações, relatórios e análises gráficas. O domínio de aplicação do MEPA abrange temas como gestão de energia no setor público , eficiência energética , otimização de custos e sustentabilidade na administração pública.
  
 Nós alunos de Qualidade de Software do curso de engenharia de software da Universidade de Brasília nos propomos em fazer uma análise de qualidade do software com base na ISO 25000 e 25010 da série SQuaRE. 
  
@@ -94,3 +94,4 @@ docsify serve ./docs
 | Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
 | `1.0` | Modelagem inicial do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
+| `1.1` | Atualização do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 29/09/2025 | | | |
