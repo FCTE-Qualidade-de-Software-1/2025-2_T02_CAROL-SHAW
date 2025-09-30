@@ -115,6 +115,12 @@ Portanto, foram priorizadas as características de **Adequação Funcional**, **
 
 Essa priorização servirá como base para a especificação das métricas, definição dos critérios de julgamento e planejamento da avaliação, garantindo foco nas qualidades mais relevantes para a experiência e confiança dos usuários no produto avaliado.
 
+Além de justificar as características selecionadas, também se faz necessário esclarecer os motivos pelos quais outras características de qualidade foram despriorizadas ou excluídas do escopo desta avaliação.
+
+A Usabilidade, por exemplo, embora inicialmente classificada como de “grande interesse” (nível 5), não pôde ser incluída. Isso se deve à orientação da professora, que vetou sua escolha em razão da alta recorrência dessa característica entre as equipes no semestre anterior.
+
+Outras características, como Eficiência de Desempenho, Compatibilidade e Portabilidade, receberam baixa ou nenhuma ênfase. Essa decisão refletiu uma estratégia da equipe de avaliação, que optou por concentrar esforços nesses três pilares. Tal direcionamento busca garantir uma análise mais aprofundada e consistente, em vez de uma avaliação superficial de um conjunto mais amplo de qualidades.
+
 ---
 
 ## Especificação do Modelo de Qualidade
@@ -232,7 +238,18 @@ Dispomos do código-fonte, testes automatizados (quando disponíveis) e document
 | **Abordagem de análise** | - Avaliar **testabilidade** por meio da qualidade e cobertura dos testes automatizados.<br>- Verificar aderência a princípios de **modificabilidade** (ex.: inversão de dependência, baixo acoplamento).<br>- Analisar a arquitetura quanto à **modularidade** e clareza da separação de responsabilidades. |
 | **Limitações**        | - Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa. |
  
+### Premissas e Riscos da Avaliação
 
+A tabela a seguir descreve e identifica as premissas e riscos da avaliação.
+
+| ID  | Categoria      | Descrição                                                                                                                                                                                                                                                        |
+| :-- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| P01 | **Premissa** | A documentação existente, como o Diagrama de Casos de Uso, está suficientemente atualizada para a análise inicial da Adequação Funcional. A avaliação se baseia nestes artefatos como insumo primário.                            |
+| P02 | **Premissa** | Haverá acesso completo e irrestrito ao código-fonte da aplicação MEPA para a equipe de avaliação. O acesso ao código é um insumo essencial para a avaliação da Confiabilidade e da Manutenibilidade.                      |
+| P03 | **Premissa** | A versão do software a ser avaliada permanecerá estável, sem atualizações significativas, durante o período da avaliação. Mudanças no sistema podem invalidar os resultados, conforme a necessidade de identificar uma versão específica do produto. |
+| R01 | **Risco 1** | A ausência de diagramas que documentem requisitos não funcionais pode limitar a profundidade da avaliação. O impacto é que a análise de características como Confiabilidade pode permanecer em um nível mais abstrato.            |
+| R02 | **Risco 2** | O histórico de testes pode estar incompleto ou a cobertura dos testes automatizados pode ser baixa, o que dificultaria a avaliação objetiva da Maturidade (subcaracterística da Confiabilidade) e da Testabilidade.                         |
+| R03 | **Risco 3** | A avaliação de aspectos da Manutenibilidade (ex: modularidade, boas práticas) pode ter um grau de subjetividade, gerando o risco de conclusões que variam de acordo com a experiência do avaliador.                                      |
 #### Link para as discuções realizadas para a definição desse escopo:
 
 [Ata 1](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/atas/ata1)
