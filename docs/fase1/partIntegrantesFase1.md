@@ -37,4 +37,4 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | `1.1` | Inserção da contribuição do Felipe das Neves. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
 | `1.2` | Inserção da contribuição do Pedro Barbosa. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
 | `1.3` | Atualização da contribuição de todos os membros. | [Felipe das Neves](https://github.com/pedrobarbosaocb) | 29/09/2025 | | | |
-| `1.4` | Adicionando detalhamentos. | [Mylena Mendonça](https://github.com/MylenaTrindade) | 30/09/2025 | | | |
+

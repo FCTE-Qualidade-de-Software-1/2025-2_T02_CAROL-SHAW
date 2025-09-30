@@ -117,9 +117,9 @@ Essa priorização servirá como base para a especificação das métricas, defi
 
 Além de justificar as características selecionadas, também se faz necessário esclarecer os motivos pelos quais outras características de qualidade foram despriorizadas ou excluídas do escopo desta avaliação.
 
-A Usabilidade, por exemplo, embora inicialmente classificada como de “grande interesse” (nível 5), não pôde ser incluída. Isso se deve à orientação da professora, que vetou sua escolha em razão da alta recorrência dessa característica entre as equipes no semestre anterior.
+A **Usabilidade**, por exemplo, embora inicialmente classificada como de “grande interesse” (nível 5), não pôde ser incluída. Isso se deve à orientação da professora, que vetou sua escolha em razão da alta recorrência dessa característica entre as equipes no semestre anterior.
 
-Outras características, como Eficiência de Desempenho, Compatibilidade e Portabilidade, receberam baixa ou nenhuma ênfase. Essa decisão refletiu uma estratégia da equipe de avaliação, que optou por concentrar esforços nesses três pilares. Tal direcionamento busca garantir uma análise mais aprofundada e consistente, em vez de uma avaliação superficial de um conjunto mais amplo de qualidades.
+Outras características, como **Eficiência de Desempenho**, **Compatibilidade** e **Portabilidade**, receberam baixa ou nenhuma ênfase. Essa decisão refletiu uma estratégia da equipe de avaliação, que optou por concentrar esforços nesses três pilares. Tal direcionamento busca garantir uma análise mais aprofundada e consistente, em vez de uma avaliação superficial de um conjunto mais amplo de qualidades.
 
 ---
 
@@ -236,7 +236,7 @@ Dispomos do código-fonte, testes automatizados (quando disponíveis) e document
 |-----------------------|-----------|
 | **Insumos**           | - Código-fonte para avaliação de modularidade e boas práticas.<br>- Testes automatizados e sua cobertura.<br>- Documentação arquitetural (suporte à modularidade e extensibilidade). |
 | **Abordagem de análise** | - Avaliar **testabilidade** por meio da qualidade e cobertura dos testes automatizados.<br>- Verificar aderência a princípios de **modificabilidade** (ex.: inversão de dependência, baixo acoplamento).<br>- Analisar a arquitetura quanto à **modularidade** e clareza da separação de responsabilidades. |
-| **Limitações**        | - Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa. |
+| **Limitações**        | - Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa. 
  
 ### Premissas e Riscos da Avaliação
 
@@ -345,3 +345,4 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 | `1.3` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade e Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/25 | Correção do tópico do modelo de qualidade, fiz o ajusto considerando um alinhamento com a ISO |
 | `1.4` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
 | `1.5` | Desenvolvimento do Escopo da modelagem de qualidade escolhida | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 29/09/2025 | | | |
+| `1.6` | Adicionando detalhamentos. | [Mylena Mendonça](https://github.com/MylenaTrindade) | 30/09/2025 | | | |
