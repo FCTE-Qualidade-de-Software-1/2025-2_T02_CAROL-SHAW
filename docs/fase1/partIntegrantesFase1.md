@@ -12,8 +12,8 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | Participação da discussão de definição do software e características, e desenvolvimento da seções: de proposito de avaliação e identificação do produto | 36,66 | [Propósito da avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao) e [Identificação do tipo de produto](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao)  |
 | [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | Participação da discussão de definição do software e características | 6,66 | []() |
 | [Marcos Santos Bittar](https://github.com/leozinlima) | Participação da discussão de definição do software e características | 6,66 | []() |
-| [Mylena Trindade de Mendonca](https://github.com/MateuSansete)| Participação da discussão de definição do software e características | 6,66 | []() |
-| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | Participação da discussão de definição do software e características, e desenvolvimento da seção de especificação do modelo | 36,66 | [Especificação do Modelo de Qualidade](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao?id=especifica%c3%a7%c3%a3o-do-modelo-de-qualidade) |
+| [Mylena Trindade de Mendonca](https://github.com/MateuSansete)| Participação da discussão de definição do software e características. Premissas e riscos de avaliação | 13,32 | []() |
+| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | Participação da discussão de definição do software e características, e desenvolvimento da seção de especificação do modelo | 30,00 | [Especificação do Modelo de Qualidade](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/fase1/propositoDeAvaliacao?id=especifica%c3%a7%c3%a3o-do-modelo-de-qualidade) |
 | Total: | | 100% | []() |
 
 <div align="center"> 
@@ -37,4 +37,4 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | `1.1` | Inserção da contribuição do Felipe das Neves. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
 | `1.2` | Inserção da contribuição do Pedro Barbosa. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
 | `1.3` | Atualização da contribuição de todos os membros. | [Felipe das Neves](https://github.com/pedrobarbosaocb) | 29/09/2025 | | | |
-
+| `1.4` | Atualização da contribuição da Mylena. | [Felipe das Neves](https://github.com/pedrobarbosaocb) | 01/10/2025 | | | |

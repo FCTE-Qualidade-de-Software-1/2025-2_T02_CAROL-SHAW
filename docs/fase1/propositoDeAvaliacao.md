@@ -94,7 +94,7 @@ A seguir, apresenta-se a classificação das características de qualidade com s
     </tr>
     <tr>
       <td>Segurança</td>
-      <td>4 – largo interesse</td>
+      <td>4 – médio interesse</td>
     </tr>
     <tr>
       <td>Manutenibilidade</td>
@@ -236,20 +236,7 @@ Dispomos do código-fonte, testes automatizados (quando disponíveis) e document
 |-----------------------|-----------|
 | **Insumos**           | - Código-fonte para avaliação de modularidade e boas práticas.<br>- Testes automatizados e sua cobertura.<br>- Documentação arquitetural (suporte à modularidade e extensibilidade). |
 | **Abordagem de análise** | - Avaliar **testabilidade** por meio da qualidade e cobertura dos testes automatizados.<br>- Verificar aderência a princípios de **modificabilidade** (ex.: inversão de dependência, baixo acoplamento).<br>- Analisar a arquitetura quanto à **modularidade** e clareza da separação de responsabilidades. |
-| **Limitações**        | - Nível de detalhamento dos testes disponíveis pode restringir a avaliação completa. 
  
-### Premissas e Riscos da Avaliação
-
-A tabela a seguir descreve e identifica as premissas e riscos da avaliação.
-
-| ID  | Categoria      | Descrição                                                                                                                                                                                                                                                        |
-| :-- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| P01 | **Premissa** | A documentação existente, como o Diagrama de Casos de Uso, está suficientemente atualizada para a análise inicial da Adequação Funcional. A avaliação se baseia nestes artefatos como insumo primário.                            |
-| P02 | **Premissa** | Haverá acesso completo e irrestrito ao código-fonte da aplicação MEPA para a equipe de avaliação. O acesso ao código é um insumo essencial para a avaliação da Confiabilidade e da Manutenibilidade.                      |
-| P03 | **Premissa** | A versão do software a ser avaliada permanecerá estável, sem atualizações significativas, durante o período da avaliação. Mudanças no sistema podem invalidar os resultados, conforme a necessidade de identificar uma versão específica do produto. |
-| R01 | **Risco 1** | A ausência de diagramas que documentem requisitos não funcionais pode limitar a profundidade da avaliação. O impacto é que a análise de características como Confiabilidade pode permanecer em um nível mais abstrato.            |
-| R02 | **Risco 2** | O histórico de testes pode estar incompleto ou a cobertura dos testes automatizados pode ser baixa, o que dificultaria a avaliação objetiva da Maturidade (subcaracterística da Confiabilidade) e da Testabilidade.                         |
-| R03 | **Risco 3** | A avaliação de aspectos da Manutenibilidade (ex: modularidade, boas práticas) pode ter um grau de subjetividade, gerando o risco de conclusões que variam de acordo com a experiência do avaliador.                                      |
 #### Link para as discuções realizadas para a definição desse escopo:
 
 [Ata 1](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/atas/ata1)
@@ -345,4 +332,4 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 | `1.3` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade e Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 26/09/2025 | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/25 | Correção do tópico do modelo de qualidade, fiz o ajusto considerando um alinhamento com a ISO |
 | `1.4` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
 | `1.5` | Desenvolvimento do Escopo da modelagem de qualidade escolhida | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 29/09/2025 | | | |
-| `1.6` | Adicionando detalhamentos. | [Mylena Mendonça](https://github.com/MylenaTrindade) | 30/09/2025 | | | |
+| `1.6` | Justificativas e premissas dos riscos de avaliação | [Mylena Mendonça](https://github.com/MylenaTrindade) | 30/09/2025 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 01/10/25 | Remoção da tabela alocando os conceitos tratados no texto das respectivas escolhas das caracteristicas de qualidade. |
