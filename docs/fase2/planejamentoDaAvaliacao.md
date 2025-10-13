@@ -55,13 +55,13 @@ Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão 
 
 <font size="3">
     <p style="text-align: center">
-        <b>Figura 3:</b> Diagrama GQM da Adequação Funcional.
+        <b>Figura 1:</b> Diagrama GQM da Adequação Funcional.
         <br>
     </p>
 </font>
 
 <div align="center">
-  <img src="assets/adequa.png" alt="Diagrama GQM da adequacao" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/adequa.png" alt="Diagrama GQM da adequacao" width="600">
 </div>
 
 <font size="3">
@@ -89,13 +89,13 @@ Q2. Qual a **disponibilidade** do serviço web em horário de expediente?
 
 <font size="3">
     <p style="text-align: center">
-        <b>Figura 3:</b> Diagrama GQM da Confiabilidade.
+        <b>Figura 2:</b> Diagrama GQM da Confiabilidade.
         <br>
     </p>
 </font>
 
 <div align="center">
-  <img src="assets/confiabilidade.png" alt="Diagrama GQM da confiabilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/confiabilidade.png" alt="Diagrama GQM da confiabilidade" width="600">
 </div>
 
 <font size="3">
@@ -130,7 +130,7 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 </font>
 
 <div align="center">
-  <img src="assets/manutenibilidade.png" alt="Diagrama GQM da Manutenibilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/manutenibilidade.png" alt="Diagrama GQM da Manutenibilidade" width="600">
 </div>
 
 <font size="3">
@@ -188,4 +188,7 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 
 | Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
-| `1.0` | Desenvolvimento da planejamento para a fase 2| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
+| `1.0` | Desenvolvimento dos objetivos do gqm| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
+| `1.1` | Desenvolvimento dos gqms das caracteristicas de qualidade escolhidas na fase 1 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
+| `1.2` | Inserção das imagens do gqm para cada caracteristica de qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
+| `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
