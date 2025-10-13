@@ -1,0 +1,136 @@
+# Planejamento da Avaliação (Fase 2) — MEPA Energia
+
+---
+## Sumário
+- [1. Contexto e Escopo](#1-contexto-e-escopo)
+- [2. Objetivos de Medição por GQM](#2-objetivos-de-medição-por-gqm)
+  - [GQM-1 — Adequação Funcional](#gqm-1--adequação-funcional)
+  - [GQM-2 — Confiabilidade](#gqm-2--confiabilidade)
+  - [GQM-3 — Manutenibilidade](#gqm-3--manutenibilidade)
+- [3. Plano de Coleta de Dados](#3-plano-de-coleta-de-dados)
+- [4. Riscos e Mitigações](#5-riscos-e-mitigações)
+- [5. Entregáveis](#6-entregáveis)
+- [Apêndice — Tabela Resumo (Q→M)](#apêndice--tabela-resumo-qm)
+- [Referências](#referências)
+
+---
+
+> Baseado no documento da Fase 1 (`propositoDeAvaliacao.md`) e na abordagem GQM (Goal–Question–Metric).
+
+## 1. Contexto e Escopo
+- **Sistema analisado:** Plataforma **MEPA Energia** (web), com foco em apoio à **gestão de contratos de energia** em IFES (gestores e técnicos).
+- **Características priorizadas:** **Adequação Funcional**, **Confiabilidade**, **Manutenibilidade**.
+- **Unidade de análise:** versão estável atual do MEPA e artefatos (código, issues, testes, releases).
+- **Processos-alvo (macro):** 
+
+(i) **Cadastro e validação** de faturas/insumos;
+
+(ii) **Análise e recomendação** de contrato;
+
+(iii) **Relatórios e dashboards**; 
+
+(iv) **Exportação/integrações**.
+
+- **Fronteiras:** funcionalidades usadas pelos perfis-alvo; ambiente web suportado; repositórios e documentação públicos do projeto.
+
+---
+
+## 2. Objetivos de Medição por GQM
+
+### GQM-1 — Adequação Funcional
+
+**Objetivo:** Avaliar, do ponto de vista do **gestor/técnico** ou seja o usuário final, o quanto as funções do MEPA **cobrem** e **entregam corretamente** as tarefas-alvo no contexto de gestão pública de energia. 
+
+#### Questões
+Q1. As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
+Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão **implementados** e **verificado por testes**?
+
+#### Métricas
+- M1. **Cobertura de funcionalidades priorizadas (%)** = RF implementados / RF priorizados × 100.
+- M2. **Taxa de sucesso de cenários (%)** = cenários concluídos sem desvio / total × 100.
+- M3. **Cobertura de testes por RF (%)** = RF com teste associado / RF implementados × 100.
+
+**Critérios indicativos:** M1 ≥ 90%, M2 ≥ 95% (processo batch determinístico), M3 ≥ 85%, M4 ≥ 70%.
+
+---
+
+### GQM-2 — Confiabilidade
+
+**Objetivo:** Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise** e a estabilidade percebida pelos usuários.
+
+#### Questões
+Q1. Qual a **densidade de defeitos** (bugs) em módulos do escopo por unidade de tamanho?  
+Q2. Qual a **disponibilidade** do serviço web em horário de expediente?
+
+#### Métricas
+- M4. **Densidade de defeitos** = bugs confirmados.
+- M5. **Disponibilidade (%)** = (tempo em operação / tempo total em janela de serviço) × 100.
+
+**Critérios indicativos:** densidade ≤ 0,5 bugs; MTBF crescente por release; MTTR P50 ≤ 15 min; disponibilidade ≥ 99% em expediente.
+
+---
+
+### GQM-3 — Manutenibilidade
+
+**Objetivo:** Avaliar a **facilidade de mudança** (correções/evoluções) nos módulos críticos do MEPA, garantindo **testabilidade** e **baixo acoplamento**.
+
+#### Questões
+Q1. Como estão **complexidade** e **acoplamento** dos módulos de ingestão/análise/relato?  
+Q2. Qual o **lead time de correção** de defeitos priorizados?  
+
+#### Métricas
+- M6. **Tempo de correção (dias)** = data merge – data abertura do bug.
+- M7. **Cobertura de regressão (%)** nos módulos modificados (linha/branch).
+- M8. **Esforço por demanda (h)** = horas registradas por correção/evolução.
+
+**Critérios indicativos:** CC média ≤ 10; P50 tempo de correção ≤ 7 dias; cobertura ≥ 70%; esforço dentro do *budget* por sprint.
+
+---
+
+## 3. Plano de Coleta de Dados
+
+- **Fontes**: repositórios MEPA (código/IC), issues/MRs, documentação de releases, registros de disponibilidade.
+- **Instrumentos**: planilha GQM, scripts de CC e cobertura, extratores de issues.
+- **Amostragem**: cenários críticos (cadastro→recomendação→relatório), módulos do escopo.
+- **Periodicidade**: por release e por sprint.
+
+## 4. Riscos e Mitigações
+
+- **R1** Rastreabilidade requisito–teste–commit incompleta → política e revisão de *links*.
+- **R2** Dados/ambiente heterogêneos → matriz de cenários e ambientes padronizados.
+- **R3** Baixa disciplina de apontamento de esforço → definição mínima de apontamento.
+
+## 5. Entregáveis
+
+- Catálogo de métricas, planilha GQM, relatórios por release.
+
+---
+
+## Apêndice — Tabela Resumo (Q→M)
+| Objetivo | Questão | Métrica | Fonte | Freq. |
+|---|---|---|---|---|
+| Adequação | Q1 | M1, M2 | releases | por release |
+| Adequação | Q2 | M3 | testes | por release |
+| Confiabilidade | Q1 | M4 | issues | mensal |
+| Confiabilidade | Q2 | M5 | monitoria | mensal |
+| Manutenibilidade | Q1 | M7, M8 | código | por mudança |
+| Manutenibilidade | Q2 | M6 | issues | por bug |
+
+---
+
+## Referências
+> - Notas de aula da disciplina de Qualidade de Software: **Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)**.
+
+> - Basili, V. R., et al. **GQM+Strategies: Aligning Software Measurement with Business Goals**. *IEEE Computer*, 2010.
+
+> - Slides da disciplina de Qualidade de Software: **As cinco métricas fundamentais para normalização/controle**.
+
+> - Fenton, N., & Bieman, S. **Software Metrics: A Rigorous and Practical Approach** (3rd ed.). CRC Press. (Fundamentos de medição e escalas).
+
+---
+
+## Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
+| :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
+| `1.0` | Desenvolvimento da planejamento para a fase 2| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
