@@ -9,10 +9,7 @@
   - [2.3 Preparação e Coleta](#23-preparação-e-coleta)
   - [2.4 Interpretação e Relato](#24-interpretação-e-relato)
   - [2.5 Governança](#25-governança)
-- [3. Instrumentos (templates)](#3-instrumentos-templates)
-- [4. Critérios de Aceitação (indicativos)](#4-critérios-de-aceitação-indicativos)
-- [5. Riscos e Mitigação](#5-riscos-e-mitigação)
-- [6. Bibliografia (selecionada)](#6-bibliografia-selecionada)
+- [3. Bibliografia (selecionada)](#6-bibliografia-selecionada)
 
 ---
 
@@ -33,38 +30,18 @@ Adotamos **GQM** em quatro macro etapas: **Planejamento → Definição → Cole
 - Preparar **modelo de interpretação** (limiares, tendências, janelas móveis e normalização por tamanho).
 
 ### 2.3 Preparação e Coleta
-- **Fontes**: repositórios MEPA, issues/MRs, CI, documentação de release, planilhas de cenário e logs operacionais.
-- **Instrumentos**: planilha GQM; scripts para CC, cobertura e extração de issues; roteiros de cenário; *checklists* de qualidade de dados (completude/consistência/unicidade).
+- **Fontes**: repositórios MEPA, issues, documentação de release e logs operacionais.
+- **Instrumentos**: planilha GQM; cobertura e extração de issues; *checklists* de qualidade de dados (completude/consistência/unicidade).
 - **Amostragem**: cenários críticos **cadastro→análise→relatórios**, por ambiente suportado.
 - **Ética/privacidade**: anonimização de dados sensíveis de faturas; coleta mínima.
 
 ### 2.4 Interpretação e Relato
-- Consolidação por **release**: gráficos de tendência (densidade de defeitos, MTBF/MTTR, cobertura, tempo de correção, sucesso de cenários).
+- Consolidação por **release**: gráficos de tendência (densidade de defeitos, cobertura, tempo de correção, sucesso de cenários).
 - Análise de **causas** e recomendações; *backlog* de melhoria priorizado por impacto/risco.
-
-### 2.5 Governança
-- **Papéis**: Sponsor (professor), Avaliador, Analista de Métricas, Testadores, Observador.
-- **Ritos**: *kickoff*, checkpoints quinzenais e *post-mortem* por release.
-- **Ferramentas**: Git/Issues/MRs, CI, scripts Python, planilhas e *dashboards*.
-
-## 3. Instrumentos (templates)
-- **Catálogo de Métricas** (ID, nome, objetivo, definição, fórmula, unidade, fonte, frequência, responsável, critério).
-- **Roteiro de Cenários** (passos, dados, oráculo, oráculo de aceitação, sucesso/falha).
-- **Planilha de Sessões** (ambiente, duração, falhas, MTBF/MTTR).
-
-## 4. Critérios de Aceitação (indicativos)
-- Adequação: cobertura RF ≥ 90%, precisão recomendação ≥ 95%, sucesso de cenários ≥ 85%, cobertura por RF ≥ 70%.
-- Confiabilidade: densidade ≤ 0,5 bugs/KLOC; MTBF↑; MTTR P50 ≤ 15 min; disponibilidade ≥ 99%.
-- Manutenibilidade: CC ≤ 10; P50 correção ≤ 7 dias; cobertura regressão ≥ 70%; esforço conforme *budget*.
-
-## 5. Riscos e Mitigação
-- Rastro requisito–teste–commit incompleto → fortalecer rastreabilidade.
-- Dados heterogêneos/ambientes → matriz de ambientes e VMs padronizadas.
-- Falta de apontamento de esforço → política mínima de time tracking.
 
 ---
 
-## 6. Bibliografia (selecionada)
+## 3. Bibliografia (selecionada)
 
 > - Fenton, N., & Bieman, S. **Software Metrics: A Rigorous and Practical Approach** (3rd ed.). CRC Press.
 
