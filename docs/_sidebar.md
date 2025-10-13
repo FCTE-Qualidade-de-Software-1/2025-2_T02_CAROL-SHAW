@@ -16,7 +16,7 @@
 
 - **Atas**
   - [Ata 01 - Fase 1](atas/ata1.md)
-  - [Ata 02 - Fasa 2](atas/ata2.md)
+
 
 
 
