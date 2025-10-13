@@ -52,6 +52,25 @@ Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão 
 
 **Critérios indicativos:** M1 ≥ 90%, M2 ≥ 95% (processo batch determinístico), M3 ≥ 85%, M4 ≥ 70%.
 
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 3:</b> Diagrama GQM da Adequação Funcional.
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="assets/adequa.png" alt="Diagrama GQM da adequacao" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Felipe das Neves
+    </p>
+</font>
+
 ---
 
 ### GQM-2 — Confiabilidade
@@ -67,6 +86,24 @@ Q2. Qual a **disponibilidade** do serviço web em horário de expediente?
 - M5. **Disponibilidade (%)** = (tempo em operação / tempo total em janela de serviço) × 100.
 
 **Critérios indicativos:** densidade ≤ 0,5 bugs; MTBF crescente por release; MTTR P50 ≤ 15 min; disponibilidade ≥ 99% em expediente.
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 3:</b> Diagrama GQM da Confiabilidade.
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="assets/confiabilidade.png" alt="Diagrama GQM da confiabilidade" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Felipe das Neves
+    </p>
+</font>
 
 ---
 
@@ -84,6 +121,24 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 - M8. **Esforço por demanda (h)** = horas registradas por correção/evolução.
 
 **Critérios indicativos:** CC média ≤ 10; P50 tempo de correção ≤ 7 dias; cobertura ≥ 70%; esforço dentro do *budget* por sprint.
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 3:</b> Diagrama GQM da Manutenibilidade.
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="assets/manutenibilidade.png" alt="Diagrama GQM da Manutenibilidade" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Felipe das Neves
+    </p>
+</font>
 
 ---
 
