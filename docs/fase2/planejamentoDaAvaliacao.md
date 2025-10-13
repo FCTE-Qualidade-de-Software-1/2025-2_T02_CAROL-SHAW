@@ -144,8 +144,8 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 
 ## 3. Plano de Coleta de Dados
 
-- **Fontes**: repositórios MEPA (código/IC), issues/MRs, documentação de releases, registros de disponibilidade.
-- **Instrumentos**: planilha GQM, scripts de CC e cobertura, extratores de issues.
+- **Fontes**: repositórios MEPA (código), issues, documentação de releases, registros de disponibilidade.
+- **Instrumentos**: planilha GQM, cobertura, extratores de issues.
 - **Amostragem**: cenários críticos (cadastro→recomendação→relatório), módulos do escopo.
 - **Periodicidade**: por release e por sprint.
 
