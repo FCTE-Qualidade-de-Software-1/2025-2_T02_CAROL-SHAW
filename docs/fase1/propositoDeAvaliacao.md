@@ -7,6 +7,7 @@
 - [Proposta de Avaliação e Melhoria de Qualidade](#proposta-de-avaliação-e-melhoria-de-qualidade)
 - [Especificação do Modelo de Qualidade](#especificação-do-modelo-de-qualidade)
 - [Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU](#conexão-com-ods-objetivo-de-desenvolvimento-sustentável-da-onu)
+- [Uso de IA](#uso-de-ia)
 - [Bibliografia](#bibliografia)
 - [Referências Bibliográficas](#referências-bibliográficas)
 - [Histórico de Versões](#histórico-de-versões)
@@ -297,7 +298,21 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 
 ---
 
+## Uso de IA
+ 
+Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o **ChatGPT (OpenAI)** e o **Gemini (Google)**. O uso dessas tecnologias teve como principais objetivos:
+ 
+- **Aprimoramento da Escrita:** Melhorar a clareza, coesão e correção gramatical dos textos, garantindo uma comunicação mais eficaz.
+- **Geração de Estruturas:** Auxiliar na criação de estruturas iniciais para seções e tabelas, otimizando o tempo de desenvolvimento.
+- **Refinamento de Ideias:** Servir como ferramenta de brainstorming para refinar conceitos e justificativas apresentadas no documento.
+- **Consistência Terminológica:** Ajudar a manter a consistência dos termos técnicos utilizados ao longo da documentação.
+ 
+É importante ressaltar que todo o conteúdo gerado por IA foi cuidadosamente revisado, editado e validado pelos membros da equipe para assegurar sua precisão, relevância e alinhamento com os objetivos da avaliação de qualidade. As ferramentas foram empregadas como um suporte ao processo de criação, e a responsabilidade final pelo conteúdo permanece com os autores do projeto.
+
+---
+
 ## Bibliografia
+
 > \- ISO/IEC 25000 SQuaRE series Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE). Disponível em: <https://committee.iso.org/sites/jtc1sc7/home/projects/flagship-standards/iso-25000-square-series.html>. Acesso em: 26 de setembro de 2025. 
  
 > \- ISO/IEC 25010. Disponível em: <https://iso25000.com/index.php/en/iso-25000-standards/iso-25010>. Acesso em: 26 de setembro de 2025.
@@ -333,3 +348,4 @@ O MEPA é uma ferramenta que induz padrões de consumo mais responsáveis.
 | `1.4` | Desenvolvimento dos tópicos: Especificação do Modelo de Qualidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 28/09/2025 | | | |
 | `1.5` | Desenvolvimento do Escopo da modelagem de qualidade escolhida | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 29/09/2025 | | | |
 | `1.6` | Justificativas e premissas dos riscos de avaliação | [Mylena Mendonça](https://github.com/MylenaTrindade) | 30/09/2025 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 01/10/25 | Remoção da tabela alocando os conceitos tratados no texto das respectivas escolhas das caracteristicas de qualidade. |
+| `1.7` | Desenvolvimento do tópico do uso de ia | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 13/10/2025 | | | |
