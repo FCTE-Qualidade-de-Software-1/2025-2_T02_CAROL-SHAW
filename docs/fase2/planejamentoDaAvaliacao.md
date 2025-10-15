@@ -207,4 +207,5 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 | `1.0` | Desenvolvimento dos objetivos do gqm| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
 | `1.1` | Desenvolvimento dos gqms das caracteristicas de qualidade escolhidas na fase 1 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
 | `1.2` | Inserção das imagens do gqm para cada caracteristica de qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
+| `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | | 
+| `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
