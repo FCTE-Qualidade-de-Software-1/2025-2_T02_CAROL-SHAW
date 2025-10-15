@@ -39,18 +39,36 @@
 
 ### GQM-1 — Adequação Funcional
 
-**Objetivo:** Avaliar, do ponto de vista do **gestor/técnico** ou seja o usuário final, o quanto as funções do MEPA **cobrem** e **entregam corretamente** as tarefas-alvo no contexto de gestão pública de energia. 
+**Objetivo:** Avaliar, do ponto de vista do **gestor/técnico (usuário final)**, o quanto as funções da plataforma MEPA **cobrem** e **entregam corretamente** as tarefas-alvo no contexto de gestão pública de energia.
 
 #### Questões
-Q1. As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
-Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão **implementados** e **verificado por testes**?
+- **Q1.** As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
+- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?
 
 #### Métricas
-- M1. **Cobertura de funcionalidades priorizadas (%)** = RF implementados / RF priorizados × 100.
-- M2. **Taxa de sucesso de cenários (%)** = cenários concluídos sem desvio / total × 100.
-- M3. **Cobertura de testes por RF (%)** = RF com teste associado / RF implementados × 100.
 
-**Critérios indicativos:** M1 ≥ 90%, M2 ≥ 95% (processo batch determinístico), M3 ≥ 85%, M4 ≥ 70%.
+| ID  | Nome da Métrica                              | Fórmula                                                                                           | Unidade | Fonte                                | Frequência   | Responsável        |
+|-----|-----------------------------------------------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------|-------------|--------------------|
+| M1  | **Cobertura de funcionalidades priorizadas**  | \(\displaystyle \frac{\text{RF implementados}}{\text{RF priorizados}} \times 100\)               | %       | Backlog / releases                     | Por release | Owner de produto   |
+| M2  | **Taxa de sucesso de cenários críticos**      | \(\displaystyle \frac{\text{cenários concluídos sem desvio}}{\text{total de cenários executados}} \times 100\) | % | Testes funcionais / registros de execução | Por release | QA responsável     |
+| M3  | **Cobertura de testes por RF**               | \(\displaystyle \frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100\)       | %       | Repositório de testes / CI             | Por release | QA responsável     |
+
+> **Notas formais:**  
+> • “RF priorizados” = requisitos funcionais marcados como *in scope* para a release em avaliação.  
+> • “Cenário sem desvio” = execução bem-sucedida no ambiente de teste, sem incidentes nem reprocessamento.  
+> • “Teste associado” = caso de teste automatizado ou manual vinculado ao requisito no sistema de rastreabilidade.
+
+#### Critérios indicativos (Semáforo)
+
+| Métrica | Verde (OK) | Amarelo (Atenção) | Vermelho (Crítico) |
+|---------|------------|--------------------|---------------------|
+| M1      | ≥ 90 %     | 75 – 89 %          | < 75 %              |
+| M2      | ≥ 95 %     | 85 – 94 %          | < 85 %              |
+| M3      | ≥ 85 %     | 70 – 84 %          | < 70 %              |
+
+- Esses limiares foram definidos com base em **práticas de referência de medição de qualidade de software** e literatura de métricas funcionais.  
+- Recomenda-se manter histórico de 3 releases para avaliação de tendência (janela móvel).
+
 
 
 <font size="3">
