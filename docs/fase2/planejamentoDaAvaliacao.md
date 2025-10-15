@@ -75,17 +75,33 @@ Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão 
 
 ### GQM-2 — Confiabilidade
 
-**Objetivo:** Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise** e a estabilidade percebida pelos usuários.
+| Campo                  | Descrição                                |
+|-------------------------|------------------------------------------|
+| **Analisar**            | O MEPA                      |
+| **Para o propósito de** | Avaliar                                  |
+| **Com respeito a**      | confiabilidade operacional                      |
+| **Do ponto de vista de**| Desenvolvedores                          |
+| **No contexto da**      | Disciplina de Qualidade de Software      |
 
-#### Questões
-Q1. Qual a **densidade de defeitos** (bugs) em módulos do escopo por unidade de tamanho?  
-Q2. Qual a **disponibilidade** do serviço web em horário de expediente?
+#### Goal (Objetivo)
+Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise**, e a estabilidade percebida pelos usuários.
 
-#### Métricas
-- M4. **Densidade de defeitos** = bugs confirmados.
-- M5. **Disponibilidade (%)** = (tempo em operação / tempo total em janela de serviço) × 100.
 
-**Critérios indicativos:** densidade ≤ 0,5 bugs; MTBF crescente por release; MTTR P50 ≤ 15 min; disponibilidade ≥ 99% em expediente.
+#### Questions (Questões)
+- **Q1.** Qual a **densidade de defeitos (bugs)** em módulos do escopo por unidade de tamanho?  
+- **Q2.** Qual a **disponibilidade** do serviço web em horário de expediente?
+
+
+#### Metrics (Métricas)
+- **M4. Densidade de defeitos** = bugs confirmados.  
+- **M5. Disponibilidade (%)** = (tempo em operação / tempo total em janela de serviço) × 100.
+
+#### Critérios indicativos:
+- Densidade ≤ 0,5 bugs  
+- MTBF crescente por release  
+- MTTR P50 ≤ 15 min  
+- Disponibilidade ≥ 99% em expediente
+
 
 <font size="3">
     <p style="text-align: center">
