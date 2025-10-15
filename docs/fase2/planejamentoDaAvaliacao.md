@@ -102,7 +102,7 @@
 | **No contexto da**      | Disciplina de Qualidade de Software      |
 
 #### Goal (Objetivo)
-Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise**, e a estabilidade percebida pelos usuários.
+Avaliar a confiabilidade operacional do MEPA, considerando a estabilidade e disponibilidade percebida pelos usuários durante o uso do sistema.
 
 
 #### Questions (Questões)
