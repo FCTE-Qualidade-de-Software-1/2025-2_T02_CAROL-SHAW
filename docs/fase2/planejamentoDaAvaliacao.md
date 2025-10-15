@@ -79,7 +79,7 @@ Q2. O **catálogo de requisitos** observados no diagrama de casos de uso estão 
 |-------------------------|------------------------------------------|
 | **Analisar**            | O MEPA                      |
 | **Para o propósito de** | Avaliar                                  |
-| **Com respeito a**      | confiabilidade operacional                      |
+| **Com respeito a**      | Confiabilidade operacional                      |
 | **Do ponto de vista de**| Desenvolvedores                          |
 | **No contexto da**      | Disciplina de Qualidade de Software      |
 
