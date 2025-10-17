@@ -39,13 +39,23 @@
 
 ### GQM-1 — Adequação Funcional
 
-**Objetivo:** Avaliar, do ponto de vista do **gestor/técnico (usuário final)**, o quanto as funções da plataforma MEPA **cobrem** e **entregam corretamente** as tarefas-alvo no contexto de gestão pública de energia.
+| Campo                  | Descrição                                                                                  |
+|-------------------------|--------------------------------------------------------------------------------------------|
+| **Analisar**            | A plataforma MEPA Energia                                                                  |
+| **Para o propósito de** | Avaliar                                                                                    |
+| **Com respeito a**      | Adequação Funcional (cobertura e conformidade funcional)                                   |
+| **Do ponto de vista de**| Gestores e técnicos de IFES (usuários finais)                                              |
+| **No contexto da**      | Gestão de contratos de energia (cadastro, recomendação, relatórios e exportação de dados)  |
 
-#### Questões
+#### Goal (Objetivo)
+Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam corretamente as tarefas críticas do processo de gestão de energia, atendendo aos requisitos funcionais definidos e testados.
+
+#### Questions (Questões)
 - **Q1.** As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
-- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?
+- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?  
+- **Q3.** As funcionalidades implementadas possuem **testes associados e rastreáveis**?
 
-#### Métricas
+#### Metrics (Métricas)
 
 | ID  | Nome da Métrica                              | Fórmula                                                                                           | Unidade | Fonte                                | Frequência   | Responsável        |
 |-----|-----------------------------------------------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------|-------------|--------------------|
@@ -66,10 +76,10 @@
 | M2      | ≥ 95 %     | 85 – 94 %          | < 85 %              |
 | M3      | ≥ 85 %     | 70 – 84 %          | < 70 %              |
 
-- Esses limiares foram definidos com base em **práticas de referência de medição de qualidade de software** e literatura de métricas funcionais.  
-- Recomenda-se manter histórico de 3 releases para avaliação de tendência (janela móvel).
+- Esses limiares foram definidos com base em **práticas de referência de qualidade funcional** e normas de medição de software.  
+- Recomenda-se manter histórico de 3 releases para avaliação de tendência.
 
-
+#### Diagrama GQM
 
 <font size="3">
     <p style="text-align: center">
@@ -88,6 +98,7 @@
         Felipe das Neves
     </p>
 </font>
+
 
 ---
 
