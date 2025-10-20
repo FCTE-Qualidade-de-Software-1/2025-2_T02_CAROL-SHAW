@@ -59,9 +59,9 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 
 | ID  | Nome da Métrica                              | Fórmula                                                                                           | Unidade | Fonte                                | Frequência   | Responsável        |
 |-----|-----------------------------------------------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------|-------------|--------------------|
-| M1  | **Cobertura de funcionalidades priorizadas**  | \(\displaystyle \frac{\text{RF implementados}}{\text{RF priorizados}} \times 100\)               | %       | Backlog / releases                     | Por release | Owner de produto   |
-| M2  | **Taxa de sucesso de cenários críticos**      | \(\displaystyle \frac{\text{cenários concluídos sem desvio}}{\text{total de cenários executados}} \times 100\) | % | Testes funcionais / registros de execução | Por release | QA responsável     |
-| M3  | **Cobertura de testes por RF**               | \(\displaystyle \frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100\)       | %       | Repositório de testes / CI             | Por release | QA responsável     |
+| M1  | **Cobertura de funcionalidades priorizadas**  | $$\frac{\text{RF implementados}}{\text{RF priorizados}} \times 100$$               | %       | Backlog / releases                     | Por release | Owner de produto   |
+| M2  | **Taxa de sucesso de cenários críticos**      | $$\frac{\text{Cenários concluídos sem desvio}}{\text{Total de cenários executados}} \times 100$$ | % | Testes funcionais / registros de execução | Por release | QA responsável     |
+| M3  | **Cobertura de testes por RF**               | $$\frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100$$       | %       | Repositório de testes / CI             | Por release | QA responsável     |
 
 > **Notas formais:**  
 > • “RF priorizados” = requisitos funcionais marcados como *in scope* para a release em avaliação.  
@@ -89,13 +89,13 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/adequa.png" alt="Diagrama GQM da adequacao" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe das Neves
+        Gustavo Gontijo Lima
     </p>
 </font>
 
@@ -140,13 +140,13 @@ Avaliar a confiabilidade operacional do MEPA, considerando a estabilidade e disp
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/confiabilidade.png" alt="Diagrama GQM da confiabilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM2.png" alt="Diagrama GQM da confiabilidade" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe das Neves
+        Gustavo Gontijo Lima
     </p>
 </font>
 
@@ -175,13 +175,13 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/manutenibilidade.png" alt="Diagrama GQM da Manutenibilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM3.png" alt="Diagrama GQM da Manutenibilidade" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe das Neves
+        Gustavo Gontijo Lima
     </p>
 </font>
 
@@ -239,3 +239,4 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 | `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | | 
 | `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
 | `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
+| `1.6` | Adicionando Diagramas corrigidos e corrigindo formulas GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
