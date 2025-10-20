@@ -39,19 +39,29 @@
 
 ### GQM-1 — Adequação Funcional
 
-**Objetivo:** Avaliar, do ponto de vista do **gestor/técnico (usuário final)**, o quanto as funções da plataforma MEPA **cobrem** e **entregam corretamente** as tarefas-alvo no contexto de gestão pública de energia.
+| Campo                  | Descrição                                                                                  |
+|-------------------------|--------------------------------------------------------------------------------------------|
+| **Analisar**            | A plataforma MEPA Energia                                                                  |
+| **Para o propósito de** | Avaliar                                                                                    |
+| **Com respeito a**      | Adequação Funcional (cobertura e conformidade funcional)                                   |
+| **Do ponto de vista de**| Gestores e técnicos de IFES (usuários finais)                                              |
+| **No contexto da**      | Gestão de contratos de energia (cadastro, recomendação, relatórios e exportação de dados)  |
 
-#### Questões
+#### Goal (Objetivo)
+Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam corretamente as tarefas críticas do processo de gestão de energia, atendendo aos requisitos funcionais definidos e testados.
+
+#### Questions (Questões)
 - **Q1.** As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
-- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?
+- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?  
+- **Q3.** As funcionalidades implementadas possuem **testes associados e rastreáveis**?
 
-#### Métricas
+#### Metrics (Métricas)
 
 | ID  | Nome da Métrica                              | Fórmula                                                                                           | Unidade | Fonte                                | Frequência   | Responsável        |
 |-----|-----------------------------------------------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------|-------------|--------------------|
-| M1  | **Cobertura de funcionalidades priorizadas**  | \(\displaystyle \frac{\text{RF implementados}}{\text{RF priorizados}} \times 100\)               | %       | Backlog / releases                     | Por release | Owner de produto   |
-| M2  | **Taxa de sucesso de cenários críticos**      | \(\displaystyle \frac{\text{cenários concluídos sem desvio}}{\text{total de cenários executados}} \times 100\) | % | Testes funcionais / registros de execução | Por release | QA responsável     |
-| M3  | **Cobertura de testes por RF**               | \(\displaystyle \frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100\)       | %       | Repositório de testes / CI             | Por release | QA responsável     |
+| M1  | **Cobertura de funcionalidades priorizadas**  | $$\frac{\text{RF implementados}}{\text{RF priorizados}} \times 100$$               | %       | Backlog / releases                     | Por release | Owner de produto   |
+| M2  | **Taxa de sucesso de cenários críticos**      | $$\frac{\text{Cenários concluídos sem desvio}}{\text{Total de cenários executados}} \times 100$$ | % | Testes funcionais / registros de execução | Por release | QA responsável     |
+| M3  | **Cobertura de testes por RF**               | $$\frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100$$       | %       | Repositório de testes / CI             | Por release | QA responsável     |
 
 > **Notas formais:**  
 > • “RF priorizados” = requisitos funcionais marcados como *in scope* para a release em avaliação.  
@@ -66,10 +76,10 @@
 | M2      | ≥ 95 %     | 85 – 94 %          | < 85 %              |
 | M3      | ≥ 85 %     | 70 – 84 %          | < 70 %              |
 
-- Esses limiares foram definidos com base em **práticas de referência de medição de qualidade de software** e literatura de métricas funcionais.  
-- Recomenda-se manter histórico de 3 releases para avaliação de tendência (janela móvel).
+- Esses limiares foram definidos com base em **práticas de referência de qualidade funcional** e normas de medição de software.  
+- Recomenda-se manter histórico de 3 releases para avaliação de tendência.
 
-
+#### Diagrama GQM
 
 <font size="3">
     <p style="text-align: center">
@@ -79,15 +89,16 @@
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/adequa.png" alt="Diagrama GQM da adequacao" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe das Neves
+        Gustavo Gontijo Lima
     </p>
 </font>
+
 
 ---
 
@@ -102,7 +113,7 @@
 | **No contexto da**      | Disciplina de Qualidade de Software      |
 
 #### Goal (Objetivo)
-Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise**, e a estabilidade percebida pelos usuários.
+Avaliar a confiabilidade operacional do MEPA, considerando a estabilidade e disponibilidade percebida pelos usuários durante o uso do sistema.
 
 
 #### Questions (Questões)
@@ -129,13 +140,13 @@ Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/confiabilidade.png" alt="Diagrama GQM da confiabilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM2.png" alt="Diagrama GQM da confiabilidade" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe das Neves
+        Gustavo Gontijo Lima
     </p>
 </font>
 
@@ -192,7 +203,8 @@ Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise
 </font>
 
 <div align="center">
-  <img src="./assets/manuntenabilidade2.0.png" alt="Diagrama GQM da Manutenibilidade" width="600">
+
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM3.png" alt="Diagrama GQM da Manutenibilidade" width="600">
 </div>
 
 <font size="3">
@@ -258,3 +270,5 @@ Medir a confiabilidade operacional do MEPA nas rotinas de **ingestão e análise
 | `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
 | `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
 | `1.6` | Revisão e aprimoramento do GQM-3 (Manutenibilidade) | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | | | |
+| `1.7` | Adicionando Diagramas corrigidos e corrigindo formulas GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
+
