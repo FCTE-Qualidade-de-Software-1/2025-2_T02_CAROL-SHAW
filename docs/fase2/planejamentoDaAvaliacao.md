@@ -154,18 +154,46 @@ Avaliar a confiabilidade operacional do MEPA, considerando a estabilidade e disp
 
 ### GQM-3 — Manutenibilidade
 
-**Objetivo:** Avaliar a **facilidade de mudança** (correções/evoluções) nos módulos críticos do MEPA, garantindo **testabilidade** e **baixo acoplamento**.
+**Objetivo:** Avaliar a **facilidade de mudança** (correções e evoluções) nos módulos críticos do MEPA, garantindo **testabilidade**, **baixo acoplamento** e **complexidade controlada**, com foco na manutenção contínua da qualidade do código.
+
+<table border="1">
+  <tr>
+    <td><b>Analisar</b></td>
+    <td>o MEPA</td>
+  </tr>
+  <tr>
+    <td><b>Para o propósito de</b></td>
+    <td>avaliar</td>
+  </tr>
+  <tr>
+    <td><b>Com respeito a</b></td>
+    <td>Manutenibilidade</td>
+  </tr>
+  <tr>
+    <td><b>Do ponto de vista de</b></td>
+    <td>desenvolvedores e equipe de manutenção</td>
+  </tr>
+  <tr>
+    <td><b>No contexto da</b></td>
+    <td>disciplina de Qualidade de Software</td>
+  </tr>
+</table>
 
 #### Questões
-Q1. Como estão **complexidade** e **acoplamento** dos módulos de ingestão/análise/relato?  
-Q2. Qual o **lead time de correção** de defeitos priorizados?  
+
+- **Q5.** Como estão os níveis de **complexidade** e **acoplamento** nos módulos de ingestão, análise e relato?  
+- **Q6.** Qual o **lead time de correção** de defeitos priorizados e o **esforço médio por demanda**?  
+- **Q7.** Qual o **nível de cobertura de regressão** nos módulos alterados, indicando **testabilidade**?
 
 #### Métricas
-- M6. **Tempo de correção (dias)** = data merge – data abertura do bug.
-- M7. **Cobertura de regressão (%)** nos módulos modificados (linha/branch).
-- M8. **Esforço por demanda (h)** = horas registradas por correção/evolução.
 
-**Critérios indicativos:** CC média ≤ 10; P50 tempo de correção ≤ 7 dias; cobertura ≥ 70%; esforço dentro do *budget* por sprint.
+| ID  | Nome da Métrica | Fórmula / Definição |
+|-----|------------------|----------------------|
+| **M5** | Tempo de correção (dias) | Data de merge – Data de abertura do bug         |
+| **M6** | Cobertura de regressão (%) | (Linhas/branches cobertos ÷ total) × 100      | 
+| **M7** | Esforço por demanda (h) | Horas registradas em correções/evoluções         |
+| **M8** | Acoplamento entre módulos (CBO) | Média de dependências por módulo         | 
+| **M9** | Complexidade Ciclomática Média (CC) | Valor médio de CC por módulo crítico | 
 
 <font size="3">
     <p style="text-align: center">
@@ -175,15 +203,17 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 </font>
 
 <div align="center">
+
   <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM3.png" alt="Diagrama GQM da Manutenibilidade" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Gustavo Gontijo Lima
+        Felipe Freire, com revisão e adesão de Pedro Barbosa
     </p>
 </font>
+
 
 ---
 
@@ -239,4 +269,6 @@ Q2. Qual o **lead time de correção** de defeitos priorizados?
 | `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | | 
 | `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
 | `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
-| `1.6` | Adicionando Diagramas corrigidos e corrigindo formulas GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
+| `1.6` | Revisão e aprimoramento do GQM-3 (Manutenibilidade) | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | | | |
+| `1.7` | Adicionando Diagramas corrigidos e corrigindo formulas GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
+
