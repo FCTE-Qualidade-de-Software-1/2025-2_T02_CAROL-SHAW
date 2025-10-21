@@ -105,32 +105,43 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 ### GQM-2 — Confiabilidade
 
 | Campo                  | Descrição                                |
-|-------------------------|------------------------------------------|
-| **Analisar**            | O MEPA                      |
+|-----------------------|-------------------------------------------|
+| **Analisar**            | O MEPA                                   |
 | **Para o propósito de** | Avaliar                                  |
-| **Com respeito a**      | Confiabilidade operacional                      |
+| **Com respeito a**      | Confiabilidade operacional               |
 | **Do ponto de vista de**| Desenvolvedores                          |
 | **No contexto da**      | Disciplina de Qualidade de Software      |
 
 #### Goal (Objetivo)
-Avaliar a confiabilidade operacional do MEPA, considerando a estabilidade e disponibilidade percebida pelos usuários durante o uso do sistema.
-
+Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponibilidade e capacidade de recuperação do serviço em produção.
 
 #### Questions (Questões)
-- **Q1.** Qual a **densidade de defeitos (bugs)** em módulos do escopo por unidade de tamanho?  
-- **Q2.** Qual a **disponibilidade** do serviço web em horário de expediente?
+- **Q1.** Qual é a taxa de ocorrência de falhas/defeitos observada durante o uso do sistema?
+- **Q2.** Qual é a disponibilidade do serviço ao longo dos períodos de operação?
+- **Q3.** Quanto tempo, em média, leva para restaurar o serviço após falhas?
+- **Q4.** Qual é a frequência de incidentes **críticos** (maior severidade) ao longo do tempo?
 
+#### Metrics (Métricas) — padronizadas
+- **M1. Densidade de defeitos (bugs/KLOC)** = nº de bugs confirmados / tamanho do módulo (em **KLOC**).  
+  *Unidade:* bugs/KLOC. *Fonte:* tracker de issues + contagem de código.
+- **M2. Disponibilidade (%)** = (tempo em operação **uptime** / tempo total na janela de serviço) × 100.  
+  *Unidade:* %. *Janela:* horário de expediente definido para o serviço.
+- **M3. MTBF (Mean Time Between Failures)** = tempo médio **entre falhas** registradas (de fim de reparo até início do próximo impacto).  
+  *Unidade:* horas.
+- **M4. MTTR (Mean Time To Recovery)** = média de (**tempo de recuperação** = hora de restauração − hora do primeiro impacto) por incidente.  
+  *Unidade:* minutos/horas. *Recuperação* = retorno ao nível de serviço normal.
+- **M5. Taxa de incidentes críticos** = nº de incidentes severidade **Crítica** por período (ex.: por semana).  
+  *Unidade:* incidentes/semana. *Severidade* conforme taxonomia do time de SRE.
 
-#### Metrics (Métricas)
-- **M4. Densidade de defeitos** = bugs confirmados.  
-- **M5. Disponibilidade (%)** = (tempo em operação / tempo total em janela de serviço) × 100.
+> Observação operacional: quando pertinente, também reportar a **disponibilidade teórica** pela relação  
+> **A = MTBF / (MTBF + MTTR)** para comparação com a disponibilidade observada por monitoramento.
 
-#### Critérios indicativos:
-- Densidade ≤ 0,5 bugs  
-- MTBF crescente por release  
-- MTTR P50 ≤ 15 min  
-- Disponibilidade ≥ 99% em expediente
-
+#### Critérios indicativos (exemplo de metas)
+- Densidade ≤ **0,5 bugs/KLOC** por módulo.  
+- **MTBF** crescente a cada release.  
+- **MTTR P50** ≤ **15 min** e P90 ≤ **60 min**.  
+- **Disponibilidade ≥ 99%** no expediente definido.  
+- Tendência decrescente na **taxa de incidentes críticos** por iteração.
 
 <font size="3">
     <p style="text-align: center">
