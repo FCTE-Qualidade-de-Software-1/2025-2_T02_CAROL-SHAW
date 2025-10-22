@@ -51,10 +51,9 @@
 Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam corretamente as tarefas críticas do processo de gestão de energia, atendendo aos requisitos funcionais definidos e testados.
 
 #### Questions (Questões)
-- **Q1.** As funcionalidades essenciais da plataforma MEPA atendem às necessidades e fluxos críticos dos usuários finais?  
-- **Q2.** O catálogo de requisitos priorizados está implementado de forma consistente e verificável?  
-- **Q3.** As funcionalidades implementadas possuem cobertura adequada de testes e rastreabilidade com os requisitos?  
-- **Q4.** Os cenários críticos são executados corretamente, sem desvios funcionais ou regressões?
+- **Q1.** O catálogo de requisitos priorizados está implementado de forma consistente e verificável?  
+- **Q2.** As funcionalidades implementadas possuem cobertura adequada de testes e rastreabilidade com os requisitos?  
+- **Q3.** Os cenários críticos são executados corretamente, sem desvios funcionais ou regressões?
 
 #### Metrics (Métricas)
 
@@ -64,6 +63,7 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 | M2  | **Taxa de sucesso de cenários críticos**      | $$\frac{\text{Cenários concluídos sem desvio}}{\text{Total de cenários executados}} \times 100$$  | %       | Testes funcionais / registros de execução | Por release | QA responsável     |
 | M3  | **Cobertura de testes por RF**                | $$\frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100$$                       | %       | Repositório de testes / CI             | Por release | QA responsável     |
 | M4  | **Taxa de conformidade funcional**            | $$\frac{\text{RF verificados e aprovados}}{\text{RF implementados}} \times 100$$                   | %       | Relatórios de testes / homologação     | Por release | QA responsável     |
+| M5  | **Taxa de Rejeição de Requisitos**            | $$\frac{\text{RF rejeitados em homologação}}{\text{RF implementados}} \times 100$$                   | %       | Relatórios de testes / homologação     | Por release | QA responsável     |
 
 > **Notas formais:**  
 > • “RF priorizados” = requisitos funcionais marcados como *in scope* para a release em avaliação.  
@@ -79,6 +79,7 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 | M2 Sucesso Cenários   | ≥ 95 %     | 85 – 94 %          | < 85 %              |
 | M3 Cobertura Testes   | ≥ 85 %     | 70 – 84 %          | < 70 %              |
 | M4 Conformidade       | ≥ 90 %     | 75 – 89 %          | < 75 %              |
+| M5 Rejeição RF        | < 5 %      | 5 – 15 %           | > 15 %              |
 
 - Esses limiares foram definidos com base em **práticas de referência de qualidade funcional** e normas de medição de software (ex.: ISO/IEC 25010).  
 - Recomenda-se manter histórico de 3 releases para avaliação de tendência.
@@ -93,7 +94,7 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/GQM1.png" alt="Diagrama GQM da adequacao" width="600">
 </div>
 
 <font size="3">
@@ -163,7 +164,7 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM2.png" alt="Diagrama GQM da confiabilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/GQM2.png" alt="Diagrama GQM da confiabilidade" width="600">
 </div>
 
 <font size="3">
@@ -212,11 +213,11 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 
 | ID  | Nome da Métrica | Fórmula / Definição |
 |-----|------------------|----------------------|
-| **M5** | Tempo de correção (dias) | Data de merge – Data de abertura do bug         |
-| **M6** | Cobertura de regressão (%) | (Linhas/branches cobertos ÷ total) × 100      | 
-| **M7** | Esforço por demanda (h) | Horas registradas em correções/evoluções         |
-| **M8** | Acoplamento entre módulos (CBO) | Média de dependências por módulo         | 
-| **M9** | Complexidade Ciclomática Média (CC) | Valor médio de CC por módulo crítico | 
+| **M1** | Tempo de correção (dias) | Data de merge – Data de abertura do bug         |
+| **M2** | Cobertura de regressão (%) | (Linhas/branches cobertos ÷ total) × 100      | 
+| **M3** | Esforço por demanda (h) | Horas registradas em correções/evoluções         |
+| **M4** | Acoplamento entre módulos (CBO) | Média de dependências por módulo         | 
+| **M5** | Complexidade Ciclomática Média (CC) | Valor médio de CC por módulo crítico | 
 
 <font size="3">
     <p style="text-align: center">
@@ -227,13 +228,13 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 
 <div align="center">
 
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM3.png" alt="Diagrama GQM da Manutenibilidade" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/GQM3.png" alt="Diagrama GQM da Manutenibilidade" width="600">
 </div>
 
 <font size="3">
     <p style="text-align: center">
         <b>Fonte:</b> 
-        Felipe Freire, com revisão e adesão de Pedro Barbosa
+        Gustavo Gontijo
     </p>
 </font>
 
@@ -262,12 +263,16 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 ## Apêndice — Tabela Resumo (Q→M)
 | Objetivo | Questão | Métrica | Fonte | Freq. |
 |---|---|---|---|---|
-| Adequação | Q1 | M1, M2 | releases | por release |
-| Adequação | Q2 | M3 | testes | por release |
-| Confiabilidade | Q1 | M4 | issues | mensal |
-| Confiabilidade | Q2 | M5 | monitoria | mensal |
-| Manutenibilidade | Q1 | M7, M8 | código | por mudança |
-| Manutenibilidade | Q2 | M6 | issues | por bug |
+| Adequação | Q1 | M1, M4, M5 | Backlog, Testes | por release |
+| Adequação | Q2 | M3 | Testes / CI | por release |
+| Adequação | Q3 | M2 | Testes | por release |
+| Confiabilidade | Q4 | M1, M3 | Issues, Monitoria | mensal |
+| Confiabilidade | Q5 | M2 | Monitoria | mensal |
+| Confiabilidade | Q6 | M4 | Issues, Monitoria | mensal |
+| Confiabilidade | Q7 | M5 | Issues | mensal |
+| Manutenibilidade | Q8 | M4, M5 | Código, Análise Estática | por release |
+| Manutenibilidade | Q9 | M1, M3 | Issues | por demanda |
+| Manutenibilidade | Q10 | M2 | Testes / CI | por release |
 
 ---
 
@@ -293,5 +298,5 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 | `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
 | `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
 | `1.6` | Revisão e aprimoramento do GQM-3 (Manutenibilidade) | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | | | |
-| `1.7` | Adicionando Diagramas corrigidos e corrigindo formulas GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
-
+| `1.7` | Adição dos Diagramas corrigidos e correção das formulas do GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
+| `1.8` | Correção dos Diagramas, do GQM 1 e do Apendice | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 22/10/2025 | | | |
