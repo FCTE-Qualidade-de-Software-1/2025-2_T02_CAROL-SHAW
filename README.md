@@ -5,8 +5,6 @@
 
 ## Alunos
 
-
-
 <div align="center">
   <p><strong>Tabela 1 – Integrantes da Equipe</strong></p>
 
