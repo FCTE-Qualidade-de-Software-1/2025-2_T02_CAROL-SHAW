@@ -51,32 +51,36 @@
 Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam corretamente as tarefas críticas do processo de gestão de energia, atendendo aos requisitos funcionais definidos e testados.
 
 #### Questions (Questões)
-- **Q1.** As funcionalidades essenciais (entrada/validação de dados, recomendação, relatórios, exportação) **cobrem** as necessidades do usuário?  
-- **Q2.** O **catálogo de requisitos** observados no diagrama de casos de uso está **implementado** e **verificado por testes** automatizados ou manuais?  
-- **Q3.** As funcionalidades implementadas possuem **testes associados e rastreáveis**?
+- **Q1.** As funcionalidades essenciais da plataforma MEPA atendem às necessidades e fluxos críticos dos usuários finais?  
+- **Q2.** O catálogo de requisitos priorizados está implementado de forma consistente e verificável?  
+- **Q3.** As funcionalidades implementadas possuem cobertura adequada de testes e rastreabilidade com os requisitos?  
+- **Q4.** Os cenários críticos são executados corretamente, sem desvios funcionais ou regressões?
 
 #### Metrics (Métricas)
 
 | ID  | Nome da Métrica                              | Fórmula                                                                                           | Unidade | Fonte                                | Frequência   | Responsável        |
 |-----|-----------------------------------------------|---------------------------------------------------------------------------------------------------|---------|----------------------------------------|-------------|--------------------|
-| M1  | **Cobertura de funcionalidades priorizadas**  | $$\frac{\text{RF implementados}}{\text{RF priorizados}} \times 100$$               | %       | Backlog / releases                     | Por release | Owner de produto   |
-| M2  | **Taxa de sucesso de cenários críticos**      | $$\frac{\text{Cenários concluídos sem desvio}}{\text{Total de cenários executados}} \times 100$$ | % | Testes funcionais / registros de execução | Por release | QA responsável     |
-| M3  | **Cobertura de testes por RF**               | $$\frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100$$       | %       | Repositório de testes / CI             | Por release | QA responsável     |
+| M1  | **Cobertura de funcionalidades priorizadas**  | $$\frac{\text{RF implementados}}{\text{RF priorizados}} \times 100$$                               | %       | Backlog / releases                     | Por release | Owner de produto   |
+| M2  | **Taxa de sucesso de cenários críticos**      | $$\frac{\text{Cenários concluídos sem desvio}}{\text{Total de cenários executados}} \times 100$$  | %       | Testes funcionais / registros de execução | Por release | QA responsável     |
+| M3  | **Cobertura de testes por RF**                | $$\frac{\text{RF com teste associado}}{\text{RF implementados}} \times 100$$                       | %       | Repositório de testes / CI             | Por release | QA responsável     |
+| M4  | **Taxa de conformidade funcional**            | $$\frac{\text{RF verificados e aprovados}}{\text{RF implementados}} \times 100$$                   | %       | Relatórios de testes / homologação     | Por release | QA responsável     |
 
 > **Notas formais:**  
 > • “RF priorizados” = requisitos funcionais marcados como *in scope* para a release em avaliação.  
 > • “Cenário sem desvio” = execução bem-sucedida no ambiente de teste, sem incidentes nem reprocessamento.  
-> • “Teste associado” = caso de teste automatizado ou manual vinculado ao requisito no sistema de rastreabilidade.
+> • “Teste associado” = caso de teste automatizado ou manual vinculado ao requisito no sistema de rastreabilidade.  
+> • “RF verificados e aprovados” = requisitos que passaram pelos testes de validação e foram aceitos pelo time responsável.
 
 #### Critérios indicativos (Semáforo)
 
 | Métrica | Verde (OK) | Amarelo (Atenção) | Vermelho (Crítico) |
 |---------|------------|--------------------|---------------------|
-| M1      | ≥ 90 %     | 75 – 89 %          | < 75 %              |
-| M2      | ≥ 95 %     | 85 – 94 %          | < 85 %              |
-| M3      | ≥ 85 %     | 70 – 84 %          | < 70 %              |
+| M1 Cobertura RF       | ≥ 90 %     | 75 – 89 %          | < 75 %              |
+| M2 Sucesso Cenários   | ≥ 95 %     | 85 – 94 %          | < 85 %              |
+| M3 Cobertura Testes   | ≥ 85 %     | 70 – 84 %          | < 70 %              |
+| M4 Conformidade       | ≥ 90 %     | 75 – 89 %          | < 75 %              |
 
-- Esses limiares foram definidos com base em **práticas de referência de qualidade funcional** e normas de medição de software.  
+- Esses limiares foram definidos com base em **práticas de referência de qualidade funcional** e normas de medição de software (ex.: ISO/IEC 25010).  
 - Recomenda-se manter histórico de 3 releases para avaliação de tendência.
 
 #### Diagrama GQM
