@@ -1,5 +1,3 @@
-# Planejamento da Avaliação (Fase 2) — MEPA Energia
-
 ## Sumário
 
 - [1. Contexto e Escopo](#1-contexto-e-escopo)
@@ -8,6 +6,9 @@
   - [GQM-1 — Adequação Funcional](#gqm-1--adequação-funcional)
   - [GQM-2 — Confiabilidade](#gqm-2--confiabilidade)
   - [GQM-3 — Manutenibilidade](#gqm-3--manutenibilidade)
+- [4. Plano de Coleta de Dados](#4-plano-de-coleta-de-dados)
+- [5. Riscos e Mitigações](#5-riscos-e-mitigações)
+- [6. Entregáveis](#6-entregáveis)
 - [Apêndice — Tabela Resumo (Q→M)](#apêndice--tabela-resumo-qm)
 - [Referências](#referências)
 - [Histórico de Versões](#histórico-de-versões)
@@ -103,7 +104,7 @@
 
 **Objetivo**: avaliar **facilidade de mudança** nos módulos críticos (correções/evoluções), mantendo **testabilidade** e **complexidade controlada**.
 
-#### Questões 
+#### Questões (sem nome de métrica)
 
 - **Q8. Estrutura do código** — *O que se deseja saber:* se níveis de acoplamento e complexidade estão sob controle. *O que será medido:* acoplamento entre módulos e complexidade ciclomática média. *Hipótese:* baixos níveis de acoplamento e CC dentro dos limites.
 - **Q9. Fluxo de manutenção** — *O que se deseja saber:* tempo/esforço para corrigir defeitos priorizados. *O que será medido:* tempo entre abertura e merge de correções e esforço registrado por demanda. *Hipótese:* correções com lead time e esforço compatíveis com o SLA do time.
@@ -121,8 +122,26 @@
 
 ---
 
-## Apêndice — Tabela Resumo (Q→M)
+## 4. Plano de Coleta de Dados
 
+- **Fontes**: repositórios MEPA (código), issues, documentação de releases, registros de disponibilidade.  
+- **Instrumentos**: planilha GQM, relatórios de cobertura, extratores de issues/monitoria.  
+- **Amostragem**: cenários críticos (cadastro→recomendação→relatório) e módulos do escopo.  
+- **Periodicidade**: por release e por sprint.
+
+## 5. Riscos e Mitigações
+
+- **R1** Rastreabilidade requisito–teste–commit incompleta → política e revisão de links.  
+- **R2** Dados/ambiente heterogêneos → matriz de cenários e ambientes padronizados.  
+- **R3** Baixa disciplina de apontamento de esforço → definição mínima de apontamento.
+
+## 6. Entregáveis
+
+- Catálogo de métricas, planilha GQM, relatórios por release.
+
+---
+
+## Apêndice — Tabela Resumo (Q→M)
 | Objetivo | Questão | Métrica(s) | Fonte | Freq. |
 |---|---|---|---|---|
 | Adequação | Q1 | AF1, AF4 | Backlog/Homologação | por release |
@@ -151,28 +170,17 @@ Para a elaboração deste documento e de outros artefatos do projeto, foram util
 
 ---
 
-## Bibliografia
-
-> - Notas de aula da disciplina de Qualidade de Software: **Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)**.
-
-> - Basili, V. R., et al. **GQM+Strategies: Aligning Software Measurement with Business Goals**. *IEEE Computer*, 2010.
-
-> - Slides da disciplina de Qualidade de Software: **As cinco métricas fundamentais para normalização/controle**.
-
-> - Fenton, N., & Bieman, S. **Software Metrics: A Rigorous and Practical Approach** (3rd ed.). CRC Press. (Fundamentos de medição e escalas).
+## Referências
+- Documento de **Fase 1 (Propósito de Avaliação)** como contexto normativo da Fase 2.
+- Basili, V. R., et al. **GQM+Strategies: Aligning Software Measurement with Business Goals**. *IEEE Computer*, 2010.  
+- Fenton, N., & Bieman, J. **Software Metrics: A Rigorous and Practical Approach** (3rd ed.). CRC Press.  
+- ISO/IEC 25000 e 25010 — **SQuaRE**: modelos de qualidade e medição.  
+- Notas de aula da disciplina de Qualidade de Software (GQM: introdução, planejamento, coleta e interpretação).
 
 ---
 
 ## Histórico de Versões
-
-| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
-| :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
-| `1.0` | Desenvolvimento dos objetivos do gqm| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.1` | Desenvolvimento dos gqms das caracteristicas de qualidade escolhidas na fase 1 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.2` | Inserção das imagens do gqm para cada caracteristica de qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | | 
-| `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
-| `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
-| `1.6` | Revisão e aprimoramento do GQM-3 (Manutenibilidade) | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | | | |
-| `1.7` | Adição dos Diagramas corrigidos e correção das formulas do GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
-| `1.8` | Correção dos Diagramas, do GQM 1 e do Apendice | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 22/10/2025 | | | |
+| Versão | Descrição | Autor(es) | Data |
+|:--:|---|---|:--:|
+| 2.1 | Alinhamento explícito com Fase 1 (público-alvo, prioridades, ODS, COTS) e inclusão da seção 0.8 de traço | ChatGPT + Equipe | 22/10/2025 |
+| 2.0 | Revisão estrutural: inclusão de hipóteses por questão; diretrizes “Conhecer a métrica”; reformulação das perguntas; padronização de critérios; atualização do apêndice | ChatGPT + Equipe | 22/10/2025 |
