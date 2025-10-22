@@ -9,7 +9,7 @@
   - [GQM-2 — Confiabilidade](#gqm-2--confiabilidade)
   - [GQM-3 — Manutenibilidade](#gqm-3--manutenibilidade)
 - [Apêndice — Tabela Resumo (Q→M)](#apêndice--tabela-resumo-qm)
-- [Referências](#referências)
+- [Bibliografia](#bibliografia)
 - [Histórico de Versões](#histórico-de-versões)
 
 ---
