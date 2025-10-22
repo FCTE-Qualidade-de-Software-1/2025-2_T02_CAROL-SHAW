@@ -225,14 +225,16 @@ Para a elaboração deste documento e de outros artefatos do projeto, foram util
 
 ## Histórico de Versões
 
-| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Incremento do Revisor|
-| :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
-| `1.0` | Desenvolvimento dos objetivos do gqm| [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.1` | Desenvolvimento dos gqms das caracteristicas de qualidade escolhidas na fase 1 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.2` | Inserção das imagens do gqm para cada caracteristica de qualidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | |
-| `1.3` | Sintetização dos entregáveis | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | | | | 
-| `1.4` | Modificação da estrutura do GQM 2 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | | | |
-| `1.5` | Modificação da estrutura do GQM 1 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | | | |
-| `1.6` | Revisão e aprimoramento do GQM-3 (Manutenibilidade) | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | | | |
-| `1.7` | Adição dos Diagramas corrigidos e correção das formulas do GQM 1 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | | | |
-| `1.8` | Correção dos Diagramas, do GQM 1 e do Apendice | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 22/10/2025 | | | |
+| Versão | Tipo de Alteração | Descrição Detalhada | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Observações / Incrementos |
+|:------:|------------------|--------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
+| `1.0` | Criação | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | — | — | Versão inicial do documento. |
+| `1.1` | Expansão | Desenvolvimento dos GQMs das características de qualidade escolhidas na Fase 1. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | — | — | Complemento da versão 1.0. |
+| `1.2` | Inserção de conteúdo visual | Inserção das imagens do GQM para cada característica de qualidade. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | — | — | — |
+| `1.3` | Síntese | Sintetização dos entregáveis. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | — | — | — |
+| `1.4` | Reestruturação | Modificação da estrutura do GQM 2, seguindo os padrões propostos para melhor coerência entre métricas e objetivos. | [Mylena Mendonça](https://github.com/MylenaTrindade) | 15/10/2025 | — | — | Complemento técnico, sem aumento de escopo. |
+| `1.5` | Reestruturação | Modificação da estrutura do GQM 1, para adequações ao padrão solicitado. | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 15/10/2025 | — | — | — |
+| `1.6` | Reestruturação | Revisão e aprimoramento do GQM-3 para adequação à estrutura GQM (Manutenibilidade). | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 15/10/2025 | — | — | — |
+| `1.7 - Detalhamento` | Complemento | Ajuste de fórmulas, explicações adicionais e tabela de critérios. | [Mylena Mendonça](https://github.com/MylenaTrindade) e [Ana Luiza Komatsu](https://github.com/luluaroeira) | 16/10/2025 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | — | Ajustes na tabela de critérios e unificação com a tabela de métricas. |
+| `1.7` | Correção técnica | Adição dos diagramas corrigidos e correção das fórmulas do GQM. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 20/10/2025 | [Marcos Bittar ](https://github.com/leozinlima) | — | Revisão final com ajustes. |
+| `1.8` | Revisão final | Reunião para verificação final e validação do documento. | [Gustavo Gontijo Lima](https://github.com/Guga301104), [Pedro Barbosa](https://github.com/pedrobarbosaocb) e [Felipe das Neves](https://github.com/FelipeFreire-gf) | 22/10/2025 | — | — | Versão estável. |
+| `1.9` | Padronização | Reunião para verificação de padronização e histórico de versão. | [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade) | 21/10/2025 | — | — | — |
