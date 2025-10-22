@@ -9,7 +9,7 @@
   - [GQM-2 — Confiabilidade](#gqm-2--confiabilidade)
   - [GQM-3 — Manutenibilidade](#gqm-3--manutenibilidade)
 - [Apêndice — Tabela Resumo (Q→M)](#apêndice--tabela-resumo-qm)
-- [Referências](#referências)
+- [Bibliografia](#bibliografia)
 - [Histórico de Versões](#histórico-de-versões)
 
 ---
@@ -58,6 +58,26 @@
 
 > **Notas:** “RF verificados e aprovados” = requisitos que passaram na validação e foram aceitos; manter histórico mínimo de 3 releases para tendência.
 
+#### Diagrama GQM da Adequação Funcional
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 1:</b> Diagrama GQM da Adequação Funcional
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Gustavo Gontijo Lima
+    </p>
+</font>
+
 ---
 
 ### GQM-2 — Confiabilidade
@@ -89,6 +109,26 @@
 | CF4 | MTTR | Tempo para restaurar serviço | min | Monitoria/Issues | mensal | <15 / 15–60 / >60 |
 | CF5 | Severidade de incidentes | Distribuição por nível | contagem/% | Issues | mensal | manter baixa proporção de níveis Crítico/Alto |
 
+#### Diagrama GQM da Confiabilidade
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 1:</b> Diagrama GQM da Confiabilidade
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Gustavo Gontijo Lima
+    </p>
+</font>
+
 ---
 
 ### GQM-3 — Manutenibilidade
@@ -119,6 +159,26 @@
 | MN4 | Acoplamento (CBO) | Média de dependências por módulo | — | Análise estática | por release | ≤9 / 10–12 / >12 |
 | MN5 | Complexidade ciclomática média | Valor médio por módulo crítico | — | Análise estática | por release | ≤10 / 11–15 / >15 |
 
+#### Diagrama GQM da Manutenibilidade
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Figura 1:</b> Diagrama GQM da Manutenibilidade
+        <br>
+    </p>
+</font>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/fase2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Fonte:</b> 
+        Gustavo Gontijo Lima
+    </p>
+</font>
+
 ---
 
 ## Apêndice — Tabela Resumo (Q→M)
@@ -126,15 +186,15 @@
 | Objetivo | Questão | Métrica(s) | Fonte | Freq. |
 |---|---|---|---|---|
 | Adequação | Q1 | AF1, AF4 | Backlog/Homologação | por release |
-| Adequação | Q2 | AF2, AF3 | Testes/CI | por release |
+| Adequação | Q2 | AF2, AF3 | Testes | por release |
 | Adequação | Q3 | AF4, AF5 | Homologação | por release |
 | Confiabilidade | Q4 | CF1, CF3 | Monitoria/Issues | mensal |
 | Confiabilidade | Q5 | CF2 | Monitoria | mensal |
 | Confiabilidade | Q6 | CF4 | Monitoria/Issues | mensal |
 | Confiabilidade | Q7 | CF5 | Issues | mensal |
 | Manutenibilidade | Q8 | MN4, MN5 | Análise Estática | por release |
-| Manutenibilidade | Q9 | MN1, MN2 | Issues/Timesheet | por demanda |
-| Manutenibilidade | Q10 | MN3 | CI/Testes | por release |
+| Manutenibilidade | Q9 | MN1, MN2 | Issues | por demanda |
+| Manutenibilidade | Q10 | MN3 | Testes | por release |
 
 ---
 
