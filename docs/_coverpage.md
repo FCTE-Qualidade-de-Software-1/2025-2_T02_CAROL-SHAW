@@ -8,6 +8,6 @@
 > Projeto de análise de qualidade do Mepa Energia
 
 [GitHub](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW)
-[Acesse a documentação](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW)
+[Acesse o Projeto](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/#/README)
 
 ![color](#6aa1d3)
