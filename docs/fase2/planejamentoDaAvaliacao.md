@@ -143,18 +143,6 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 > • A *taxonomia de severidade* deve ser formalmente definida pela equipe responsável.
 > • Observação operacional: quando pertinente, também reportar a **disponibilidade teórica** pela relação **A = MTBF / (MTBF + MTTR)** para comparação com M2.
 
-#### Critérios indicativos (Semáforo)
-
-| Métrica         | Verde (OK)               | Amarelo (Atenção)         | Vermelho (Crítico)        |
-| :-------------- | :----------------------- | :------------------------ | :------------------------ |
-| M1 Taxa Falhas  | Tendência Decrescente    | Estagnado                 | Tendência Crescente       |
-| M2 Disponib.    | ≥ 99%                    | 98% – 98.99%              | < 98%                     |
-| M3 MTBF         | Tendência Crescente      | Estagnado                 | Tendência Decrescente     |
-| M4 MTTR (P50)   | ≤ 15 min                 | > 15 min e ≤ 30 min       | > 30 min                  |
-| M5 Severidade   | Nº Críticos+Altos ↓      | Nº Críticos+Altos estável | Nº Críticos+Altos ↑       |
-
-- Limiares para M2 e M4 são exemplos e devem ser ajustados à criticidade do MEPA.
-- Tendências (M1, M3, M5) consideram os últimos 3-6 períodos.
 
 <font size="3">
     <p style="text-align: center">
