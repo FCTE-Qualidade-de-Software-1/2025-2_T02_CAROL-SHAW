@@ -116,32 +116,40 @@ Avaliar se as funcionalidades principais da plataforma MEPA cobrem e executam co
 Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponibilidade e capacidade de recuperação do serviço em produção.
 
 #### Questions (Questões)
-- **Q1.** Qual é a taxa de ocorrência de falhas/defeitos observada durante o uso do sistema?
-- **Q2.** Qual é a disponibilidade do serviço ao longo dos períodos de operação?
-- **Q3.** Quanto tempo, em média, leva para restaurar o serviço após falhas?
-- **Q4.** Qual é a frequência de incidentes **críticos** (maior severidade) ao longo do tempo?
+- **Q4.** Quão **estável** é o sistema MEPA durante a operação normal?
+- **Q5.** Quão **consistentemente** o serviço MEPA está disponível para uso quando necessário?
+- **Q6.** Quão **eficaz** é o sistema MEPA em se recuperar após a ocorrência de falhas?
+- **Q7.** Qual o **perfil de severidade** e impacto dos incidentes que ocorrem em produção?
 
-#### Metrics (Métricas) — padronizadas
-- **M1. Densidade de defeitos (bugs/KLOC)** = nº de bugs confirmados / tamanho do módulo (em **KLOC**).  
-  *Unidade:* bugs/KLOC. *Fonte:* tracker de issues + contagem de código.
-- **M2. Disponibilidade (%)** = (tempo em operação **uptime** / tempo total na janela de serviço) × 100.  
-  *Unidade:* %. *Janela:* horário de expediente definido para o serviço.
-- **M3. MTBF (Mean Time Between Failures)** = tempo médio **entre falhas** registradas (de fim de reparo até início do próximo impacto).  
-  *Unidade:* horas.
-- **M4. MTTR (Mean Time To Recovery)** = média de (**tempo de recuperação** = hora de restauração − hora do primeiro impacto) por incidente.  
-  *Unidade:* minutos/horas. *Recuperação* = retorno ao nível de serviço normal.
-- **M5. Taxa de incidentes críticos** = nº de incidentes severidade **Crítica** por período (ex.: por semana).  
-  *Unidade:* incidentes/semana. *Severidade* conforme taxonomia do time de SRE.
+#### Metrics (Métricas)
 
-> Observação operacional: quando pertinente, também reportar a **disponibilidade teórica** pela relação  
-> **A = MTBF / (MTBF + MTTR)** para comparação com a disponibilidade observada por monitoramento.
+| ID  | Nome da Métrica                           | Fórmula                                                                                     | Unidade                          |
+| :-- | :---------------------------------------- | :------------------------------------------------------------------------------------------ | :------------------------------- |
+| M1  | **Taxa de Falhas (Failure Rate)** | $$\frac{\text{Nº total de falhas operacionais}}{\text{Tempo total de operação}}$$           | falhas/hora                      |
+| M2  | **Disponibilidade (%)** | $$\frac{\text{Tempo total em operação}}{\text{Tempo total esperado}} \times 100$$            | %                                |
+| M3  | **MTBF (Mean Time Between Failures)** | Tempo médio entre o fim da recuperação de uma falha e o início da próxima                    | horas                            |
+| M4  | **MTTR (Mean Time To Recovery)** | Tempo médio total para restaurar o serviço (Hora restauração - Hora impacto)                 | minutos                          |
+| M5  | **Distribuição de Severidade de Incidentes**| Contagem de incidentes por nível de severidade (Crítico, Alto, Médio, Baixo) em um período | Contagem/categoria/período |
 
-#### Critérios indicativos (exemplo de metas)
-- Densidade ≤ **0,5 bugs/KLOC** por módulo.  
-- **MTBF** crescente a cada release.  
-- **MTTR P50** ≤ **15 min** e P90 ≤ **60 min**.  
-- **Disponibilidade ≥ 99%** no expediente definido.  
-- Tendência decrescente na **taxa de incidentes críticos** por iteração.
+> **Notas formais:**
+> • *Tempo total de operação* e *Tempo total esperado* referem-se à janela de serviço definida (ex: horário comercial).
+> • *Falha operacional* é qualquer evento que cause indisponibilidade ou degradação significativa do serviço.
+> • *Restauração* significa retorno ao nível de serviço normal.
+> • A *taxonomia de severidade* deve ser formalmente definida pela equipe responsável.
+> • Observação operacional: quando pertinente, também reportar a **disponibilidade teórica** pela relação **A = MTBF / (MTBF + MTTR)** para comparação com M2.
+
+#### Critérios indicativos (Semáforo)
+
+| Métrica         | Verde (OK)               | Amarelo (Atenção)         | Vermelho (Crítico)        |
+| :-------------- | :----------------------- | :------------------------ | :------------------------ |
+| M1 Taxa Falhas  | Tendência Decrescente    | Estagnado                 | Tendência Crescente       |
+| M2 Disponib.    | ≥ 99%                    | 98% – 98.99%              | < 98%                     |
+| M3 MTBF         | Tendência Crescente      | Estagnado                 | Tendência Decrescente     |
+| M4 MTTR (P50)   | ≤ 15 min                 | > 15 min e ≤ 30 min       | > 30 min                  |
+| M5 Severidade   | Nº Críticos+Altos ↓      | Nº Críticos+Altos estável | Nº Críticos+Altos ↑       |
+
+- Limiares para M2 e M4 são exemplos e devem ser ajustados à criticidade do MEPA.
+- Tendências (M1, M3, M5) consideram os últimos 3-6 períodos.
 
 <font size="3">
     <p style="text-align: center">
@@ -192,9 +200,9 @@ Avaliar a confiabilidade operacional do MEPA, considerando estabilidade, disponi
 
 #### Questões
 
-- **Q5.** Como estão os níveis de **complexidade** e **acoplamento** nos módulos de ingestão, análise e relato?  
-- **Q6.** Qual o **lead time de correção** de defeitos priorizados e o **esforço médio por demanda**?  
-- **Q7.** Qual o **nível de cobertura de regressão** nos módulos alterados, indicando **testabilidade**?
+- **Q8.** Como estão os níveis de **complexidade** e **acoplamento** nos módulos de ingestão, análise e relato?  
+- **Q9.** Qual o **lead time de correção** de defeitos priorizados e o **esforço médio por demanda**?  
+- **Q10.** Qual o **nível de cobertura de regressão** nos módulos alterados, indicando **testabilidade**?
 
 #### Métricas
 
