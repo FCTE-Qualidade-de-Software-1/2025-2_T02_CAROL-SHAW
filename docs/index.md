@@ -1,7 +1,7 @@
 # Ánalise da Qualidade de Software do Mepa Energia
 
 <div align="center">
-  <img src="assets/shaww.png" alt="Capa" width="50%">
+  <img src="assets/shawR2.png" alt="Capa" width="50%">
   <p><b>Figura 1:</b> Carol Shaw</p>
 </div>
 

@@ -2,15 +2,14 @@
 
 ## Sumário
 
-- [1. Contexto e Escopo](#1-contexto-e-escopo)
-- [2. Metodologia e Diretrizes de Medição](#2-metodologia-e-diretrizes-de-medição)
-- [3. Objetivos de Medição por GQM](#3-objetivos-de-medição-por-gqm)
-  - [GQM-1 — Adequação Funcional](#gqm-1--adequação-funcional)
-  - [GQM-2 — Confiabilidade](#gqm-2--confiabilidade)
-  - [GQM-3 — Manutenibilidade](#gqm-3--manutenibilidade)
-- [Apêndice — Tabela Resumo (Q→M)](#apêndice--tabela-resumo-qm)
+- [2. Metodologia e Diretrizes de Medição](#2-metodologia-e-diretrizes-de-medicao)
+- [3. Objetivos de Medição por GQM](#3-objetivos-de-medicao-por-gqm)
+  - [GQM-1 — Adequação Funcional](#gqm-1-adequacao-funcional)
+  - [GQM-2 — Confiabilidade](#gqm-2-confiabilidade)
+  - [GQM-3 — Manutenibilidade](#gqm-3-manutenibilidade)
+- [Apêndice — Tabela Resumo (Q→M)](#apendice-tabela-resumo-qm)
 - [Bibliografia](#bibliografia)
-- [Histórico de Versões](#histórico-de-versões)
+- [Histórico de Versões](#historico-de-versoes)
 
 ---
 

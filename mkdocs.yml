@@ -9,12 +9,12 @@ nav:
   - Metodologia: metodologia.md
 
   - Fase 1:
-    - Proposito de Avaliação: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
-    - Participação Fase 1: pages/Modulo1/modelo_relacional.md
+    - Proposito de Avaliação: pages/Modulo1/propositoDeAvaliacao.md
+    - Participação Fase 1: pages/Modulo1/partIntegrantesFase1.md
 
   - Fase 2:
-    - Planejamento de Avaliação: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
-    - Participação Fase 2: pages/Modulo1/modelo_relacional.md
+    - Planejamento de Avaliação: pages/Modulo2/planejamentoDaAvaliacao.md
+    - Participação Fase 2: pages/Modulo2/partIntegrantesFase2.md
 
   - Atas:
     - Ata Fase 1: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
@@ -47,8 +47,8 @@ theme:
         name: Mude para o tema claro
 
   
-  logo: assets/shawww.ico
-  favicon: assets/shaww.png
+  logo: assets/shawR2I.ico
+  favicon: assets/shawR2.png
   highlightjs: true
 
 extra_css:

@@ -2,11 +2,11 @@
 
 ---
 ## Sumário
-- [Introdução](#introdução)
-- [Contextualização do Problema](#contextualização-do-problema)
-- [Proposta de Solução](#proposta-de-solução)
+- [Introdução](#introducao)
+- [Contextualização do Problema](#contextualizacao-do-problema)
+- [Proposta de Solução](#proposta-de-solucao)
 - [Objetivos do Projeto](#objetivos-do-projeto)
-- [Público-Alvo](#público-alvo)
+- [Público-Alvo](#publico-alvo)
 - [Principais Funcionalidades](#principais-funcionalidades)
 - [Diferenciais Competitivos](#diferenciais-competitivos)
 

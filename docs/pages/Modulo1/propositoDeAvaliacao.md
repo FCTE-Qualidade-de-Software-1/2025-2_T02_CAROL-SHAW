@@ -2,15 +2,15 @@
 
 ## Sumário
 - [Contexto de Trabalho](#contexto-de-trabalho)
-- [Aplicação Escolhida](#aplicação-escolhida)
-- [Classificação e Ênfase das Características de Qualidade](#classificação-e-ênfase-das-características-de-qualidade)
-- [Proposta de Avaliação e Melhoria de Qualidade](#proposta-de-avaliação-e-melhoria-de-qualidade)
-- [Especificação do Modelo de Qualidade](#especificação-do-modelo-de-qualidade)
-- [Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU](#conexão-com-ods-objetivo-de-desenvolvimento-sustentável-da-onu)
+- [Aplicação Escolhida](#aplicacao-escolhida)
+- [Classificação e Ênfase das Características de Qualidade](#classificacao-e-enfase-das-caracteristicas-de-qualidade)
+- [Proposta de Avaliação e Partes Interessadas](#proposta-de-avaliacao-e-partes-interessadas)
+- [Especificação do Modelo de Qualidade](#especificacao-do-modelo-de-qualidade)
+- [Conexão com ODS (Objetivo de Desenvolvimento Sustentável) da ONU](#conexao-com-ods-objetivo-de-desenvolvimento-sustentavel-da-onu)
 - [Uso de IA](#uso-de-ia)
 - [Bibliografia](#bibliografia)
-- [Referências Bibliográficas](#referências-bibliográficas)
-- [Histórico de Versões](#histórico-de-versões)
+- [Referências Bibliográficas](#referencias-bibliograficas)
+- [Histórico de Versões](#historico-de-versoes)
 
 ---
 
@@ -135,7 +135,7 @@ Com o intuito de avaliar a qualidade do software MEPA Energia, o grupo adotou um
     </p>
 </font>
 
-![productQualityModel](../assets/productQualityModel.png)
+![productQualityModel](../../assets/productQualityModel.png)
 
 <font size="3">
     <p style="text-align: center">
@@ -189,7 +189,7 @@ O diagrama 1 a seguir representa o foco que a equipe terá ao desenvolver os mod
     </p>
 </font>
 
-![productQualityModel](../assets/diagramaV.png)
+![productQualityModel](../../assets/diagramaV.png)
 
 <font size="3">
     <p style="text-align: center">
@@ -255,7 +255,7 @@ A aplicação avaliada apresenta forte alinhamento com diversos Objetivos de Des
     </p>
 </font>
 
-![ODS](../assets/odsMepa.png)
+![ODS](../../assets/odsMepa.png)
 
 <font size="3">
     <p style="text-align: center">
