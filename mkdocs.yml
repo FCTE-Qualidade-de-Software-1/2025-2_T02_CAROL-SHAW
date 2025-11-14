@@ -1,0 +1,60 @@
+site_name: Análise de Qualidade Mepa Energia
+
+repo_url: https://github.com/SBD1/2025.1-senhor_dos_aneis/new/main
+repo_name: 2025.2-carolShaw
+site_description: "Documentação da Análise de Qualidade Mepa Energia"
+
+nav:
+  - Home: index.md
+  - Metodologia: metodologia.md
+
+  - Fase 1:
+    - Proposito de Avaliação: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
+    - Participação Fase 1: pages/Modulo1/modelo_relacional.md
+
+  - Fase 2:
+    - Planejamento de Avaliação: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
+    - Participação Fase 2: pages/Modulo1/modelo_relacional.md
+
+  - Atas:
+    - Ata Fase 1: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
+
+theme:
+  name: material
+  language: pt-BR
+
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - header.autohide
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+  
+  palette:
+    - scheme: default
+      primary: '--md-primary-fg-color'
+      accent: '--md-primary-fg-color'
+      toggle:
+        icon: material/lightbulb-outline
+        name: Mude para o tema escuro
+        
+    - scheme: slate
+      primary: '--md-primary-fg-color'
+      accent: '--md-primary-fg-color'
+      toggle:
+        icon: material/lightbulb
+        name: Mude para o tema claro
+
+  
+  logo: assets/shawww.ico
+  favicon: assets/shaww.png
+  highlightjs: true
+
+extra_css:
+  - overrides/styles.css
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
