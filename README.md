@@ -72,12 +72,12 @@ Nós alunos de Qualidade de Software do curso de engenharia de software da Unive
 
 Para executar a documentação em ambiente local siga os seguintes passos:
 
-#### Instale o docsify
+#### Instale as dependências
 
 Execute o comando:
 
 ```shell
-npm i docsify-cli -g
+pip install -r requirements.txt
 ```
 
 #### Executando localmente
@@ -85,7 +85,7 @@ npm i docsify-cli -g
 Para iniciar o site localmente, utilize o comando:
 
 ```shell
-docsify serve ./docs
+mkdocs serve
 ```
 ---
 
@@ -95,3 +95,4 @@ docsify serve ./docs
 | :----: | --------- | --------- | :--------------: | ----------- | :-------------: | :-------------: |
 | `1.0` | Modelagem inicial do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 24/09/2025 | | | |
 | `1.1` | Atualização do readme | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 29/09/2025 | | | |
+| `1.2` | Modificações no shell pela refatoração do docsify para o mkdocs material | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 14/11/2025 | | | |

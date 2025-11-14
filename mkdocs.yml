@@ -1,6 +1,6 @@
 site_name: Análise de Qualidade Mepa Energia
 
-repo_url: https://github.com/SBD1/2025.1-senhor_dos_aneis/new/main
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW
 repo_name: 2025.2-carolShaw
 site_description: "Documentação da Análise de Qualidade Mepa Energia"
 
@@ -16,8 +16,16 @@ nav:
     - Planejamento de Avaliação: pages/Modulo2/planejamentoDaAvaliacao.md
     - Participação Fase 2: pages/Modulo2/partIntegrantesFase2.md
 
+  - Fase 3:
+    - Descrição da Medição: pages/Modulo3/descricaoDaMedicao.md
+    - Participação Fase 3: pages/Modulo3/partIntegrantesFase3.md
+
+  - Fase 4:
+    - Execução da Medição: pages/Modulo4/execucaoDaMedicao.md
+    - Participação Fase 4: pages/Modulo4/partIntegrantesFase4.md
+
   - Atas:
-    - Ata Fase 1: pages/Modulo1/Diagrama_Entidade_Relacionamento.md
+    - Ata Fase 1: pages/ata/ata1.md
 
 theme:
   name: material

@@ -135,7 +135,9 @@ Com o intuito de avaliar a qualidade do software MEPA Energia, o grupo adotou um
     </p>
 </font>
 
-![productQualityModel](../../assets/productQualityModel.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo1/assets/productQualityModel.png" width="600">
+</div>
 
 <font size="3">
     <p style="text-align: center">
@@ -189,15 +191,16 @@ O diagrama 1 a seguir representa o foco que a equipe terá ao desenvolver os mod
     </p>
 </font>
 
-![productQualityModel](../../assets/diagramaV.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo1/assets/productQualityModel.png" alt="productQualityModel" width="600">
+</div>
 
 <font size="3">
     <p style="text-align: center">
-        <b>Modelo Adaptado Fonte:</b> 
-        ISO/IEC 25010.
+        <b>Autor:</b> 
+        Felipe das Neves
     </p>
 </font>
-
 
 ---
 
@@ -255,7 +258,9 @@ A aplicação avaliada apresenta forte alinhamento com diversos Objetivos de Des
     </p>
 </font>
 
-![ODS](../../assets/odsMepa.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo1/assets/odsMepa.png" width="600">
+</div>
 
 <font size="3">
     <p style="text-align: center">
