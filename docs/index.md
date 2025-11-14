@@ -5,7 +5,7 @@
   <p><b>Figura 1:</b> Carol Shaw</p>
 </div>
 
-Colocar texto
+**Carol Shaw** é reconhecida historicamente como a **primeira mulher designer de jogos e programadora** da indústria. Com passagens pela Atari e Activision, sua obra-prima foi o clássico **River Raid (1982)**, um marco técnico que utilizou geração procedural para criar mapas extensos com memória mínima. Sua contribuição pioneira abriu portas no setor e lhe rendeu o prêmio *Industry Icon Award* no The Game Awards.
 
 ---
 

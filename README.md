@@ -5,12 +5,8 @@
 
 ## Alunos
 
-
-
 <div align="center">
   <p><strong>Tabela 1 – Integrantes da Equipe</strong></p>
-
-
 
   <table>
     <tr>
@@ -50,7 +46,6 @@
           <br /><sub><b>Pedro de Oliveira Campos Barbosa</b></sub>
         </a><br />
       </td>
-
 
   </table>
   <p>Autor: <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>.</p>
