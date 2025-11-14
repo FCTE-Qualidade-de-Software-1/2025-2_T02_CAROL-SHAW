@@ -1,4 +1,4 @@
-# Ánalise da Qualidade de Software do Mepa Energia
+# Grupo 1 - Carol Shaw, Análise de Qualidade do Mepa Energia
 
 <div align="center">
   <img src="assets/shawR2.png" alt="Capa" width="50%">

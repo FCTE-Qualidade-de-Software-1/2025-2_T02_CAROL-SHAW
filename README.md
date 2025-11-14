@@ -1,4 +1,4 @@
-# Ánalise da Qualidade de Software do Mepa Energia
+# Análise da Qualidade de Software do Mepa Energia
 
 **Código da Disciplina**: FGA0315<br>
 **Grupo**: Carol Shaw<br>
