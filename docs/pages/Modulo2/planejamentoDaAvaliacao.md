@@ -1,4 +1,4 @@
-# Planejamento da Avaliação (Fase 2) — MEPA Energia
+# Fase 2 - Planejamento da Avaliação
 
 ## Sumário
 
@@ -34,7 +34,7 @@
 | **Analisar** | A plataforma MEPA Energia |
 | **Para o propósito de** | Avaliar |
 | **Com respeito a** | Adequação Funcional (cobertura e conformidade funcional) |
-| **Do ponto de vista de** | Gestores e técnicos de IFES (usuários finais) |
+| **Do ponto de vista de** | Gestores e técnicos |
 | **No contexto da** | Gestão de contratos de energia (cadastro, recomendação, relatórios e exportação de dados) |
 
 **Objetivo**: verificar se as **funcionalidades críticas** cobrem e executam corretamente as tarefas priorizadas, com rastreabilidade e verificação formal.

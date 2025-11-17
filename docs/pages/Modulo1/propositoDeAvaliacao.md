@@ -1,4 +1,4 @@
-# Fase 1 - Processo de Avaliação
+# Fase 1 - Proposito de Avaliação
 
 ## Sumário
 - [Contexto de Trabalho](#contexto-de-trabalho)
@@ -192,7 +192,7 @@ O diagrama 1 a seguir representa o foco que a equipe terá ao desenvolver os mod
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo1/assets/productQualityModel.png" alt="productQualityModel" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo1/assets/diagramaV.png" alt="productQualityModel" width="600">
 </div>
 
 <font size="3">
