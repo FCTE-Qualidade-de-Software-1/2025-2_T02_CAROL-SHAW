@@ -181,7 +181,24 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 | **Query de Issues** | Consulta estruturada no [Sistema de Issues] para extrair os dados de tempo de vida dos defeitos (LTC). |
 | **Relatório de Cobertura de Código** | Documento que detalha o percentual de código coberto por testes automatizados (CTR). |
 
+---
 
+## Localização dos Dados de Avaliação
+
+Os dados coletados serão organizados e armazenados na seguinte estrutura neste repositório:
+
+- **`/docs/pages/Modulo4/assets/`**: Diretório principal para todos os dados da avaliação
+  - **`adequacao_funcional/`**: Resultados das métricas de adequação funcional
+    - `Checklist Funcionalidades`: Dados do TCF e ICF
+    - `Testes Correção`: Dados do TCR  
+    - `Workflow Tarefas`: Dados do IAT
+  - **`portabilidade/`**: Resultados das métricas de portabilidade
+    - `Adaptabilidade em Multiplataforma`: Dados do TAM
+    - `Instalação de Sistemas`: Dados do TMI e TSI
+    - `Migração de projetos`: Dados do IPD
+  - **`evidencias/`**: Capturas de tela, vídeos e logs dos testes realizados
+  - **`analise/`**: Análises estatísticas e relatórios consolidados
+  
 ## Uso de IA
  
 Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o **ChatGPT (OpenAI)** e o **Gemini (Google)**. O uso dessas tecnologias teve como principais objetivos:
