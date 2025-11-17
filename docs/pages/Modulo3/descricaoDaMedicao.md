@@ -124,25 +124,63 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 ## Descrição da Medição Para a Manutenibilidade
 
 
+## Descrição da Medição Para a Manutenibilidade
 
+A medição da Manutenibilidade é crucial para garantir a longevidade e a adaptabilidade do software MEPA, que é um projeto de código aberto e em constante evolução. Conforme definido no Planejamento de Avaliação (Fase 2), o foco está em avaliar a facilidade com que o sistema pode ser analisado, modificado e testado.
 
----
+Nossa análise será baseada no acesso ao código-fonte e aos dados de gestão de projetos, conforme detalhado nos artefatos abaixo:
 
-## Localização dos Dados de Avaliação
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela X:</b> Documentos e Artefatos Analisados para Manutenibilidade
+    </p>
+</font>
 
-Os dados coletados serão organizados e armazenados na seguinte estrutura neste repositório:
+| Artefato | Descrição | Link/Localização |
+|---|---|---|
+| **Repositório de Código-Fonte** | O código-fonte completo do projeto MEPA, essencial para a análise estática. | [Link para o Repositório Git] |
+| **Sistema de Gestão de Issues** | Plataforma utilizada para rastrear defeitos e tarefas de manutenção (Lead Time de Correção). | [Link para o GitHub Issues/Jira] |
+| **Relatórios de Cobertura de Testes** | Documentos gerados pelo CI/CD que indicam a cobertura de código por testes automatizados. | [Link para o Relatório de Cobertura] |
 
-- **`/docs/pages/Modulo4/assets/`**: Diretório principal para todos os dados da avaliação
-  - **`adequacao_funcional/`**: Resultados das métricas de adequação funcional
-    - `Checklist Funcionalidades`: Dados do TCF e ICF
-    - `Testes Correção`: Dados do TCR  
-    - `Workflow Tarefas`: Dados do IAT
-  - **`portabilidade/`**: Resultados das métricas de portabilidade
-    - `Adaptabilidade em Multiplataforma`: Dados do TAM
-    - `Instalação de Sistemas`: Dados do TMI e TSI
-    - `Migração de projetos`: Dados do IPD
-  - **`evidencias/`**: Capturas de tela, vídeos e logs dos testes realizados
-  - **`analise/`**: Análises estatísticas e relatórios consolidados
+### Procedimentos das Análises:
+
+Aqui descrevemos o passo a passo de como serão realizadas as medições para as questões de Manutenibilidade definidas na Fase 2.
+
+#### Q8. A estrutura do código favorece a manutenção? (Complexidade Ciclomática Média - CCM)
+
+- **Procedimento:** Utilizaremos a ferramenta de análise estática [Nome da Ferramenta, ex: SonarQube] para calcular a Complexidade Ciclomática (CC) em todos os módulos considerados críticos (ex: módulos de cálculo de faturas e geração de relatórios). A **CCM** será calculada como a média dos valores de CC para estas funções/módulos.
+- **Métricas associadas:** MN4 (Complexidade Ciclomática), MN5 (Acoplamento).
+
+#### Q9. Qual é a agilidade no fluxo de correção de defeitos? (Lead Time de Correção - LTC)
+
+- **Procedimento:** Serão extraídos dados do [Nome do Sistema de Issues, ex: GitHub Issues] para um período de [X meses]. O **LTC** será calculado para uma amostra de [Y] defeitos críticos, medindo o tempo entre a abertura da *issue* e o *merge* da correção em produção.
+- **Métricas associadas:** MN1 (Tempo de Resolução de Defeitos), MN2 (Tempo de Entrega de Correção).
+
+#### Q10. O sistema possui proteção adequada contra regressão? (Cobertura de Testes de Regressão - CTR)
+
+- **Procedimento:** O relatório de cobertura de código gerado pelo [Nome da Ferramenta de Cobertura, ex: JaCoCo, Coverage.py] será analisado. A **CTR** será calculada com base na cobertura de *branches* (ramificações) e linhas de código, focando nas áreas que sofreram modificações recentes.
+- **Métricas associadas:** MN3 (Cobertura de Testes).
+
+### Ambiente de Análise:
+ 
+Os procedimentos de análise serão executados nos ambientes e com as ferramentas descritas na tabela abaixo:
+ 
+| Componente | Especificação |
+|---|---|
+| **Ferramenta de Análise Estática** | [Nome e Versão da Ferramenta, ex: SonarQube 9.9 LTS] |
+| **Sistema de Versionamento** | [Nome, ex: Gitlab/GitHub] |
+| **Linguagem de Programação** | [Linguagem do Projeto, ex: Python 3.10] |
+
+### Resumo dos Instrumentos de Medição:
+
+Para a coleta de dados, foram utilizados os seguintes instrumentos:
+
+| Instrumento | Descrição |
+|---|---|
+| **Relatório de Análise Estática** | Documento gerado pela ferramenta [Nome da Ferramenta] contendo as métricas de código (CCM, Coesão, Acoplamento). |
+| **Query de Issues** | Consulta estruturada no [Sistema de Issues] para extrair os dados de tempo de vida dos defeitos (LTC). |
+| **Relatório de Cobertura de Código** | Documento que detalha o percentual de código coberto por testes automatizados (CTR). |
+
 
 ## Uso de IA
  
