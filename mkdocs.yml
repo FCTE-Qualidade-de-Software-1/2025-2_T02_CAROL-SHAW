@@ -25,7 +25,9 @@ nav:
     - Participação Fase 4: pages/Modulo4/partIntegrantesFase4.md
 
   - Atas:
-    - Ata Fase 1: pages/ata/ata1.md
+    - Ata 1 - Fase 1: pages/atas/ata1.md
+    - Ata 2 - Fase 3: pages/atas/ata2.md
+    - Ata 3 - Fase 4: pages/atas/ata3.md
 
 theme:
   name: material

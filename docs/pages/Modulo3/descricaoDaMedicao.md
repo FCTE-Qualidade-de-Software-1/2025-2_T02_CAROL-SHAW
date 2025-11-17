@@ -15,15 +15,22 @@
 
 Afim de permear nossa proposta inicial de abringir os escopos planejados para a adequação funcional:
 
-   - Completude Funcional: cobertura de todas as tarefas e objetivos;
+   - Completude Funcional: todas as funções estão presentes?
 
-   - Correção funcional: quão bem provê os resultados corretos quando preciso;
+   - Correção funcional: os resultados das funções estão corretos?
 
-   - Apropriação Funcional: quão bem é capaz de realizar tarefas e objetivos específicos.
+   - Pertinencia Funcional: essas funções de fato ajudam os usuários?
 
 Mais detalhes em: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/)
 
-Para nossa análise foram utilizados os seguintes artefatos na documentação pública do produto:
+Nossa análise foram utilizados os seguintes artefatos na documentação pública do produto:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela 1:</b> Documentos analisados do Mepa
+        <br>
+    </p>
+</font>
 
 | Artefato | Descrição | Link |
 |---|---|---|
@@ -31,12 +38,67 @@ Para nossa análise foram utilizados os seguintes artefatos na documentação p�
 | **Diagrama de Arquitetura** | Apresenta a estrutura geral do sistema, seus principais componentes e como eles se comunicam e interagem entre si. | [Acessar](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura) |
 | **Diagrama de Infraestrutura** | Detalha a configuração de hardware e software onde o sistema opera, incluindo servidores, redes e outros elementos de infraestrutura. | [Acessar](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infrao) |
 
-Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup>, o ideal é a utilização de requisitos funcionais e não funcionais para a completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
+<font size="3">
+    <p style="text-align: center">
+        <b>Autor:</b> 
+        [Felipe das Neves](https://github.com/FelipeFreire-gf)
+    </p>
+</font>
 
+Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup> e <sup>[4]</sup>, o ideal é a utilização de requisitos funcionais para a completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
+
+<a href="https://youtu.be/4CvQMOwoJzA" target="_blank">
+    <p align="center"><strong>Entrevista com o desenvolvedor</strong></p>
+</a>
+<p align="center">
+  <a href="https://youtu.be/4CvQMOwoJzA4" target="_blank">
+    <img src="https://img.youtube.com/vi/4CvQMOwoJzA/0.jpg" alt="Vídeo 01" width="480">
+  </a>
+</p>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade)
+    </p>
+</font>
+
+### Procedimentos das Análises:
+
+Aqui vamos descrever todo o passo a passo de como iremos realizar as medições:
+
+#### Completude Funcional: todas as funções estão presentes?
+
+- Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) e a análise dos documentos públicos (Tabela 1) para verificar se as funcionalidades especificadas estão implementadas.
+
+#### Correção funcional: os resultados das funções estão corretos?
+
+- Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação online, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
+
+#### Pertinencia Funcional: essas funções de fato ajudam os usuários?
+
+A análise de pertinência busca entender se as funcionalidades existentes são de fato úteis e relevantes para os objetivos dos gestores públicos.
+
+Detalhes a ser pensado:
+
+- **Simulação de Tarefas do Usuário:** Realizar um passo a passo simulando as tarefas de um gestor (ex: cadastrar uma fatura, gerar um relatório de economia) para avaliar se o fluxo de trabalho é lógico e se as funções facilitam a conclusão dessas tarefas.
+
+- **Questionário de Percepção:** Aplicar um questionário direcionado ao desenvolvedor (ou a um usuário-chave, se possível) para coletar feedback qualitativo sobre quais funcionalidades são mais valorizadas e quais poderiam ser otimizadas ou removidas.
+
+---
 
 ## Descrição da Medição Para a Confiabilidade
 
+
+
+
+---
+
 ## Descrição da Medição Para a Manutenibilidade
+
+
+
+
 
 ---
 
@@ -60,6 +122,8 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 > [2] RODRIGUES, Renato. ISO/IEC 25010: Functional Suitability. LinkedIn, 2 de fev. de 2024. Disponível em: <https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues>. Acesso em: 17 de nov. de 2025.
 >
 > [3] Notas de aula da disciplina de Qualidade de Software: **Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)**.
+>
+> [4] Qualidade de Software - Visão geral em 20 minutos. Canal Vitor Maia. Publicado em 25 de ago. de 2025. Disponível em: <https://www.youtube.com/watch?v=Gv5H9XgWOJ0>. Acesso em: 17 de nov. de 2025.
 
 ---
 
