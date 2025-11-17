@@ -2,13 +2,11 @@
 
 ## Sumário
 
-- [2. Metodologia e Diretrizes de Medição](#2-metodologia-e-diretrizes-de-medicao)
-- [3. Objetivos de Medição por GQM](#3-objetivos-de-medicao-por-gqm)
-  - [GQM-1 — Adequação Funcional](#gqm-1-adequacao-funcional)
-  - [GQM-2 — Confiabilidade](#gqm-2-confiabilidade)
-  - [GQM-3 — Manutenibilidade](#gqm-3-manutenibilidade)
-- [Apêndice — Tabela Resumo (Q→M)](#apendice-tabela-resumo-qm)
-- [Bibliografia](#bibliografia)
+- [Descrição da Medição Para a Adequação Funcional](#descrição-da-medição-para-a-adequação-funcional)
+- [Descrição da Medição Para a Confiabilidade](#descrição-da-medição-para-a-confiabilidade)
+- [Descrição da Medição Para a Manutenibilidade](#descrição-da-medição-para-a-manutenibilidade)
+- [Uso de IA](#uso-de-ia)
+- [Referências Bibliográfica](#referências-bibliográfica)
 - [Histórico de Versões](#historico-de-versoes)
 
 ---
@@ -33,7 +31,9 @@ Para nossa análise foram utilizados os seguintes artefatos na documentação p�
 | **Diagrama de Arquitetura** | Apresenta a estrutura geral do sistema, seus principais componentes e como eles se comunicam e interagem entre si. | [Acessar](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura) |
 | **Diagrama de Infraestrutura** | Detalha a configuração de hardware e software onde o sistema opera, incluindo servidores, redes e outros elementos de infraestrutura. | [Acessar](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infrao) |
 
-Esses foram os elementos encontrados na documentação pública do produto, contudo, como estudado na referência [1](colocarlink), o ideal é a utilização de requisitos não funcionais do produto para a correta e completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
+Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup>, o ideal é a utilização de requisitos não funcionais para a correta e completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
+
+
 
 ## Descrição da Medição Para a Confiabilidade
 
@@ -66,7 +66,7 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 
 ## Histórico de Versões
 
-| Versão | Tipo de Alteração | Descrição Detalhada | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Observações / Incrementos |
-|:------:|------------------|--------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
-| `1.0` | Criação | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | — | — | Versão inicial do documento. |
-| `1.1` | Inserção das técnicas de medição para a adequação funcional | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 13/10/2025 | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | - |
+| Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Observações / Incrementos |
+|:------:|------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
+| `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 17/11/2025 | — | — | Versão inicial do documento. |
+| `1.1` | Inserção das técnicas de medição para a adequação funcional. | Felipe das Neves | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
