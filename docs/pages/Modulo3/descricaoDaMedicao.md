@@ -71,19 +71,25 @@ Aqui vamos descrever todo o passo a passo de como iremos realizar as medições 
 
 - Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) e a análise dos documentos públicos (Tabela 1) para verificar se as funcionalidades especificadas estão implementadas.
 
+#### Métricas associadas:
+
+AF1, 
+
 #### Correção funcional: os resultados das funções estão corretos?
 
 - Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação online, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
 
+#### Métricas associadas:
+
+AF3, 
+
 #### Pertinencia Funcional: essas funções de fato ajudam os usuários?
 
-A análise de pertinência busca entender se as funcionalidades existentes são de fato úteis e relevantes para os objetivos dos gestores públicos.
+- Na análise de pertinência buscamos entender se as funcionalidades existentes são de fato úteis e relevantes para os objetivos dos usuários. Portanto, realizamos um passo a passo simulado das tarefas do gestor como: cadastrar uma fatura e gerar um relatório de economia para avaliarmos o fluxo de trabalho é lógico.
 
-Detalhes a ser pensado:
+#### Métricas associadas:
 
-- **Simulação de Tarefas do Usuário:** Realizar um passo a passo simulando as tarefas de um gestor (ex: cadastrar uma fatura, gerar um relatório de economia) para avaliar se o fluxo de trabalho é lógico e se as funções facilitam a conclusão dessas tarefas.
-
-- **Questionário de Percepção:** Aplicar um questionário direcionado ao desenvolvedor (ou a um usuário-chave, se possível) para coletar feedback qualitativo sobre quais funcionalidades são mais valorizadas e quais poderiam ser otimizadas ou removidas.
+AF4, 
 
 ---
 
