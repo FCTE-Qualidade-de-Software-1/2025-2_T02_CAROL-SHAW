@@ -65,7 +65,7 @@ Esses foram os elementos encontrados na documentação, contudo, como estudado n
 
 ### Procedimentos das Análises:
 
-Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao):
+Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na etapa de planejamento de avaliação: [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
 
 #### Completude Funcional: todas as funções estão presentes?
 
@@ -91,6 +91,27 @@ AF3,
 
 AF4, 
 
+
+### Ambiente de Teste:
+ 
+Os testes foram executados nos ambientes descritos na tabela abaixo, garantindo a verificação em diferentes configurações:
+ 
+| Componente | Especificação |
+|---|---|
+| **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS |
+| **Hardware** | Processador Ryzen 7 Pro 4750U ou superior |
+| **Navegador** | Mozilla Firefox (versão mais recente) |
+
+### Resumo dos Instrumentos de Medição:
+
+Para a coleta de dados, foram utilizados os seguintes instrumentos:
+
+| Instrumento | Descrição |
+|---|---|
+| **Checklist de Funcionalidades** | Documento para verificação da implementação dos requisitos, baseado no escopo da Fase 1 e elicitado na Fase 4. |
+| **Ferramenta de Captura de Tela** | Utilizada para registrar evidências estáticas (imagens) de resultados e comportamentos específicos. |
+| **Software de Gravação (OBS Studio)** | Utilizado para gravar as sessões de teste em vídeo, documentando o fluxo de interação. |
+
 ---
 
 ## Descrição da Medição Para a Confiabilidade
@@ -105,8 +126,23 @@ AF4,
 
 
 
-
 ---
+
+## Localização dos Dados de Avaliação
+
+Os dados coletados serão organizados e armazenados na seguinte estrutura neste repositório:
+
+- **`/docs/pages/Modulo4/assets/`**: Diretório principal para todos os dados da avaliação
+  - **`adequacao_funcional/`**: Resultados das métricas de adequação funcional
+    - `Checklist Funcionalidades`: Dados do TCF e ICF
+    - `Testes Correção`: Dados do TCR  
+    - `Workflow Tarefas`: Dados do IAT
+  - **`portabilidade/`**: Resultados das métricas de portabilidade
+    - `Adaptabilidade em Multiplataforma`: Dados do TAM
+    - `Instalação de Sistemas`: Dados do TMI e TSI
+    - `Migração de projetos`: Dados do IPD
+  - **`evidencias/`**: Capturas de tela, vídeos e logs dos testes realizados
+  - **`analise/`**: Análises estatísticas e relatórios consolidados
 
 ## Uso de IA
  

@@ -51,6 +51,10 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais e n�
     </p>
 </font>
 
+Resultados
+
+Melhorias
+
 
 ## Descrição da Medição Para a Confiabilidade
 
