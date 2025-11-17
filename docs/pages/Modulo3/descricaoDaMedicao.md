@@ -65,7 +65,7 @@ Esses foram os elementos encontrados na documentação, contudo, como estudado n
 
 ### Procedimentos das Análises:
 
-Aqui vamos descrever todo o passo a passo de como iremos realizar as medições:
+Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao):
 
 #### Completude Funcional: todas as funções estão presentes?
 

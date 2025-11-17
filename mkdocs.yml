@@ -6,7 +6,7 @@ site_description: "Documentação da Análise de Qualidade Mepa Energia"
 
 nav:
   - Home: index.md
-  - Metodologia: metodologia.md
+  
 
   - Fase 1:
     - Proposito de Avaliação: pages/Modulo1/propositoDeAvaliacao.md
