@@ -4,7 +4,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 
 --- 
 
-# Participação na Fase 3
+# Participação na Fase 4
 
 | Nome do Membro | Contribuição | Porcentagem de Contribuição | Comprobatórios Claros (com link) |
 |----------------|--------------|----------------------------------------------|-----------------------------------|

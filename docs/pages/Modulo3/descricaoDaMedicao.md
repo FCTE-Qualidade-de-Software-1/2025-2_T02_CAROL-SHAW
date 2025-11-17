@@ -31,8 +31,7 @@ Para nossa análise foram utilizados os seguintes artefatos na documentação p�
 | **Diagrama de Arquitetura** | Apresenta a estrutura geral do sistema, seus principais componentes e como eles se comunicam e interagem entre si. | [Acessar](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura) |
 | **Diagrama de Infraestrutura** | Detalha a configuração de hardware e software onde o sistema opera, incluindo servidores, redes e outros elementos de infraestrutura. | [Acessar](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infrao) |
 
-Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup>, o ideal é a utilização de requisitos não funcionais para a correta e completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
-
+Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup>, o ideal é a utilização de requisitos funcionais e não funcionais para a completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
 
 
 ## Descrição da Medição Para a Confiabilidade
@@ -56,7 +55,7 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 
 ## Referências Bibliográfica
 
-> [1] REQUISITOS FUNCIONAIS e NÃO FUNCIONAIS: Qual a DIFERENÇA?. Canal Código Fonte TV. Publicado em 25 de ago. de 2022. Disponível em: <https://www.youtube.com/watch?v=Gv5H9XgWOJ0>. Acesso em: 17 de nov. de 2025.
+> [1] REQUISITOS NÃO FUNCIONAIS. Canal Fatto Consultoria e Sistemas. Publicado em 06 de ago. de 2015. Disponível em: <https://www.youtube.com/watch?v=Gv5H9XgWOJ0>. Acesso em: 17 de nov. de 2025.
 > 
 > [2] RODRIGUES, Renato. ISO/IEC 25010: Functional Suitability. LinkedIn, 2 de fev. de 2024. Disponível em: <https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues>. Acesso em: 17 de nov. de 2025.
 >
@@ -68,5 +67,5 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 
 | Versão | Descrição | Autor(es) | Data de Produção | Revisor(es) | Data de Revisão | Observações / Incrementos |
 |:------:|------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
-| `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf)| 17/11/2025 | — | — | Versão inicial do documento. |
-| `1.1` | Inserção das técnicas de medição para a adequação funcional. | Felipe das Neves | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
+| `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | — | — | Versão inicial do documento. |
+| `1.1` | Inserção das técnicas de medição para a adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
