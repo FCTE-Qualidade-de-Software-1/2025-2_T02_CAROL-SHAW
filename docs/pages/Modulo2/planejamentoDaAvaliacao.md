@@ -2,11 +2,16 @@
 
 ## Sumário
 
-- [2. Metodologia e Diretrizes de Medição](#2-metodologia-e-diretrizes-de-medicao)
-- [3. Objetivos de Medição por GQM](#3-objetivos-de-medicao-por-gqm)
-  - [GQM-1 — Adequação Funcional](#gqm-1-adequacao-funcional)
-  - [GQM-2 — Confiabilidade](#gqm-2-confiabilidade)
-  - [GQM-3 — Manutenibilidade](#gqm-3-manutenibilidade)
+- [1. Objetivos de Medição por GQM](#1-objetivos-de-medicao-por-gqm)
+  - [1.1. Adequação Funcional](#11-adequacao-funcional)
+    - [Questões e Métricas](#questoes-e-metricas)
+    - [Diagrama GQM Adaptado da Adequação Funcional](#diagrama-gqm-adaptado-da-adequacao-funcional)
+  - [2. Confiabilidade](#2-confiabilidade)
+    - [Questões e Métricas](#questoes-e-metricas-1)
+    - [Diagrama GQM Adaptado da Confiabilidade](#diagrama-gqm-adaptado-da-confiabilidade)
+  - [3. Manutenibilidade](#3-manutenibilidade)
+    - [Questões e Métricas](#questoes-e-metricas-2)
+    - [Diagrama GQM da Manutenibilidade](#diagrama-gqm-da-manutenibilidade)
 - [Apêndice — Tabela Resumo (Q→M)](#apendice-tabela-resumo-qm)
 - [Uso de IA](#uso-de-ia)
 - [Bibliografia](#bibliografia)
@@ -346,4 +351,3 @@ Para a elaboração deste documento e de outros artefatos do projeto, foram util
 | `1.9` | Reunião para verificação final e validação do documento. | Gustavo Gontijo Lima, Pedro Barbosa e Felipe das Neves | 21/10/2025 | — | — | Versão estável. |
 | `2.0` | Reunião para verificação de padronização e histórico de versão. | Felipe das Neves e Mylena Mendonça | 22/10/2025 | — | — | — |
 | `2.1` | Reunião para verificação de padronização e histórico de versão. | Felipe das Neves e Mylena Mendonça | 22/10/2025 | — | — | — |
-
