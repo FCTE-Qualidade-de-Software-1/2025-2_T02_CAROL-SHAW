@@ -152,7 +152,6 @@ Os testes foram executados nos ambientes descritos na tabela abaixo, garantindo 
 | **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS |
 | **Hardware** | Processador Ryzen 7 Pro 4750U ou superior |
 | **Navegador** | Mozilla Firefox (versão mais recente) |
-| **Ferramenta de Análise Estática** | SonarQube |
 
 ---
 
@@ -171,6 +170,7 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 | **Ferramenta de Simulação de Carga (JMeter)** | Utilizada para gerar requisições em massa e simular sobrecarga no sistema, essencial para testar a Tolerância a Falhas. |
 | **Script de Monitoramento de Uptime** | Ferramenta automatizada para registrar o tempo de atividade e inatividade do servidor, fundamental para o cálculo da Disponibilidade. |
 | **Cronômetro** | Utilizados para medir o Tempo Médio de Recuperação (TMR). |
+| **Ferramenta de Análise Estática** | SonarQube |
 
 ---
 
