@@ -128,7 +128,61 @@ Para a coleta de dados e execução dos procedimentos, serão utilizados os segu
 ## 3. Descrição da Medição Para a Manutenibilidade
 
 
+## Descrição da Medição Para a Manutenibilidade
 
+A medição da Manutenibilidade é crucial para garantir a longevidade e a adaptabilidade do software MEPA, que é um projeto de código aberto e em constante evolução. Conforme definido no Planejamento de Avaliação (Fase 2), o foco está em avaliar a facilidade com que o sistema pode ser analisado, modificado e testado.
+
+Nossa análise será baseada no acesso ao código-fonte e aos dados de gestão de projetos, conforme detalhado nos artefatos abaixo:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela X:</b> Documentos e Artefatos Analisados para Manutenibilidade
+    </p>
+</font>
+
+| Artefato | Descrição | Link/Localização |
+|---|---|---|
+| **Repositório de Código-Fonte** | O código-fonte completo do projeto MEPA, essencial para a análise estática. | [Repositório no GitLab](https://gitlab.com/lappis-unb/projetos-energia/mec-energia) |
+| **Sistema de Gestão de Issues** | Plataforma utilizada para rastrear defeitos e tarefas de manutenção (Lead Time de Correção). | [Presente no próprio repositório](https://gitlab.com/lappis-unb/projetos-energia/mec-energia/mec-energia-api/-/issues) |
+| **Relatórios de Cobertura de Testes** | Documentos gerados pelo CI/CD que indicam a cobertura de código por testes automatizados. | [Presentes no próprio repositório na visualização das pipelines de CI/CD](https://gitlab.com/lappis-unb/projetos-energia/mec-energia/mec-energia-api/-/jobs/11894408124) |
+
+### Procedimentos das Análises:
+
+Aqui descrevemos o passo a passo de como serão realizadas as medições para as questões de Manutenibilidade definidas na Fase 2.
+
+#### Q8. A estrutura do código favorece a manutenção? (Complexidade Ciclomática Média - CCM)
+
+- **Procedimento:** Utilizaremos a ferramenta de análise estática SonarQube para calcular a Complexidade Ciclomática (CC) em todos nos módulos da api. A **CCM** será calculada como a média dos valores de CC para estas funções/módulos.
+- **Métricas associadas:** MN4 (Complexidade Ciclomática), MN5 (Acoplamento).
+
+#### Q9. Qual é a agilidade no fluxo de correção de defeitos? (Lead Time de Correção - LTC)
+
+- **Procedimento:** Serão extraídos dados das Issues presentes no GitLab abrangindo um período de 6 meses. O **LTC** será calculado para uma amostra dos defeitos críticos, medindo o tempo entre a abertura da *issue* e o *merge* da correção em produção.
+- **Métricas associadas:** MN1 (Tempo de Resolução de Defeitos), MN2 (Tempo de Entrega de Correção).
+
+#### Q10. O sistema possui proteção adequada contra regressão? (Cobertura de Testes de Regressão - CTR)
+
+- **Procedimento:** O relatório de cobertura de código gerado pelo [Nome da Ferramenta de Cobertura, ex: JaCoCo, Coverage.py] será analisado. A **CTR** será calculada com base na cobertura de *branches* (ramificações) e linhas de código, focando nas áreas que sofreram modificações recentes.
+- **Métricas associadas:** MN3 (Cobertura de Testes).
+
+### Ambiente de Análise:
+ 
+Os procedimentos de análise serão executados nos ambientes e com as ferramentas descritas na tabela abaixo:
+ 
+| Componente | Especificação |
+|---|---|
+| **Ferramenta de Análise Estática** | SonarQube |
+| **Sistema de Versionamento** | GitHub |
+
+### Resumo dos Instrumentos de Medição:
+
+Para a coleta de dados, foram utilizados os seguintes instrumentos:
+
+| Instrumento | Descrição |
+|---|---|
+| **Relatório de Análise Estática** | Documento gerado pela ferramenta SonarQube contendo as métricas de código (CCM, Coesão, Acoplamento). |
+| **Query de Issues** | Consulta estruturada no GitLab para extrair os dados de tempo de vida dos defeitos (LTC). |
+| **Relatório de Cobertura de Código** | Documento que detalha o percentual de código coberto por testes automatizados (CTR). |
 
 ---
 
@@ -147,7 +201,7 @@ Os dados coletados serão organizados e armazenados na seguinte estrutura neste 
     - `Migração de projetos`: Dados do IPD
   - **`evidencias/`**: Capturas de tela, vídeos e logs dos testes realizados
   - **`analise/`**: Análises estatísticas e relatórios consolidados
-
+  
 ## Uso de IA
  
 Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o **ChatGPT (OpenAI)** e o **Gemini (Google)**. O uso dessas tecnologias teve como principais objetivos:
@@ -179,5 +233,7 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 |:------:|------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
 | `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | — | — | Versão inicial do documento. |
 | `1.1` | Inserção das técnicas de medição para a adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
-| `1.1` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
-| `1.2` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+| `1.2` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
+| `1.3` | Inserção das técnicas de medição para a Manuntenabilidade. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 18/11/2025 |  |  |  |
+| `1.4` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+
