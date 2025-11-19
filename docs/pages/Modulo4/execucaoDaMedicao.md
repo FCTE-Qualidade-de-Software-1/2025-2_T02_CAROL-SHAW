@@ -11,7 +11,84 @@
 
 ---
 
-## Execução da Medição Para a Adequação Funcional
+## 1. Execução da Medição Para a Adequação Funcional
+
+### 1.1 Execução Etapa 1 - Realização da Entrevista
+
+Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmos os requisitos funcionais da aplicação, segue as perguntas que utilizamos:
+
+!!! Tip "Atenção!"
+    Para visualizar as perguntas basta clicar na barra azul com o texto: "Perguntas utilizadas para a entrevista:"
+
+
+??? info "Perguntas utilizadas para a entrevista: "
+
+    No que consiste a aplicação mepa?
+
+    Há a necessidade de cadastrar distribuidoras? Quem as faz?
+
+    **Sobre Gestão de Universidades e Usuários**
+
+    Qual é a diferença prática de permissão entre um 'Administrador da Universidade' e um 'Técnico'? Existe alguma tela ou botão que o Admin vê e o Técnico não?
+
+    Um usuário pode estar vinculado a múltiplas universidades simultaneamente ou o vínculo é exclusivo (1 para 1)?
+
+    A remoção de um usuário é 'lógica' (apenas desativa o login, mantendo o histórico) ou 'física' (apaga os dados do banco)? Se apagarmos uma instituição ece com as faturas que ele cadastrou?
+
+    Quais são os campos obrigatórios para cadastrar uma Universidade? O sistema deve validar o formato do CNPJ automaticamente e impedir duplicatas?
+
+    **Sobre Unidades Consumidoras**    
+
+    Qual dado garante que uma UC é única no sistema? É o 'Código da Unidade Consumidora' presente na conta de luz? O sistema deve bloquear se tentarem cadastrar o mesmo código duas vezes?
+
+    Além do nome e endereço, precisamos cadastrar dados técnicos como 'Grupo Tarifário' (A ou B), 'Subgrupo', 'Tensão de Fornecimento' e 'Tipo de Medição'? Esses dados influenciam nos cálculos futuros?
+
+    Se uma UC mudar de endereço ou de medidor, o sistema cria uma nova ou atualiza a existente mantendo o histórico de consumo?
+
+
+    **Sobre Contratos e Renovação**
+
+    Todo contrato tem obrigatoriamente uma 'Data de Início' e 'Data de Fim'? O sistema deve mudar o status do contrato para 'Expirado' automaticamente quando chegar a data final?
+
+    Ao clicar em 'Renovar Contrato', o sistema deve criar um novo registro copiando os dados do contrato anterior (ex: Demanda Contratada) para agilizar o preenchimento? O sistema deve manter o histórico de todas as renovações passadas?
+
+    Um contrato pertence a uma única UC ou pode ser um contrato 'guarda-chuva' que cobre várias unidades?
+
+    **Sobre Faturas** 
+
+    A entrada da fatura é manual campo a campo? Se sim, quais campos são críticos para os relatórios? (Ex: Consumo Ponta, Fora de Ponta, Demanda Medida, Demanda Faturada, Energia Reativa, Multas).
+
+    O sistema deve alertar o usuário se ele digitar um consumo absurdamente alto ou negativo (validação de range)? O sistema deve impedir o cadastro de duas faturas para o mesmo mês de referência na mesma UC?
+
+    Qual é a regra exata para o sistema marcar uma fatura como 'Pendente'? É quando passa do dia X do mês e a fatura ainda não foi cadastrada no sistema?
+
+    **Sobre Distribuidoras e Tarifas**
+
+    As tarifas de energia mudam anualmente. O sistema permite cadastrar a vigência da tarifa (De: Jan/2024 Até: Dez/2024)? Isso é essencial para que faturas antigas não tenham seus valores alterados quando a tarifa nova for cadastrada?
+
+    O cadastro de tarifa deve suportar diferenciação por 'Posto Horário' (Ponta e Fora de Ponta) e 'Bandeiras Tarifárias' (Verde, Amarela, Vermelha)?
+
+
+    **Sobre Inteligência e Dashboards**
+
+    Como o sistema gera uma 'Recomendação'? Ele compara a 'Demanda Contratada' com a 'Demanda Medida' dos últimos 12 meses? Essa recomendação aparece automaticamente ou o usuário precisa solicitar a análise?
+
+    No dashboard de pendências, o usuário deve conseguir filtrar por 'Tipo de Pendência' (ex: Fatura Atrasada vs. Tarifa não cadastrada)? Deve haver um link direto para resolver o problema (ex: clicar na pendência e ir para a tela de cadastro de fatura)?
+    ```
+
+[Baixar Transcrição da Entrevista](https://raw.githubusercontent.com/seuusuario/seurepo/main/transcricao.pdf)
+
+<div style="text-align: center;">
+  <p><strong>Entrevista 1:</strong> <a href="https://youtu.be/9Z0V1nYTEcc">Com os devs para a elaboração dos requisitos funcionais</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Z0V1nYTEcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade)
+    </p>
+</font>
 
 Após a entrevista modelamos a seguinte lista para os requisitos funcionais e não funcionais para o nosso estudo:
 
@@ -56,7 +133,7 @@ Resultados
 Melhorias
 
 
-## Execução da Medição Para a Confiabilidade
+## 2. Execução da Medição Para a Confiabilidade
 
 A execução da medição de confiabilidade foi realizada no ambiente de teste previamente definido, seguindo rigorosamente os procedimentos detalhados na seção "Descrição da Medição Para a Confiabilidade" (Fase 3).
 
@@ -129,7 +206,7 @@ A avaliação de confiabilidade revela uma dicotomia importante: o sistema é **
 **Recomendação Principal:** A implementação de mecanismos de tratamento de exceção mais robustos e a adoção de arquitetura de alta disponibilidade (e.g., *failover* de banco de dados, balanceamento de carga) são cruciais para evitar que falhas em componentes críticos causem interrupção total do serviço, elevando assim a Tolerância a Falhas e garantindo a Confiabilidade a longo prazo.
 
 
-## Descrição da Medição Para a Manutenibilidade
+## 3. Descrição da Medição Para a Manutenibilidade
 
 ---
 
