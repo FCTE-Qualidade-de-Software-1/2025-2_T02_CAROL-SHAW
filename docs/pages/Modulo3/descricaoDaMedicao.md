@@ -11,7 +11,7 @@
 
 ---
 
-## Descrição da Medição Para a Adequação Funcional
+## 1. Descrição da Medição Para a Adequação Funcional
 
 Afim de permear nossa proposta inicial de abringir os escopos planejados para a adequação funcional:
 
@@ -23,47 +23,9 @@ Afim de permear nossa proposta inicial de abringir os escopos planejados para a 
 
 Mais detalhes em: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/)
 
-Nossa análise foram utilizados os seguintes artefatos na documentação pública do produto:
+Os artefatos encontrados na documentação pública e como estudado na referência <sup>[1]</sup> e <sup>[4]</sup>, não são suficientes para a completa modelagem desse artefato o ideal é a utilização de requisitos funcionais para a completude da análise. Portanto, solicitamos uma entrevista com dois dos desenvolvedores do lappis que atuam diretamente no desenvolvimento produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) e [Hugo Rocha](https://gitlab.com/hugorochaffs) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
 
-<font size="3">
-    <p style="text-align: center">
-        <b>Tabela 1:</b> Documentos analisados do Mepa
-        <br>
-    </p>
-</font>
-
-| Artefato | Descrição | Link |
-|---|---|---|
-| **Diagrama de Caso de Uso** | Descreve as interações entre os usuários (atores) e o sistema, detalhando as funcionalidades sob a perspectiva do usuário. | [Acessar](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/casos_de_uso) |
-| **Diagrama de Arquitetura** | Apresenta a estrutura geral do sistema, seus principais componentes e como eles se comunicam e interagem entre si. | [Acessar](https://lappis-unb.gitlab.io/projetos-energia/mec-energia/documentacao/arquitetura/arquitetura) |
-| **Diagrama de Infraestrutura** | Detalha a configuração de hardware e software onde o sistema opera, incluindo servidores, redes e outros elementos de infraestrutura. | [Acessar](https://gitlab.com/lappis-unb/projetos-energia/mepa/mepa-infrao) |
-
-<font size="3">
-    <p style="text-align: center">
-        <b>Autor:</b> 
-        [Felipe das Neves](https://github.com/FelipeFreire-gf)
-    </p>
-</font>
-
-Esses foram os elementos encontrados na documentação, contudo, como estudado na referência <sup>[1]</sup> e <sup>[4]</sup>, o ideal é a utilização de requisitos funcionais para a completude da análise. Portanto, solicitamos uma entrevista com um dos desenvolvedores do produto: [Gabriel Ferreira](https://gitlab.com/oo7gabriel) para nos ajudar a melhor entender a aplicação e modelar de maneira mais completa esse artefato.
-
-<a href="https://youtu.be/4CvQMOwoJzA" target="_blank">
-    <p align="center"><strong>Entrevista com o desenvolvedor</strong></p>
-</a>
-<p align="center">
-  <a href="https://youtu.be/4CvQMOwoJzA4" target="_blank">
-    <img src="https://img.youtube.com/vi/4CvQMOwoJzA/0.jpg" alt="Vídeo 01" width="480">
-  </a>
-</p>
-
-<font size="3">
-    <p style="text-align: center">
-        <b>Autores:</b> 
-        [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade)
-    </p>
-</font>
-
-### Procedimentos das Análises:
+### 1.1. Procedimentos das Análises:
 
 Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na etapa de planejamento de avaliação: [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
 
@@ -110,11 +72,11 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 |---|---|
 | **Checklist de Funcionalidades** | Documento para verificação da implementação dos requisitos, baseado no escopo da Fase 1 e elicitado na Fase 4. |
 | **Ferramenta de Captura de Tela** | Utilizada para registrar evidências estáticas (imagens) de resultados e comportamentos específicos. |
-| **Software de Gravação (OBS Studio)** | Utilizado para gravar as sessões de teste em vídeo, documentando o fluxo de interação. |
+| **Software de Gravação (OBS Studio e Microsoft Teams)** | Utilizado para gravar as sessões de teste em vídeo, documentando o fluxo de interação e entrevistas. |
 
 ---
 
-## Descrição da Medição Para a Confiabilidade
+## 2. Descrição da Medição Para a Confiabilidade
 
 A **Confiabilidade**, de acordo com a norma ISO/IEC 25010, é definida como a capacidade de um sistema, produto ou componente de manter seu nível de desempenho sob condições especificadas por um determinado período de tempo. Para a avaliação da qualidade do software, focaremos nas seguintes sub-características essenciais:
 
@@ -163,7 +125,7 @@ Para a coleta de dados e execução dos procedimentos, serão utilizados os segu
 
 ---
 
-## Descrição da Medição Para a Manutenibilidade
+## 3. Descrição da Medição Para a Manutenibilidade
 
 
 ## Descrição da Medição Para a Manutenibilidade
@@ -273,3 +235,5 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.1` | Inserção das técnicas de medição para a adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
 | `1.2` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção das técnicas de medição para a Manuntenabilidade. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 18/11/2025 |  |  |  |
+| `1.4` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+

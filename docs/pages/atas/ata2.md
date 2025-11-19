@@ -19,15 +19,15 @@
 
 ## 1. Pauta
 
-Modelar as perguntas que serão feitas para o desenvolvedor para modelarmos o artefato de adequação funcional.
+Elaboração do roteiro de entrevista com o desenvolvedor para o levantamento dos requisitos funcionais do sistema, visando a construção do artefato de adequação funcional.
 
 ---
 
 ## 5. Link da gravação
 
 <div style="text-align: center;">
-  <p><strong>Vídeo 1:</strong> <a href="https://youtu.be/RskfxnBy39Y">Reunião 01</a></p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/RskfxnBy39Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p><strong>Vídeo 1:</strong> <a href="https://youtu.be/w2u8EqlU9v4">Reunião 01</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w2u8EqlU9v4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---

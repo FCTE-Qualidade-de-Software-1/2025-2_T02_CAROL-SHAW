@@ -10,20 +10,20 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 |----------------|--------------|----------------------------------------------|-----------------------------------|
 | [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | | 0 | |
 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | Modelagem do artefato da adequação funcional |  | |
-| [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | | 0 | |
-| [Marcos Santos Bittar](https://github.com/leozinlima) | | 0 | |
-| [Mylena Trindade de Mendonca](https://github.com/MateuSansete)|  Modelagem do artefato da adequação funcional |  | |
-| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | | 0 | |
+| [Gustavo Gontijo Lima](https://github.com/Guga301104) | | 0 | |
+| [Marcos Santos Bittar](https://github.com/Bittarx) | | 0 | |
+| [Mylena Trindade de Mendonca](https://github.com/MylenaTrindade)|  Modelagem do artefato da adequação funcional |  | |
+| [Pedro de Oliveira Campos Barbosa](https://github.com/pedrobarbosaocb) | | 0 | |
 | Total: | | 0 | |
 
 <div align="center"> 
 <p>Autores:
   <a href="https://github.com/luluaroeira">Ana Luiza Komatsu</a>,
   <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>,
-  <a href="https://github.com/gabriel-lima258">Gustavo Gontijo</a>,
-  <a href="https://github.com/leozinlima">Marcos Santos</a>,
-  <a href="https://github.com/MateuSansete">Mylena Trindade</a>,
-  <a href="https://github.com/pfc15">Pedro de Oliveira</a>.
+  <a href="https://github.com/Guga301104">Gustavo Gontijo</a>,
+  <a href="https://github.com/Bittarx">Marcos Santos</a>,
+  <a href="https://github.com/MylenaTrindade">Mylena Trindade</a>,
+  <a href="https://github.com/pedrobarbosaocb">Pedro de Oliveira</a>.
 </p>
 </div>
 
