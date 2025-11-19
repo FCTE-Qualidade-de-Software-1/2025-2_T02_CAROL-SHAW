@@ -147,11 +147,14 @@ Aqui descrevemos o passo a passo de como serão realizadas as medições para as
  
 Os testes foram executados nos ambientes descritos na tabela abaixo, garantindo a verificação em diferentes configurações:
  
-| Componente | Especificação |
-|---|---|
-| **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS |
-| **Hardware** | Processador Ryzen 7 Pro 4750U ou superior |
-| **Navegador** | Mozilla Firefox (versão mais recente) |
+| Componente | Especificação | Observações |
+|---|---|---|
+| **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS | Utilizado para execução dos testes manuais e automáticos. |
+| **Hardware** | Processador Ryzen 7 Pro 4750U, 16 GB RAM | Configuração mínima para garantir a execução fluida das ferramentas. |
+| **Navegador** | Mozilla Firefox (versão mais recente) | Browser utilizado para os testes de interface e funcionalidade. |
+| **Ambiente Backend** | Python 3.10+ / Django 4.2+ | Ambiente de execução da API do MEPA. |
+| **Banco de Dados** | PostgreSQL 15 | Utilizado para armazenamento e consulta dos dados da aplicação. |
+| **Containerização** | Docker 24.0+ | Utilizado para criar um ambiente padronizado e isolado para a aplicação e seus serviços. |
 
 ---
 
