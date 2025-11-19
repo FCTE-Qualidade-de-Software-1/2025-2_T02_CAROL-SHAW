@@ -18,10 +18,12 @@
 Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmos os requisitos funcionais da aplicação, segue as perguntas que utilizamos:
 
 !!! Tip "Atenção!"
-    Para visualizar as perguntas basta clicar na barra azul com o texto: "Perguntas utilizadas para a entrevista:"
+    Para visualizar as perguntas basta clicar na barra azul abaixo com o texto: "Perguntas utilizadas para a entrevista:" nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
 
 
 ??? info "Perguntas utilizadas para a entrevista: "
+
+    <a href="https://publuu.com/flip-book/1014636/2241863" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a>
 
     No que consiste a aplicação mepa?
 
@@ -76,13 +78,13 @@ Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmo
     No dashboard de pendências, o usuário deve conseguir filtrar por 'Tipo de Pendência' (ex: Fatura Atrasada vs. Tarifa não cadastrada)? Deve haver um link direto para resolver o problema (ex: clicar na pendência e ir para a tela de cadastro de fatura)?
     ```
 
-[Baixar Transcrição da Entrevista](https://raw.githubusercontent.com/seuusuario/seurepo/main/transcricao.pdf)
-
 <div style="text-align: center;">
   <p><strong>Entrevista 1:</strong> <a href="https://youtu.be/9Z0V1nYTEcc">Com os devs para a elaboração dos requisitos funcionais</a></p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/9Z0V1nYTEcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<a href="https://publuu.com/flip-book/1014636/2241858" target="_blank"> Clique aqui para visualizar a transcrição em uma nova aba e fazer o download .pdf</a>
+
 <font size="3">
     <p style="text-align: center">
         <b>Autores:</b> 
@@ -90,17 +92,90 @@ Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmo
     </p>
 </font>
 
-Após a entrevista modelamos a seguinte lista para os requisitos funcionais e não funcionais para o nosso estudo:
+Após a entrevista modelamos a seguinte lista para os requisitos funcionais para o nosso estudo:
 
-<font size="3">
-    <p style="text-align: center">
-        <b>Figura 1:</b> Requisitos funcionais
-        <br>
-    </p>
-</font>
+!!! Tip "Atenção!"
+    Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Requisitos funcionais:", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
 
-<div align="center">
-  <img src="hã" width="600">
+
+??? info "Requisitos funcionais:"
+
+    <a href="https://publuu.com/flip-book/1014636/2241855" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a>
+
+    ### 1. Módulo de Gestão de Universidades e Integração
+
+    * **RF001 - Cadastro de Universidade via Formulário:** O sistema deve permitir o cadastro de novas universidades, processo que é iniciado através do recebimento de um formulário de interesse analisado pela equipe.
+    * **RF002 - Validação de CNPJ:** No ato do cadastro da universidade, o sistema deve validar automaticamente os dígitos verificadores do CNPJ e impedir o cadastro se o número for inválido.
+    * **RF003 - Bloqueio de Duplicidade de CNPJ:** O sistema deve verificar se o CNPJ já existe no banco de dados e impedir a criação de registros duplicados.
+    * **RF004 - Integração com API da ANEEL:** O sistema deve conectar-se automaticamente à API da ANEEL para obter e atualizar a lista de distribuidoras de energia e suas respectivas tarifas em tempo real, eliminando o cadastro manual.
+    * **RF005 - Lista de Solicitações:** O sistema deve possuir uma área administrativa onde a equipe do MEPA possa visualizar a lista de universidades que solicitaram acesso via formulário.
+
+    ### 2. Módulo de Gestão de Usuários e Permissões
+
+    * **RF006 - Níveis de Acesso:** O sistema deve suportar quatro tipos de perfis de usuário com permissões distintas:
+        1.  **Gestor:** Pode gerenciar faturas, contratos e gerenciar outros usuários (adicionar/desativar).
+        2.  **Operacional:** Pode apenas adicionar/gerenciar contratos e faturas, sem acesso à gestão de pessoas.
+        3.  **Convidado:** Acesso apenas de leitura (visualização) para fins de validação/manutenção.
+        4.  **Demonstração:** Acesso público a dados fictícios para conhecer o sistema, sem interagir com dados reais.
+    * **RF007 - Vínculo Exclusivo:** O sistema deve garantir que um usuário esteja vinculado a apenas uma universidade por vez.
+    * **RF008 - Exclusão Lógica de Usuário:** O sistema não deve permitir a exclusão física de usuários do banco de dados. A remoção deve ser lógica (apenas desativação do login), mantendo o histórico de ações e integridade dos dados.
+
+    ### 3. Módulo de Unidades Consumidoras (UCs)
+
+    * **RF009 - Unicidade da UC:** O sistema deve utilizar o "Código da Unidade Consumidora" (presente na conta de luz) como identificador único, bloqueando o cadastro se o código já existir.
+    * **RF010 - Dados Técnicos Obrigatórios:** O cadastro da UC deve exigir dados essenciais que influenciam no cálculo, incluindo: Grupo Tarifário, Subgrupo, Tensão de Fornecimento e Distribuidora.
+    * **RF011 - Imutabilidade de Local:** O sistema não deve permitir a alteração do endereço de uma UC (regra da ANEEL). Caso o local mude, a UC deve ser desativada e uma nova criada.
+    * **RF012 - Edição de Dados Cadastrais:** O sistema deve permitir a edição de nome e outros dados não-críticos da UC, mantendo o histórico.
+    * **RF013 - Desativação de UC:** O sistema deve permitir desativar uma UC, preservando todo o seu histórico de consumo.
+
+    ### 4. Módulo de Contratos
+
+    * **RF014 - Vigência do Contrato:** O sistema deve registrar obrigatoriamente a data de início e fim de cada contrato.
+    * **RF015 - Status de Expiração:** O sistema deve alterar automaticamente o status do contrato para "Expirado" quando a data final for atingida e alertar o usuário.
+    * **RF016 - Renovação de Contrato:** O sistema deve possuir uma função de "Renovar" que cria um novo contrato copiando os dados do contrato anterior (preservando o histórico do antigo) e vinculando-o à mesma UC.
+    * **RF017 - Relacionamento Contrato-UC:** O sistema deve restringir cada contrato a uma única Unidade Consumidora (relação 1 para 1).
+
+    ### 5. Módulo de Faturas (Entrada de Dados)
+
+    * **RF018 - Métodos de Entrada:** O sistema deve permitir o lançamento de faturas de duas formas:
+        1.  **Manual:** Preenchimento campo a campo.
+        2.  **Automática (Importação):** Leitura de arquivos .CSV ou .XLSX.
+        *Nota: Leitura de PDF não é suportada.*
+    * **RF019 - Campos Críticos da Fatura:** O sistema deve capturar os seguintes dados para os cálculos:
+        * Valor Total.
+        * Valor Ponta e Fora Ponta.
+        * Demanda Ponta e Fora Ponta (para tarifa Azul) ou Demanda Única (para tarifa Verde).
+        * Energia Injetada (Geração Fotovoltaica).
+    * **RF020 - Validação de Valores:** O sistema deve bloquear valores negativos, mas deve aceitar valores altos (variável conforme o tamanho da universidade).
+    * **RF021 - Bloqueio de Duplicidade de Mês:** O sistema deve impedir o cadastro de mais de uma fatura para o mesmo mês de referência na mesma UC.
+    * **RF022 - Identificação de Pendência:** O sistema deve marcar uma fatura como "Pendente" automaticamente a partir do dia 1º do mês subsequente.
+
+    ### 6. Módulo de Inteligência e Recomendação
+
+    * **RF023 - Janela de Análise:** O sistema deve utilizar uma janela móvel das últimas 12 faturas lançadas para realizar os cálculos de recomendação.
+    * **RF024 - Aviso de Dados Insuficientes:** Caso existam faturas pendentes dentro da janela de 12 meses, o sistema deve exibir um aviso (*warning*) informando que a recomendação pode estar imprecisa, mas não deve impedir o cálculo.
+    * **RF025 - Simulação de Cenários:** O sistema deve simular cenários comparando o contrato atual com as modalidades Verde e Azul (Ponta/Fora Ponta), considerando a demanda medida.
+    * **RF026 - Geração Automática:** A recomendação deve ser recalculada automaticamente em *background* sempre que uma nova fatura for lançada ou editada.
+    * **RF027 - Exibição da Recomendação:** O sistema deve exibir uma recomendação apenas se o cenário simulado for mais econômico que o contrato atual.
+
+    ### 7. Módulo de Dashboards e Visualização
+
+    * **RF028 - Painel Principal (Visão Geral):** O sistema deve exibir um painel com todas as Unidades Consumidoras que possuem pendências (faturas atrasadas ou problemas de contrato).
+    * **RF029 - Ação Rápida no Painel Principal:** No painel principal, deve haver um botão/link direto para resolver o problema (ex: abrir o modal de lançamento da fatura pendente).
+    * **RF030 - Painel Específico da UC:** Ao acessar uma UC específica, o sistema deve listar as pendências em fila (ex: "Lançar Novembro"), mostrando o mês seguinte apenas após a resolução do anterior.
+    ```
+
+
+### 1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+
+
+
+
+#### 1.2.1 Execução Etapa 2 - Resultados da análise
+
+<div style="text-align: center;">
+  <p><strong>Video 1:</strong> <a href="https://youtu.be/">Análise da Aplicação</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <font size="3">
@@ -110,28 +185,11 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais e n�
     </p>
 </font>
 
-<font size="3">
-    <p style="text-align: center">
-        <b>Figura 2:</b> Requisitos não funcionais
-        <br>
-    </p>
-</font>
 
-<div align="center">
-  <img src="hã" width="600">
-</div>
+### 1.4 Execução Etapa 4 - Melhorias
 
-<font size="3">
-    <p style="text-align: center">
-        <b>Autores:</b> 
-        [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade)
-    </p>
-</font>
 
-Resultados
-
-Melhorias
-
+---
 
 ## 2. Execução da Medição Para a Confiabilidade
 

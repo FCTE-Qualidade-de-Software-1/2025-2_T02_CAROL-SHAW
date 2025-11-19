@@ -5,6 +5,7 @@
 - [Descrição da Medição Para a Adequação Funcional](#descrição-da-medição-para-a-adequação-funcional)
 - [Descrição da Medição Para a Confiabilidade](#descrição-da-medição-para-a-confiabilidade)
 - [Descrição da Medição Para a Manutenibilidade](#descrição-da-medição-para-a-manutenibilidade)
+- [Localização dos Dados de Avaliação](#localização-dos-dados-de-avaliação)
 - [Uso de IA](#uso-de-ia)
 - [Referências Bibliográfica](#referências-bibliográfica)
 - [Histórico de Versões](#historico-de-versoes)
@@ -29,50 +30,19 @@ Os artefatos encontrados na documentação pública e como estudado na referênc
 
 Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na etapa de planejamento de avaliação: [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
 
-#### Completude Funcional: todas as funções estão presentes?
+#### Q1. Em que medida as funcionalidades priorizadas do MEPA foram implementadas?:
 
 - Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) e a análise dos documentos públicos (Tabela 1) para verificar se as funcionalidades especificadas estão implementadas.
 
-#### Métricas associadas:
 
-AF1, 
+#### Q2. Os resultados apresentados pelo MEPA nas funcionalidades estão corretos?:
 
-#### Correção funcional: os resultados das funções estão corretos?
+- Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação online e offline, pois o ambiente offline possue os usuários de maior nível na aplicação ao invés só do convidado, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
 
-- Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação online, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
 
-#### Métricas associadas:
-
-AF3, 
-
-#### Pertinencia Funcional: essas funções de fato ajudam os usuários?
+#### Q3. As funcionalidades implementadas operam em conformidade com o esperado?:
 
 - Na análise de pertinência buscamos entender se as funcionalidades existentes são de fato úteis e relevantes para os objetivos dos usuários. Portanto, realizamos um passo a passo simulado das tarefas do gestor como: cadastrar uma fatura e gerar um relatório de economia para avaliarmos o fluxo de trabalho é lógico.
-
-#### Métricas associadas:
-
-AF4, 
-
-
-### Ambiente de Teste:
- 
-Os testes foram executados nos ambientes descritos na tabela abaixo, garantindo a verificação em diferentes configurações:
- 
-| Componente | Especificação |
-|---|---|
-| **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS |
-| **Hardware** | Processador Ryzen 7 Pro 4750U ou superior |
-| **Navegador** | Mozilla Firefox (versão mais recente) |
-
-### Resumo dos Instrumentos de Medição:
-
-Para a coleta de dados, foram utilizados os seguintes instrumentos:
-
-| Instrumento | Descrição |
-|---|---|
-| **Checklist de Funcionalidades** | Documento para verificação da implementação dos requisitos, baseado no escopo da Fase 1 e elicitado na Fase 4. |
-| **Ferramenta de Captura de Tela** | Utilizada para registrar evidências estáticas (imagens) de resultados e comportamentos específicos. |
-| **Software de Gravação (OBS Studio e Microsoft Teams)** | Utilizado para gravar as sessões de teste em vídeo, documentando o fluxo de interação e entrevistas. |
 
 ---
 
@@ -118,15 +88,11 @@ Para a coleta de dados e execução dos procedimentos, serão utilizados os segu
 
 | Instrumento | Descrição |
 |---|---|
-| **Ferramenta de Simulação de Carga (Ex: JMeter)** | Utilizada para gerar requisições em massa e simular sobrecarga no sistema, essencial para testar a Tolerância a Falhas. |
-| **Script de Monitoramento de Uptime** | Ferramenta automatizada para registrar o tempo de atividade e inatividade do servidor, fundamental para o cálculo da Disponibilidade. |
-| **Cronômetro e Logs do Sistema** | Utilizados para medir o Tempo Médio de Recuperação (TMR) e para a análise detalhada da causa raiz das falhas. |
-| **Checklist de Preservação de Dados** | Documento para verificar a integridade e a ausência de perda dos dados transacionais após a recuperação do sistema. |
+
 
 ---
 
 ## 3. Descrição da Medição Para a Manutenibilidade
-
 
 ## Descrição da Medição Para a Manutenibilidade
 
@@ -165,24 +131,36 @@ Aqui descrevemos o passo a passo de como serão realizadas as medições para as
 - **Procedimento:** O relatório de cobertura de código gerado pelo [Nome da Ferramenta de Cobertura, ex: JaCoCo, Coverage.py] será analisado. A **CTR** será calculada com base na cobertura de *branches* (ramificações) e linhas de código, focando nas áreas que sofreram modificações recentes.
 - **Métricas associadas:** MN3 (Cobertura de Testes).
 
-### Ambiente de Análise:
+---
+
+## 4. Ambiente de Testes:
  
-Os procedimentos de análise serão executados nos ambientes e com as ferramentas descritas na tabela abaixo:
+Os testes foram executados nos ambientes descritos na tabela abaixo, garantindo a verificação em diferentes configurações:
  
 | Componente | Especificação |
 |---|---|
+| **Sistema Operacional** | Windows 11 e Ubuntu 22.04 LTS |
+| **Hardware** | Processador Ryzen 7 Pro 4750U ou superior |
+| **Navegador** | Mozilla Firefox (versão mais recente) |
 | **Ferramenta de Análise Estática** | SonarQube |
-| **Sistema de Versionamento** | GitHub |
 
-### Resumo dos Instrumentos de Medição:
+---
+
+## 5. Instrumentos de Medição:
 
 Para a coleta de dados, foram utilizados os seguintes instrumentos:
 
 | Instrumento | Descrição |
 |---|---|
+| **Checklist de Funcionalidades** | Documento para verificação da implementação dos requisitos, baseado no escopo da Fase 1 e elicitado na Fase 4. |
+| **Ferramenta de Captura de Tela** | Utilizada para registrar evidências estáticas (imagens) de resultados e comportamentos específicos. |
+| **Software de Gravação (OBS Studio e Microsoft Teams)** | Utilizado para gravar as sessões de teste em vídeo, documentando o fluxo de interação e entrevistas. |
 | **Relatório de Análise Estática** | Documento gerado pela ferramenta SonarQube contendo as métricas de código (CCM, Coesão, Acoplamento). |
-| **Query de Issues** | Consulta estruturada no GitLab para extrair os dados de tempo de vida dos defeitos (LTC). |
+| **Query de Issues** | Consulta no GitLab para extrair os dados de tempo de vida dos defeitos (LTC). |
 | **Relatório de Cobertura de Código** | Documento que detalha o percentual de código coberto por testes automatizados (CTR). |
+| **Ferramenta de Simulação de Carga (JMeter)** | Utilizada para gerar requisições em massa e simular sobrecarga no sistema, essencial para testar a Tolerância a Falhas. |
+| **Script de Monitoramento de Uptime** | Ferramenta automatizada para registrar o tempo de atividade e inatividade do servidor, fundamental para o cálculo da Disponibilidade. |
+| **Cronômetro** | Utilizados para medir o Tempo Médio de Recuperação (TMR). |
 
 ---
 
@@ -190,17 +168,14 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 
 Os dados coletados serão organizados e armazenados na seguinte estrutura neste repositório:
 
-- **`/docs/pages/Modulo4/assets/`**: Diretório principal para todos os dados da avaliação
+- **`/docs/pages/Modulo4/dados/`**: Diretório principal para todos os dados da avaliação
   - **`adequacao_funcional/`**: Resultados das métricas de adequação funcional
-    - `Checklist Funcionalidades`: Dados do TCF e ICF
-    - `Testes Correção`: Dados do TCR  
-    - `Workflow Tarefas`: Dados do IAT
+    - `Checklist Funcionalidades`: Dados dos requisitos elicitados
+    - `Corretude`: 
+    - `Pertinencia`: 
   - **`portabilidade/`**: Resultados das métricas de portabilidade
-    - `Adaptabilidade em Multiplataforma`: Dados do TAM
-    - `Instalação de Sistemas`: Dados do TMI e TSI
-    - `Migração de projetos`: Dados do IPD
-  - **`evidencias/`**: Capturas de tela, vídeos e logs dos testes realizados
-  - **`analise/`**: Análises estatísticas e relatórios consolidados
+    - `Complexidade Ciclomática`: Dados do SonarQube
+
   
 ## Uso de IA
  
@@ -236,4 +211,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.2` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção das técnicas de medição para a Manuntenabilidade. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 18/11/2025 |  |  |  |
 | `1.4` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
-
+| `1.4` | Unificação dos ambientes de testes e instrumentos de medição | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
