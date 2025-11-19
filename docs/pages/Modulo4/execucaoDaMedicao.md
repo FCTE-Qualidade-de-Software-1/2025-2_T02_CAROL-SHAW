@@ -2,14 +2,58 @@
 
 ## Sumário
 
-- [Execução da Medição Para a Adequação Funcional](#descrição-da-medição-para-a-adequação-funcional)
-- [Execução da Medição Para a Confiabilidade](#descrição-da-medição-para-a-confiabilidade)
-- [Execução da Medição Para a Manutenibilidade](#descrição-da-medição-para-a-manutenibilidade)
+- [Organização da Equipe](#Organização-da-Equipe)
+- [1. Execução da Medição Para a Adequação Funcional](#1-execucao-da-medicao-para-a-adequacao-funcional)
+  - [1.1 Execução Etapa 1 - Realização da Entrevista](#11-execucao-etapa-1-realizacao-da-entrevista)
+  - [1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais](#12-execucao-etapa-2-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais)
+    - [1.2.1 Execução Etapa 2 - Resultados da análise](#121-execucao-etapa-2-resultados-da-analise)
+  - [1.4 Execução Etapa 4 - Melhorias](#14-execucao-etapa-4---melhorias)
+- [2. Execução da Medição Para a Confiabilidade](#2-execucao-da-medicao-para-a-confiabilidade)
+  - [Resultados da Tolerância a Falhas (Fault Tolerance)](#resultados-da-tolerancia-a-falhas-fault-tolerance)
+  - [Resultados da Recuperabilidade (Recoverability)](#resultados-da-recuperabilidade-recoverability)
+  - [Resultados da Disponibilidade (Availability)](#resultados-da-disponibilidade-availability)
+- [Conclusão da Avaliação de Confiabilidade](#conclusao-da-avaliacao-de-confiabilidade)
+- [3. Descrição da Medição Para a Manutenibilidade](#3-descricao-da-medicao-para-a-manutenibilidade)
 - [Uso de IA](#uso-de-ia)
 - [Referências Bibliográfica](#referências-bibliográfica)
 - [Histórico de Versões](#historico-de-versoes)
 
 ---
+
+## Organização da Equipe
+
+Dividimos os trabalhos em duplas para a realização das tarefas, conforme pode ser observado na Tabela 1 a seguir:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela 1:</b> Divisão de Tarefas por Dupla
+    </p>
+</font>
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Característica de Qualidade</th>
+        <th>Dupla Responsável</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adequação Funcional</td>
+        <td>Felipe das Neves e Mylena Mendonça</td>
+      </tr>
+      <tr>
+        <td>Confiabilidade</td>
+        <td>Ana Luiza Komatsu e Gustavo Gontijo</td>
+      </tr>
+      <tr>
+        <td>Manutenibilidade</td>
+        <td>Pedro Barbosa e Marcos Bittar</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## 1. Execução da Medição Para a Adequação Funcional
 
@@ -95,14 +139,14 @@ Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmo
 Após a entrevista modelamos a seguinte lista para os requisitos funcionais para o nosso estudo:
 
 !!! Tip "Atenção!"
-    Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Requisitos funcionais:", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
+    Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Lista de Requisitos Funcionais:", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
 
 
-??? info "Requisitos funcionais:"
+??? info "Lista de Requisitos Funcionais:"
 
     <a href="https://publuu.com/flip-book/1014636/2241855" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a>
 
-    ### 1. Módulo de Gestão de Universidades e Integração
+    ### RF. Módulo de Gestão de Universidades e Integração
 
     * **RF001 - Cadastro de Universidade via Formulário:** O sistema deve permitir o cadastro de novas universidades, processo que é iniciado através do recebimento de um formulário de interesse analisado pela equipe.
     * **RF002 - Validação de CNPJ:** No ato do cadastro da universidade, o sistema deve validar automaticamente os dígitos verificadores do CNPJ e impedir o cadastro se o número for inválido.
@@ -110,7 +154,7 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF004 - Integração com API da ANEEL:** O sistema deve conectar-se automaticamente à API da ANEEL para obter e atualizar a lista de distribuidoras de energia e suas respectivas tarifas em tempo real, eliminando o cadastro manual.
     * **RF005 - Lista de Solicitações:** O sistema deve possuir uma área administrativa onde a equipe do MEPA possa visualizar a lista de universidades que solicitaram acesso via formulário.
 
-    ### 2. Módulo de Gestão de Usuários e Permissões
+    ### RF. Módulo de Gestão de Usuários e Permissões
 
     * **RF006 - Níveis de Acesso:** O sistema deve suportar quatro tipos de perfis de usuário com permissões distintas:
         1.  **Gestor:** Pode gerenciar faturas, contratos e gerenciar outros usuários (adicionar/desativar).
@@ -120,7 +164,7 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF007 - Vínculo Exclusivo:** O sistema deve garantir que um usuário esteja vinculado a apenas uma universidade por vez.
     * **RF008 - Exclusão Lógica de Usuário:** O sistema não deve permitir a exclusão física de usuários do banco de dados. A remoção deve ser lógica (apenas desativação do login), mantendo o histórico de ações e integridade dos dados.
 
-    ### 3. Módulo de Unidades Consumidoras (UCs)
+    ### RF. Módulo de Unidades Consumidoras (UCs)
 
     * **RF009 - Unicidade da UC:** O sistema deve utilizar o "Código da Unidade Consumidora" (presente na conta de luz) como identificador único, bloqueando o cadastro se o código já existir.
     * **RF010 - Dados Técnicos Obrigatórios:** O cadastro da UC deve exigir dados essenciais que influenciam no cálculo, incluindo: Grupo Tarifário, Subgrupo, Tensão de Fornecimento e Distribuidora.
@@ -128,14 +172,14 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF012 - Edição de Dados Cadastrais:** O sistema deve permitir a edição de nome e outros dados não-críticos da UC, mantendo o histórico.
     * **RF013 - Desativação de UC:** O sistema deve permitir desativar uma UC, preservando todo o seu histórico de consumo.
 
-    ### 4. Módulo de Contratos
+    ### RF. Módulo de Contratos
 
     * **RF014 - Vigência do Contrato:** O sistema deve registrar obrigatoriamente a data de início e fim de cada contrato.
     * **RF015 - Status de Expiração:** O sistema deve alterar automaticamente o status do contrato para "Expirado" quando a data final for atingida e alertar o usuário.
     * **RF016 - Renovação de Contrato:** O sistema deve possuir uma função de "Renovar" que cria um novo contrato copiando os dados do contrato anterior (preservando o histórico do antigo) e vinculando-o à mesma UC.
     * **RF017 - Relacionamento Contrato-UC:** O sistema deve restringir cada contrato a uma única Unidade Consumidora (relação 1 para 1).
 
-    ### 5. Módulo de Faturas (Entrada de Dados)
+    ### RF. Módulo de Faturas (Entrada de Dados)
 
     * **RF018 - Métodos de Entrada:** O sistema deve permitir o lançamento de faturas de duas formas:
         1.  **Manual:** Preenchimento campo a campo.
@@ -150,7 +194,7 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF021 - Bloqueio de Duplicidade de Mês:** O sistema deve impedir o cadastro de mais de uma fatura para o mesmo mês de referência na mesma UC.
     * **RF022 - Identificação de Pendência:** O sistema deve marcar uma fatura como "Pendente" automaticamente a partir do dia 1º do mês subsequente.
 
-    ### 6. Módulo de Inteligência e Recomendação
+    ### RF. Módulo de Inteligência e Recomendação
 
     * **RF023 - Janela de Análise:** O sistema deve utilizar uma janela móvel das últimas 12 faturas lançadas para realizar os cálculos de recomendação.
     * **RF024 - Aviso de Dados Insuficientes:** Caso existam faturas pendentes dentro da janela de 12 meses, o sistema deve exibir um aviso (*warning*) informando que a recomendação pode estar imprecisa, mas não deve impedir o cálculo.
@@ -158,7 +202,7 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF026 - Geração Automática:** A recomendação deve ser recalculada automaticamente em *background* sempre que uma nova fatura for lançada ou editada.
     * **RF027 - Exibição da Recomendação:** O sistema deve exibir uma recomendação apenas se o cenário simulado for mais econômico que o contrato atual.
 
-    ### 7. Módulo de Dashboards e Visualização
+    ### RF. Módulo de Dashboards e Visualização
 
     * **RF028 - Painel Principal (Visão Geral):** O sistema deve exibir um painel com todas as Unidades Consumidoras que possuem pendências (faturas atrasadas ou problemas de contrato).
     * **RF029 - Ação Rápida no Painel Principal:** No painel principal, deve haver um botão/link direto para resolver o problema (ex: abrir o modal de lançamento da fatura pendente).
@@ -167,7 +211,6 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
 
 
 ### 1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais
-
 
 
 
@@ -199,11 +242,11 @@ A execução da medição de confiabilidade foi realizada no ambiente de teste p
 
 **Objetivo:** Avaliar a capacidade do sistema de operar corretamente, mesmo na presença de falhas simuladas.
 
-| Falha Simulada | Resultado da Operação | Mensagem de Erro (se houver) | Sobrevivência (Sim/Não) |
+| Falha Simulada | Resultado da Operação |  | Sobrevivência (Sim/Não) |
 | :--- | :--- | :--- | :--- |
 | Interrupção da Conexão com o Banco de Dados | O sistema exibiu uma tela de erro genérica e travou a operação. | "Erro de conexão com o servidor." | Não |
-| Sobrecarga de Requisições (500 req/s) | O sistema ficou lento, mas não travou. As requisições foram processadas com atraso. | Nenhuma | Sim |
-| Reinicialização Abrupta do Servidor Web | O serviço ficou indisponível por 45 segundos. | Nenhuma | Não |
+| Sobrecarga de Requisições (500 req/s) |  | Nenhuma | Sim |
+| Reinicialização Abrupta do Servidor Web |  | Nenhuma | Não |
 
 **Métrica CF1 - Taxa de Sobrevivência a Falhas (TSF):**
 - Total de Falhas Simuladas: 3

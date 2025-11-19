@@ -2,9 +2,23 @@
 
 ## Sumário
 
-- [Descrição da Medição Para a Adequação Funcional](#descrição-da-medição-para-a-adequação-funcional)
-- [Descrição da Medição Para a Confiabilidade](#descrição-da-medição-para-a-confiabilidade)
-- [Descrição da Medição Para a Manutenibilidade](#descrição-da-medição-para-a-manutenibilidade)
+- [1. Descrição da Medição Para a Adequação Funcional](#1-descrição-da-medição-para-a-adequação-funcional)
+  - [1.1. Procedimentos das Análises](#11-procedimentos-das-análises)
+    - [Q1. Em que medida as funcionalidades priorizadas do MEPA foram implementadas?](#q1-em-que-medida-as-funcionalidades-priorizadas-do-mepa-foram-implementadas)
+    - [Q2. Os resultados apresentados pelo MEPA nas funcionalidades estão corretos?](#q2-os-resultados-apresentados-pelo-mepa-nas-funcionalidades-estão-corretos)
+    - [Q3. As funcionalidades implementadas operam em conformidade com o esperado?](#q3-as-funcionalidades-implementadas-operam-em-conformidade-com-o-esperado)
+- [2. Descrição da Medição Para a Confiabilidade](#2-descrição-da-medição-para-a-confiabilidade)
+  - [2.1. Procedimentos das Análises](#procedimentos-das-análises)
+    - [Tolerância a Falhas (Fault Tolerance)](#tolerância-a-falhas-fault-tolerance-o-sistema-consegue-manter-a-operação-em-caso-de-falhas)
+    - [Recuperabilidade (Recoverability)](#recuperabilidade-recoverability-o-sistema-consegue-se-recuperar-de-uma-falha-e-restaurar-os-dados)
+    - [Disponibilidade (Availability)](#disponibilidade-availability-o-sistema-está-acessível-e-operacional-quando-necessário)
+- [3. Descrição da Medição Para a Manutenibilidade](#3-descrição-da-medição-para-a-manutenibilidade)
+  - [3.1. Procedimentos das Análises](#procedimentos-das-análises-1)
+    - [Q8. A estrutura do código favorece a manutenção?](#q8-a-estrutura-do-código-favorece-a-manutenção-complexidade-ciclomática-média---ccm)
+    - [Q9. Qual é a agilidade no fluxo de correção de defeitos?](#q9-qual-é-a-agilidade-no-fluxo-de-correção-de-defeitos-lead-time-de-correção---ltc)
+    - [Q10. O sistema possui proteção adequada contra regressão?](#q10-o-sistema-possui-proteção-adequada-contra-regressão-cobertura-de-testes-de-regressão---ctr)
+- [4. Ambiente de Testes](#4-ambiente-de-testes)
+- [5. Instrumentos de Medição](#5-instrumentos-de-medição)
 - [Localização dos Dados de Avaliação](#localização-dos-dados-de-avaliação)
 - [Uso de IA](#uso-de-ia)
 - [Referências Bibliográfica](#referências-bibliográfica)
@@ -28,11 +42,11 @@ Os artefatos encontrados na documentação pública e como estudado na referênc
 
 ### 1.1. Procedimentos das Análises:
 
-Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na etapa de planejamento de avaliação: [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
+Aqui vamos descrever todo o passo a passo de como iremos realizar as medições para as perguntas feitas na etapa de planejamento de avaliação mais detalhes em: [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao). Para a melhor análise posterior das questões todos os processos será gravados e disponibilizados na [Fase 4](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo4/execucaoDaMedicao/#1-execucao-da-medicao-para-a-adequacao-funcional).
 
 #### Q1. Em que medida as funcionalidades priorizadas do MEPA foram implementadas?:
 
-- Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) e a análise dos documentos públicos (Tabela 1) para verificar se as funcionalidades especificadas estão implementadas.
+- Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) que será realizada na [Fase 4 - Execução da Medição](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo4/execucaoDaMedicao/#1-execucao-da-medicao-para-a-adequacao-funcional) e a análise dos documentos públicos: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/) para verificar se as funcionalidades especificadas estão implementadas.
 
 
 #### Q2. Os resultados apresentados pelo MEPA nas funcionalidades estão corretos?:
@@ -50,6 +64,12 @@ Aqui vamos descrever todo o passo a passo de como iremos realizar as medições 
 
 A **Confiabilidade**, de acordo com a norma ISO/IEC 25010, é definida como a capacidade de um sistema, produto ou componente de manter seu nível de desempenho sob condições especificadas por um determinado período de tempo. Para a avaliação da qualidade do software, focaremos nas seguintes sub-características essenciais:
 
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela 1:</b> Documentos e Artefatos Analisados para Manutenibilidade
+    </p>
+</font>
+
 | Sub-característica | Descrição Detalhada |
 | :--- | :--- |
 | **Tolerância a Falhas (Fault Tolerance)** | Capacidade do sistema de operar corretamente e manter um nível de serviço especificado, mesmo na presença de falhas de hardware ou software. Isso inclui a habilidade de evitar a falha completa do sistema. |
@@ -64,37 +84,27 @@ A seguir, detalhamos o passo a passo de como as medições serão realizadas par
 
 #### Tolerância a Falhas (Fault Tolerance): o sistema consegue manter a operação em caso de falhas?
 
-- **Procedimento:** Serão simuladas falhas controladas no ambiente de teste, como a interrupção da conexão com o banco de dados e a sobrecarga de requisições (teste de estresse). O objetivo é observar a resposta do sistema: se ele consegue tratar a exceção de forma elegante (e.g., *fallback*, mensagem de erro clara) sem causar a interrupção total do serviço.
+- **Procedimento:** Serão simuladas falhas controladas no ambiente de teste, como a interrupção da conexão com o banco de dados e a sobrecarga de requisições (teste de estresse). O objetivo é observar a resposta do sistema: se ele consegue tratar a exceção sem causar a interrupção total do serviço.
 - **Métricas associadas:**
-    - **CF1 - Taxa de Sobrevivência a Falhas (TSF):** $\frac{\text{Número de falhas simuladas que não resultaram em interrupção total do serviço}}{\text{Total de falhas simuladas}}$
+    - **CF1 - Taxa de Sobrevivência a Falhas (TSF):** Número de falhas simuladas que não resultaram em interrupção total do serviço/Total de falhas simuladas
 
 #### Recuperabilidade (Recoverability): o sistema consegue se recuperar de uma falha e restaurar os dados?
 
 - **Procedimento:** Após a simulação de uma falha que cause a interrupção do serviço (e.g., reinicialização abrupta do servidor), serão medidos dois aspectos cruciais: o tempo necessário para o sistema retornar ao estado operacional completo e a integridade dos dados transacionais mais recentes.
 - **Métricas associadas:**
-    - **CF2 - Tempo Médio de Recuperação (TMR):** $\frac{\text{Tempo total gasto para recuperar o sistema após falhas}}{\text{Número de falhas}}$
-    - **CF3 - Índice de Perda de Dados (IPD):** $\frac{\text{Número de transações perdidas durante a falha}}{\text{Total de transações no momento da falha}}$
+    - **CF2 - Tempo Médio de Recuperação (TMR):** Tempo total gasto para recuperar o sistema após falhas/Número de falhas
+    - **CF3 - Índice de Perda de Dados (IPD):** Número de transações perdidas durante a falha/Total de transações no momento da falha
 
 #### Disponibilidade (Availability): o sistema está acessível e operacional quando necessário?
 
 - **Procedimento:** Será utilizado um script de monitoramento para registrar o tempo de atividade (*uptime*) e inatividade (*downtime*) do sistema em um período de 24 horas. A coleta de dados será realizada em intervalos regulares (e.g., a cada 5 minutos) para garantir a precisão da medição.
 - **Métricas associadas:**
-    - **CF4 - Disponibilidade Percentual (DP):** $\frac{\text{Tempo total de operação} - \text{Tempo total de inatividade}}{\text{Tempo total de operação}} \times 100$
-    - **CF5 - Tempo Médio Entre Falhas (TMEF):** $\frac{\text{Tempo total de operação}}{\text{Número de falhas}}$
-
-### Resumo dos Instrumentos de Medição:
-
-Para a coleta de dados e execução dos procedimentos, serão utilizados os seguintes instrumentos:
-
-| Instrumento | Descrição |
-|---|---|
-
+    - **CF4 - Disponibilidade Percentual (DP):** Tempo total de operação - Tempo total de inatividade-Tempo total de operação/100
+    - **CF5 - Tempo Médio Entre Falhas (TMEF):** Tempo total de operação/Número de falhas
 
 ---
 
 ## 3. Descrição da Medição Para a Manutenibilidade
-
-## Descrição da Medição Para a Manutenibilidade
 
 A medição da Manutenibilidade é crucial para garantir a longevidade e a adaptabilidade do software MEPA, que é um projeto de código aberto e em constante evolução. Conforme definido no Planejamento de Avaliação (Fase 2), o foco está em avaliar a facilidade com que o sistema pode ser analisado, modificado e testado.
 
@@ -102,7 +112,7 @@ Nossa análise será baseada no acesso ao código-fonte e aos dados de gestão d
 
 <font size="3">
     <p style="text-align: center">
-        <b>Tabela X:</b> Documentos e Artefatos Analisados para Manutenibilidade
+        <b>Tabela 2:</b> Documentos e Artefatos Analisados para Manutenibilidade
     </p>
 </font>
 
@@ -211,4 +221,5 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.2` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção das técnicas de medição para a Manuntenabilidade. | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | 18/11/2025 |  |  |  |
 | `1.4` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
-| `1.4` | Unificação dos ambientes de testes e instrumentos de medição | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+| `1.5` | Unificação dos ambientes de testes e instrumentos de medição | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+| `1.6` | Correção das contas em confiabilidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
