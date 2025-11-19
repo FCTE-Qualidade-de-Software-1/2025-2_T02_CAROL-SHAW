@@ -116,8 +116,50 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 
 ## Descrição da Medição Para a Confiabilidade
 
+A **Confiabilidade**, de acordo com a norma ISO/IEC 25010, é definida como a capacidade de um sistema, produto ou componente de manter seu nível de desempenho sob condições especificadas por um determinado período de tempo. Para a avaliação da qualidade do software, focaremos nas seguintes sub-características essenciais:
 
+| Sub-característica | Descrição Detalhada |
+| :--- | :--- |
+| **Tolerância a Falhas (Fault Tolerance)** | Capacidade do sistema de operar corretamente e manter um nível de serviço especificado, mesmo na presença de falhas de hardware ou software. Isso inclui a habilidade de evitar a falha completa do sistema. |
+| **Recuperabilidade (Recoverability)** | Capacidade do sistema de restabelecer um nível de desempenho especificado e recuperar os dados afetados diretamente após uma falha. O foco é no tempo e na integridade da recuperação. |
+| **Disponibilidade (Availability)** | Grau em que um sistema, produto ou componente está operacional e acessível para uso quando solicitado. É frequentemente medida pela proporção de tempo em que o sistema está em um estado operacional. |
 
+Mais detalhes sobre o propósito e as perguntas de avaliação que guiam esta medição podem ser encontrados em: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/) e [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
+
+### Procedimentos das Análises:
+
+A seguir, detalhamos o passo a passo de como as medições serão realizadas para responder às perguntas de avaliação definidas na etapa de planejamento.
+
+#### Tolerância a Falhas (Fault Tolerance): o sistema consegue manter a operação em caso de falhas?
+
+- **Procedimento:** Serão simuladas falhas controladas no ambiente de teste, como a interrupção da conexão com o banco de dados e a sobrecarga de requisições (teste de estresse). O objetivo é observar a resposta do sistema: se ele consegue tratar a exceção de forma elegante (e.g., *fallback*, mensagem de erro clara) sem causar a interrupção total do serviço.
+- **Métricas associadas:**
+    - **CF1 - Taxa de Sobrevivência a Falhas (TSF):** $\frac{\text{Número de falhas simuladas que não resultaram em interrupção total do serviço}}{\text{Total de falhas simuladas}}$
+
+#### Recuperabilidade (Recoverability): o sistema consegue se recuperar de uma falha e restaurar os dados?
+
+- **Procedimento:** Após a simulação de uma falha que cause a interrupção do serviço (e.g., reinicialização abrupta do servidor), serão medidos dois aspectos cruciais: o tempo necessário para o sistema retornar ao estado operacional completo e a integridade dos dados transacionais mais recentes.
+- **Métricas associadas:**
+    - **CF2 - Tempo Médio de Recuperação (TMR):** $\frac{\text{Tempo total gasto para recuperar o sistema após falhas}}{\text{Número de falhas}}$
+    - **CF3 - Índice de Perda de Dados (IPD):** $\frac{\text{Número de transações perdidas durante a falha}}{\text{Total de transações no momento da falha}}$
+
+#### Disponibilidade (Availability): o sistema está acessível e operacional quando necessário?
+
+- **Procedimento:** Será utilizado um script de monitoramento para registrar o tempo de atividade (*uptime*) e inatividade (*downtime*) do sistema em um período de 24 horas. A coleta de dados será realizada em intervalos regulares (e.g., a cada 5 minutos) para garantir a precisão da medição.
+- **Métricas associadas:**
+    - **CF4 - Disponibilidade Percentual (DP):** $\frac{\text{Tempo total de operação} - \text{Tempo total de inatividade}}{\text{Tempo total de operação}} \times 100$
+    - **CF5 - Tempo Médio Entre Falhas (TMEF):** $\frac{\text{Tempo total de operação}}{\text{Número de falhas}}$
+
+### Resumo dos Instrumentos de Medição:
+
+Para a coleta de dados e execução dos procedimentos, serão utilizados os seguintes instrumentos:
+
+| Instrumento | Descrição |
+|---|---|
+| **Ferramenta de Simulação de Carga (Ex: JMeter)** | Utilizada para gerar requisições em massa e simular sobrecarga no sistema, essencial para testar a Tolerância a Falhas. |
+| **Script de Monitoramento de Uptime** | Ferramenta automatizada para registrar o tempo de atividade e inatividade do servidor, fundamental para o cálculo da Disponibilidade. |
+| **Cronômetro e Logs do Sistema** | Utilizados para medir o Tempo Médio de Recuperação (TMR) e para a análise detalhada da causa raiz das falhas. |
+| **Checklist de Preservação de Dados** | Documento para verificar a integridade e a ausência de perda dos dados transacionais após a recuperação do sistema. |
 
 ---
 
@@ -175,3 +217,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 |:------:|------------------|------------|:----------------:|--------------|:----------------:|---------------------------|
 | `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | — | — | Versão inicial do documento. |
 | `1.1` | Inserção das técnicas de medição para a adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
+| `1.1` | Inserção das técnicas de medição para a confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
