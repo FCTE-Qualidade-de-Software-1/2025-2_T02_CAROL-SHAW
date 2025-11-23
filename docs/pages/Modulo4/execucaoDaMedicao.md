@@ -308,6 +308,20 @@ A avaliação de confiabilidade revela uma dicotomia importante: o sistema é **
 
 
 ## 3. Descrição da Medição Para a Manutenibilidade
+A execução da manutenabilidade envolveu 3 medições, sendo elas:
+## Complexidade Ciclomática Média (CCM)
+## Lead Time de Correção (LTM)
+## Cobertura de testes de Regressão (CTR)
+Para calcular o CTR, como descrito na etapa 3, fizemos manualmente o cálculo dos últimos 3 Merge Requests aceitos, seguindo a fórmula descrita na etapa 2. a tabela a baixa mostra os resultados.
+|MR|Linhas cobertas por Testes|Linhas Alteradas|CTR|
+|:------:|------------------|------------|:----------------:|
+|!435|50|60|83%|
+|!433|236|264|89%|
+|!432|569|572|99%|
+|!431|437|493|88%|
+|!430|574|583|98%|
+
+Assim, como todos os CTRs foram maiores ou iguais à 80% concluimos, conforme estabelecido na etapa 2, que o CTR é **desejável**.
 
 ---
 
@@ -341,3 +355,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.0` | Desenvolvimento dos objetivos do GQM. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | — | — | Versão inicial do documento. |
 | `1.1` | Inserção do que executamos para o artefato da adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
 | `1.2` | Inserção do que executamos para o artefato da confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
+| `1.3` | Inserção do CTR. | [Marcos Bittar](https://github.com/Bittarx) | | 23/11/2025 |  |
