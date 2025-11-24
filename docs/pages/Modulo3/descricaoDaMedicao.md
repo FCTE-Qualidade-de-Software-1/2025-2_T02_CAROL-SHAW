@@ -138,7 +138,7 @@ Aqui descrevemos o passo a passo de como serão realizadas as medições para as
 
 #### Q10. O sistema possui proteção adequada contra regressão? (Cobertura de Testes de Regressão - CTR)
 
-- **Procedimento:** O relatório de cobertura de código gerado pelo [Nome da Ferramenta de Cobertura, ex: JaCoCo, Coverage.py] será analisado. A **CTR** será calculada com base na cobertura de *branches* (ramificações) e linhas de código, focando nas áreas que sofreram modificações recentes.
+- **Procedimento:** Como houve dificuldade em analisar o relatório de cobertura de código (CTR) gerado durante a build, o cálculo de CTR será feito manualmente nos últimos 5 Merge Requestes aceitos (!430; !431; !432; !433 e !435), que foram todos feitos no período do último mês.
 - **Métricas associadas:** MN3 (Cobertura de Testes).
 
 ---
@@ -226,3 +226,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.4` | Realocação da Entrevista com o desenvolvedor para a fase 4 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
 | `1.5` | Unificação dos ambientes de testes e instrumentos de medição | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
 | `1.6` | Correção das contas em confiabilidade | [Felipe das Neves](https://github.com/FelipeFreire-gf) | | | |  |
+| `1.7` | Alteração em Manutenibilidade | [Marcos Bittar](https://github.com/Bittarx) | | | |  |

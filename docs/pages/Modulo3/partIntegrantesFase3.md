@@ -11,7 +11,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 | [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | | 0 | |
 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | Modelagem do artefato da adequação funcional |  | |
 | [Gustavo Gontijo Lima](https://github.com/Guga301104) | | 0 | |
-| [Marcos Santos Bittar](https://github.com/Bittarx) | | 0 | |
+| [Marcos Santos Bittar](https://github.com/Bittarx) | Manutenabilidade | 0 | |
 | [Mylena Trindade de Mendonca](https://github.com/MylenaTrindade)|  Modelagem do artefato da adequação funcional |  | |
 | [Pedro de Oliveira Campos Barbosa](https://github.com/pedrobarbosaocb) | | 0 | |
 | Total: | | 0 | |
