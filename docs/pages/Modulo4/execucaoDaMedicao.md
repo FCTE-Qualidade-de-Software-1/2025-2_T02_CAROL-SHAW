@@ -346,14 +346,14 @@ No entanto, a análise modular revela pontos de atenção: os módulos **`users`
 O Lead Time de Correção (LTC) mede a agilidade do processo de manutenção, sendo um indicador direto da Modificabilidade do sistema.
 
 **Execução da Medição:**
-A coleta de dados foi realizada através de uma consulta estruturada no sistema de *Issues* do **GitLab**, utilizando um script em Python. O LTC foi calculado como o tempo decorrido entre a **abertura do *Issue*** e o **fechamento (correção do bug)**, o que reflete o tempo total de resolução de defeitos.
+A coleta de dados foi realizada através de uma consulta estruturada no sistema de *Issues* do **GitLab**, utilizando um script em Python [4]. O LTC foi calculado como o tempo decorrido entre a **abertura do *Issue*** e o **fechamento (correção do bug)**, o que reflete o tempo total de resolução de defeitos.
 
 **Amostra de Dados Coletados:**
 A tabela abaixo apresenta uma amostra dos dados utilizados no cálculo do LTC:
 
 <font size="3">
     <p style="text-align: center">
-        <b>Tabela X:</b> Amostra de Lead Time de Correção (LTC)
+        <b>Tabela 2:</b> Amostra de Lead Time de Correção (LTC)
     </p>
 </font>
 
@@ -364,6 +364,8 @@ A tabela abaixo apresenta uma amostra dos dados utilizados no cálculo do LTC:
 | 479 | Refatorar a mensagem para faturas | 2025-05-12 | 2025-05-14 | 1 |
 | 477 | Relatório detalhado faltando dados | 2025-05-09 | 2025-05-14 | 5 |
 | 475 | Tarifa vencida mesmo dentro da validade | 2025-05-08 | 2025-05-14 | 5 |
+
+| Fonte: Resultados em CSV da Extração Pipeline LTC [5]
 
 **Resultado da Medição:**
 O **LTC médio** encontrado na amostra analisada foi de **64 dias**.
@@ -417,6 +419,10 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 > [2] RODRIGUES, Renato. ISO/IEC 25010: Functional Suitability. LinkedIn, 2 de fev. de 2024. Disponível em: <https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues>. Acesso em: 17 de nov. de 2025.
 >
 > [3] Notas de aula da disciplina de Qualidade de Software: **Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)**.
+>
+> [4] Script Implementação da Pipeline LTC. Disponível em: [Script - Extrator de LTC - Issues GitLab](./dados/extratorIssuesLTC.py)
+>
+> [5] Resultados em CSV da Extração Pipeline LTC. Disponível em: [Dados de Saída - Extrator de LTC - Issues GitLab](./dados/issues_ltc.csv)
 
 ---
 
@@ -428,4 +434,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.1` | Inserção do que executamos para o artefato da adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
 | `1.2` | Inserção do que executamos para o artefato da confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção do CTR. | [Marcos Bittar](https://github.com/Bittarx) | | 23/11/2025 |  |
-| `1.3` | Inserção do que executamos para o artefato da Manuntenabilidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | | 23/11/2025 |  |
+| `1.4` | Inserção do que executamos para o artefato da Manuntenabilidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | | 23/11/2025 |  |
