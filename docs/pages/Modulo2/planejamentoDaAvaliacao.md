@@ -35,9 +35,9 @@
 
 #### Questões e Métricas
 
-##### **Q1. Em que medida as funcionalidades priorizadas do MEPA foram implementadas?**
+##### **Q1. Em que medida as funcionalidades do MEPA foram implementadas?**
 
-Para verificar a completude, utilizaremos a **Cobertura de Requisitos Priorizados (CRP)**. Esta métrica avalia se o escopo essencial para a gestão de contratos de energia foi entregue.
+Para verificar, utilizaremos a **Cobertura de Requisitos**. Esta métrica avalia se o escopo essencial para a gestão de contratos de energia foi entregue.
 
 > **Fórmula CRP:**
 >
@@ -55,7 +55,7 @@ Para verificar a completude, utilizaremos a **Cobertura de Requisitos Priorizado
 
 ##### **Q2. Os resultados apresentados pelo MEPA nas funcionalidades críticas estão corretos?**
 
-A corretude será avaliada através da **Taxa de Sucesso em Cenários Críticos (TSC)**, focando em cálculos de energia e geração de relatórios onde erros não são toleráveis.
+A corretude será avaliada através da **Sucesso em Cenários (SC)**, focando em cálculos de energia e geração de relatórios onde erros não são toleráveis.
 
 > **Fórmula TSC:**
 >
@@ -73,7 +73,7 @@ A corretude será avaliada através da **Taxa de Sucesso em Cenários Críticos 
 
 ##### **Q3. As funcionalidades implementadas operam em conformidade com o esperado na homologação?**
 
-Avalia-se a **Taxa de Conformidade Funcional (TCF)**, que mede a proporção de funcionalidades que passaram pela verificação sem rejeição por parte dos stakeholders.
+Avalia-se a **Conformidade Funcional (CF)**, que mede se as funcionalidades atendem exatamente o que foi projetado para fazer.
 
 > **Fórmula TCF:**
 >
