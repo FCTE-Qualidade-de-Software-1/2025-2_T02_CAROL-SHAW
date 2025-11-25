@@ -307,10 +307,84 @@ A avaliação de confiabilidade revela uma dicotomia importante: o sistema é **
 **Recomendação Principal:** A implementação de mecanismos de tratamento de exceção mais robustos e a adoção de arquitetura de alta disponibilidade (e.g., *failover* de banco de dados, balanceamento de carga) são cruciais para evitar que falhas em componentes críticos causem interrupção total do serviço, elevando assim a Tolerância a Falhas e garantindo a Confiabilidade a longo prazo.
 
 
-## 3. Descrição da Medição Para a Manutenibilidade
-A execução da manutenabilidade envolveu 3 medições, sendo elas:
-## Complexidade Ciclomática Média (CCM)
-## Lead Time de Correção (LTM)
+## 3. Execução da Medição Para a Manutenibilidade
+
+A execução da medição para a Manutenibilidade concentrou-se na análise estática do código-fonte e na coleta de dados de processo do sistema de gestão de projetos (GitLab Issues), conforme detalhado na Fase 3.
+
+### Complexidade Ciclomática (CCM)
+
+A Complexidade Ciclomática (CC) é uma métrica que indica a complexidade estrutural do código, sendo um fator chave para a Analisabilidade e Modificabilidade.
+
+**Execução da Medição:**
+A análise estática foi realizada utilizando a ferramenta **SonarCloud**. O valor total da Complexidade Ciclomática para o projeto foi de **1.295**.
+
+**Análise Modular e Julgamento:**
+
+Para obter a **Complexidade Ciclomática Média (CCM)**, foi realizada uma análise granular por módulo, excluindo os módulos `tests` e `mec_energia` (módulo administrativo do framework Django) por não representarem o código de negócio principal.
+
+| Módulo | CC (Total) | CCM (Média por Módulo) |
+| :--- | :--- | :--- |
+| `contracts` | 132 | 10,15 |
+| `users` | 195 | 15,00 |
+| `global_search_recommendation` | 71 | 11,83 |
+| `recommendation` | 99 | 9,00 |
+| `recommendation_commons` | 49 | 5,44 |
+| `scripts` | 47 | 5,22 |
+| `tariffs` | 155 | 14,09 |
+| `universities` | 101 | 8,41 |
+| `utils` | 102 | 7,84 |
+
+O **CCM geral** a partir dos módulos coletados foi de **9,00**.
+
+**Conclusão da CCM:**
+O resultado de **CCM = 9,00** se enquadra na faixa **Desejável (CCM ≤ 10)**, conforme o critério de julgamento estabelecido no Módulo 2. Isso sugere que, em média, o código do projeto MEPA apresenta uma baixa complexidade estrutural, favorecendo a **Analisabilidade** e a **Modificabilidade**.
+
+No entanto, a análise modular revela pontos de atenção: os módulos **`users` (CCM = 15,00)** e **`tariffs` (CCM = 14,09)** estão no limite superior da faixa **Aceitável** (10 < CCM ≤ 15), indicando que estes componentes específicos podem exigir maior esforço para manutenção e testes.
+
+### 3.3. Lead Time de Correção (LTC)
+
+O Lead Time de Correção (LTC) mede a agilidade do processo de manutenção, sendo um indicador direto da Modificabilidade do sistema.
+
+**Execução da Medição:**
+A coleta de dados foi realizada através de uma consulta estruturada no sistema de *Issues* do **GitLab**, utilizando um script em Python [4]. O LTC foi calculado como o tempo decorrido entre a **abertura do *Issue*** e o **fechamento (correção do bug)**, o que reflete o tempo total de resolução de defeitos.
+
+**Amostra de Dados Coletados:**
+A tabela abaixo apresenta uma amostra dos dados utilizados no cálculo do LTC:
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela 2:</b> Amostra de Lead Time de Correção (LTC)
+    </p>
+</font>
+
+| ID | Issue | Created | Closed | LTC_dias |
+| :---: | :--- | :---: | :---: | :---: |
+| 490 | Fix campo "Nome da Unidade Consumidora" | 2025-05-17 | 2025-06-01 | 15 |
+| 480 | Tratamento de erro para plot de gráficos | 2025-05-12 | 2025-05-14 | 1 |
+| 479 | Refatorar a mensagem para faturas | 2025-05-12 | 2025-05-14 | 1 |
+| 477 | Relatório detalhado faltando dados | 2025-05-09 | 2025-05-14 | 5 |
+| 475 | Tarifa vencida mesmo dentro da validade | 2025-05-08 | 2025-05-14 | 5 |
+
+| Fonte: Resultados em CSV da Extração Pipeline LTC [5]
+
+**Resultado da Medição:**
+O **LTC médio** encontrado na amostra analisada foi de **64 dias**.
+
+**Análise e Julgamento:**
+O critério de julgamento estabelecido no Módulo 2 para o LTC é:
+*   **Desejável:** LTC ≤ 3 dias
+*   **Aceitável:** 4 ≤ LTC ≤ 7 dias
+*   **Inaceitável:** LTC > 7 dias
+
+Com um LTC médio de **64 dias**, o resultado se enquadra na faixa **Inaceitável**. Este valor é significativamente superior ao limite de 7 dias, indicando um processo de manutenção lento.
+
+**Implicações:**
+O alto LTC sugere que a **Modificabilidade** do sistema está comprometida. As causas podem estar relacionadas a:
+1.  **Complexidade do Código:** O alto LTC pode ser uma consequência da alta Complexidade Ciclomática em módulos críticos (como visto na CCM).
+2.  **Processo de Desenvolvimento:** Gargalos no processo de *review*, testes ou *deploy* que atrasam a entrega da correção.
+
+Este resultado é um ponto crítico que deve ser destacado na conclusão da avaliação de Manutenibilidade.
+
 ## Cobertura de testes de Regressão (CTR)
 Para calcular o CTR, como descrito na etapa 3, fizemos manualmente o cálculo dos últimos 3 Merge Requests aceitos, seguindo a fórmula descrita na etapa 2. a tabela a baixa mostra os resultados.
 |MR|Linhas cobertas por Testes|Linhas Alteradas|CTR|
@@ -345,6 +419,10 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 > [2] RODRIGUES, Renato. ISO/IEC 25010: Functional Suitability. LinkedIn, 2 de fev. de 2024. Disponível em: <https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues>. Acesso em: 17 de nov. de 2025.
 >
 > [3] Notas de aula da disciplina de Qualidade de Software: **Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)**.
+>
+> [4] Script Implementação da Pipeline LTC. Disponível em: [Script - Extrator de LTC - Issues GitLab](./dados/extratorIssuesLTC.py)
+>
+> [5] Resultados em CSV da Extração Pipeline LTC. Disponível em: [Dados de Saída - Extrator de LTC - Issues GitLab](./dados/issues_ltc.csv)
 
 ---
 
@@ -356,3 +434,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.1` | Inserção do que executamos para o artefato da adequação funcional. | [Felipe das Neves](https://github.com/FelipeFreire-gf) | 17/11/2025 | [Mylena Mendonça](https://github.com/MylenaTrindade) | 17/11/2025 | Revisão da ideação do artefato. |
 | `1.2` | Inserção do que executamos para o artefato da confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção do CTR. | [Marcos Bittar](https://github.com/Bittarx) | | 23/11/2025 |  |
+| `1.4` | Inserção do que executamos para o artefato da Manuntenabilidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | | 23/11/2025 |  |
