@@ -57,7 +57,7 @@ Dividimos os trabalhos em duplas para a realização das tarefas, conforme pode 
 
 ## 1. Execução da Medição Para a Adequação Funcional
 
-### 1.1 Execução Etapa 1 - Realização da Entrevista
+### 1.1 Execução Etapa 1 - Realização da Entrevista Para o Levantamento dos Requisitos
 
 Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmos os requisitos funcionais da aplicação, segue as perguntas que utilizamos:
 
@@ -210,15 +210,13 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     ```
 
 
-### 1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+### 1.2 Execução Etapa 2 
 
-
-
-#### 1.2.1 Execução Etapa 2 - Resultados da análise
+#### 1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais
 
 <div style="text-align: center;">
-  <p><strong>Video 1:</strong> <a href="https://youtu.be/">Análise da Aplicação</a></p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p><strong>Video 1:</strong> <a href="https://youtu.be/FOx23tpugBY">Análise dos Requisitos</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FOx23tpugBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <font size="3">
@@ -228,8 +226,59 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     </p>
 </font>
 
+##### 1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+
+
+
+---
+
+#### 1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário
+
+<div style="text-align: center;">
+  <p><strong>Video 2:</strong> <a href="https://youtu.be/0lue5zYwr6Q">Funcionalidades do Sistema</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0lue5zYwr6Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        [Felipe das Neves](https://github.com/FelipeFreire-gf) e [Mylena Mendonça](https://github.com/MylenaTrindade)
+    </p>
+</font>
+
+##### 1.2.4 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+
+
+
+---
+
 
 ### 1.4 Execução Etapa 4 - Melhorias
+
+
+
+---
+
+## 7. Conclusão
+
+Dentro dos requisitos gerais discutidos, a **ferramenta MEPA apresenta as funcionalidades implementadas conforme o esperado**, incluindo:
+
+* Gestão e níveis de acesso
+* Edição de unidades consumidoras
+* Módulo de faturas com:
+
+  * bloqueio de duplicidade
+  * validação de campos obrigatórios
+  * identificação de pendências
+* Visualização geral funcionando corretamente
+
+Todos os itens acessados durante a demonstração **estão implementados e operacionais**.
+
+---
+
+Se quiser, posso também **transformar isso em relatório formal**, gerar **versão para PDF**, ou ainda produzir uma **tabela de requisitos x implementação**.
+
+
 
 
 ---
