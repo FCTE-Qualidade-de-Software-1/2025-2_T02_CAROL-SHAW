@@ -12,7 +12,6 @@
   - [3. Manutenibilidade](#3-manutenibilidade)
     - [Questões e Métricas](#questoes-e-metricas-2)
     - [Diagrama GQM da Manutenibilidade](#diagrama-gqm-da-manutenibilidade)
-- [Apêndice — Tabela Resumo (Q→M)](#apendice-tabela-resumo-qm)
 - [Uso de IA](#uso-de-ia)
 - [Bibliografia](#bibliografia)
 - [Histórico de Versões](#historico-de-versoes)
@@ -37,57 +36,57 @@
 
 ##### **Q1. Em que medida as funcionalidades do MEPA foram implementadas?**
 
-Para verificar, utilizaremos a **Cobertura de Requisitos**. Esta métrica avalia se o escopo essencial para a gestão de contratos de energia foi entregue.
+Para verificar, utilizaremos a **Cobertura de Requisitos* (CR)*. Esta métrica avalia se o escopo essencial para a gestão de contratos de energia foi entregue.
 
-> **Fórmula CRP:**
+> **Fórmula CR:**
 >
-> CRP(%) = (Requisitos Funcionais implementados ÷ Requisitos Funcionais priorizados) × 100
+> CR(%) = (Requisitos Funcionais implementados ÷ Requisitos Funcionais) × 100
 >
-> **Conceito base:** Functional Completeness (ISO/IEC 25010) [^1]
+> **Conceito base:** Functional Completeness (ISO/IEC 25010) 
 
 **Critérios de Medição e Julgamento:**
 
   * **Método de Coleta:** Comparação entre o backlog priorizado da release e o *changelog* de funcionalidades entregues e aprovadas pelo Product Owner.
   * **Níveis de Pontuação (Julgamento):**
-      * **Desejável:** CRP ≥ 90%
-      * **Aceitável:** 75% ≤ CRP \< 90%
-      * **Inaceitável:** CRP \< 75%
+      * **Desejável:** CR ≥ 90%
+      * **Aceitável:** 75% ≤ CR \< 90%
+      * **Inaceitável:** CR \< 75%
 
-##### **Q2. Os resultados apresentados pelo MEPA nas funcionalidades críticas estão corretos?**
+##### **Q2. Os resultados apresentados pelo sistema estão corretos?**
 
 A corretude será avaliada através da **Sucesso em Cenários (SC)**, focando em cálculos de energia e geração de relatórios onde erros não são toleráveis.
 
-> **Fórmula TSC:**
+> **Fórmula SC:**
 >
-> TSC(%) = (Cenários concluídos sem desvio ÷ Total de cenários críticos executados) × 100
+> SC(%) = (Cenários concluídos ÷ Sucesso em Cenários) × 100
 >
-> **Conceito base:** Functional Correctness (ISO/IEC 25010) [^1]
+> **Conceito base:** Functional Correctness (ISO/IEC 25010)
 
 **Critérios de Medição e Julgamento:**
 
   * **Método de Coleta:** Execução de suíte de testes de aceitação automatizados ou manuais focados em "Caminhos Felizes" e "Casos de Borda" críticos.
   * **Níveis de Pontuação (Julgamento):**
-      * **Desejável:** TSC ≥ 95%
-      * **Aceitável:** 85% ≤ TSC \< 95%
-      * **Inaceitável:** TSC \< 85%
+      * **Desejável:** SC ≥ 95%
+      * **Aceitável:** 85% ≤ SC \< 95%
+      * **Inaceitável:** SC \< 85%
 
 ##### **Q3. As funcionalidades implementadas operam em conformidade com o esperado na homologação?**
 
 Avalia-se a **Conformidade Funcional (CF)**, que mede se as funcionalidades atendem exatamente o que foi projetado para fazer.
 
-> **Fórmula TCF:**
+> **Fórmula CF:**
 >
-> TCF(%) = (Requisitos verificados e aprovados ÷ Requisitos implementados) × 100
+> CF(%) = (Requisitos verificados e aprovados ÷ Requisitos implementados) × 100
 >
-> **Conceito base:** Functional Appropriateness (ISO/IEC 25010) [^1]
+> **Conceito base:** Functional Appropriateness (ISO/IEC 25010) 
 
 **Critérios de Medição e Julgamento:**
 
   * **Método de Coleta:** Análise dos relatórios de homologação e tickets de rejeição (bugs abertos durante UAT - User Acceptance Testing).
   * **Níveis de Pontuação (Julgamento):**
-      * **Desejável:** TCF ≥ 90%
-      * **Aceitável:** 75% ≤ TCF \< 89%
-      * **Inaceitável:** TCF \< 75%
+      * **Desejável:** CF ≥ 90%
+      * **Aceitável:** 75% ≤ CF \< 89%
+      * **Inaceitável:** CF \< 75%
 
 #### Diagrama GQM Adaptado da Adequação Funcional
 
@@ -293,23 +292,6 @@ A **Cobertura de Testes de Regressão (CTR)** verifica se as modificações no c
 
 ---
 
-## Apêndice — Tabela Resumo (Q→M)
-
-| Objetivo | Questão | Métrica(s) | Fonte | Freq. |
-|---|---|---|---|---|
-| Adequação | Q1 | AF1, AF4 | Backlog/Homologação | por release |
-| Adequação | Q2 | AF2, AF3 | Testes | por release |
-| Adequação | Q3 | AF4, AF5 | Homologação | por release |
-| Confiabilidade | Q4 | CF1, CF3 | Monitoria/Issues | mensal |
-| Confiabilidade | Q5 | CF2 | Monitoria | mensal |
-| Confiabilidade | Q6 | CF4 | Monitoria/Issues | mensal |
-| Confiabilidade | Q7 | CF5 | Issues | mensal |
-| Manutenibilidade | Q8 | MN4, MN5 | Análise Estática | por release |
-| Manutenibilidade | Q9 | MN1, MN2 | Issues | por demanda |
-| Manutenibilidade | Q10 | MN3 | Testes | por release |
-
----
-
 ## Uso de IA
  
 Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o **ChatGPT (OpenAI)** e o **Gemini (Google)**. O uso dessas tecnologias teve como principais objetivos:
@@ -351,3 +333,4 @@ Para a elaboração deste documento e de outros artefatos do projeto, foram util
 | `1.9` | Reunião para verificação final e validação do documento. | Gustavo Gontijo Lima, Pedro Barbosa e Felipe das Neves | 21/10/2025 | — | — | Versão estável. |
 | `2.0` | Reunião para verificação de padronização e histórico de versão. | Felipe das Neves e Mylena Mendonça | 22/10/2025 | — | — | — |
 | `2.1` | Reunião para verificação de padronização e histórico de versão. | Felipe das Neves e Mylena Mendonça | 22/10/2025 | — | — | — |
+| `2.2` | Atualização das Métricas da Adequação Funcional | Felipe das Neves e Mylena Mendonça | 22/10/2025 | — | — | — |

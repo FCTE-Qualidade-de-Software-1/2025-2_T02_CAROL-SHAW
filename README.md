@@ -48,7 +48,6 @@
       </td>
 
   </table>
-  <p>Autor: <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a>.</p>
 </div>
 
 ---
