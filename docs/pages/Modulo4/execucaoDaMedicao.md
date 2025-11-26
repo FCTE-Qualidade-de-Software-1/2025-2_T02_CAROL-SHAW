@@ -7,7 +7,7 @@
   - [1.1 Execução Etapa 1 - Realização da Entrevista](#11-execucao-etapa-1-realizacao-da-entrevista)
   - [1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais](#12-execucao-etapa-2-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais)
     - [1.2.1 Execução Etapa 2 - Resultados da análise](#121-execucao-etapa-2-resultados-da-analise)
-  - [1.4 Execução Etapa 4 - Melhorias](#14-execucao-etapa-4---melhorias)
+  - [1.3 Conclusão da Medição da Adequação Funcional](#13-conclusao-da-medicao-da-adequacao-funcional)
 - [2. Execução da Medição Para a Confiabilidade](#2-execucao-da-medicao-para-a-confiabilidade)
   - [Resultados da Tolerância a Falhas (Fault Tolerance)](#resultados-da-tolerancia-a-falhas-fault-tolerance)
   - [Resultados da Recuperabilidade (Recoverability)](#resultados-da-recuperabilidade-recoverability)
@@ -62,10 +62,10 @@ Dividimos os trabalhos em duplas para a realização das tarefas, conforme pode 
 Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmos os requisitos funcionais da aplicação, segue as perguntas que utilizamos:
 
 !!! Tip "Atenção!"
-    Para visualizar as perguntas basta clicar na barra azul abaixo com o texto: "Perguntas utilizadas para a entrevista:" nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
+    Para visualizar as perguntas basta clicar na barra azul abaixo com o texto: "Perguntas utilizadas para a entrevista" nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
 
 
-??? info "Perguntas utilizadas para a entrevista: "
+??? info "Perguntas utilizadas para a entrevista "
 
     <a href="https://publuu.com/flip-book/1014636/2241863" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a>
 
@@ -139,10 +139,10 @@ Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmo
 Após a entrevista modelamos a seguinte lista para os requisitos funcionais para o nosso estudo:
 
 !!! Tip "Atenção!"
-    Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Lista de Requisitos Funcionais:", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
+    Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Lista de Requisitos Funcionais", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.
 
 
-??? info "Lista de Requisitos Funcionais:"
+??? info "Lista de Requisitos Funcionais"
 
     <a href="https://publuu.com/flip-book/1014636/2241855" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a>
 
@@ -209,7 +209,6 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     * **RF030 - Painel Específico da UC:** Ao acessar uma UC específica, o sistema deve listar as pendências em fila (ex: "Lançar Novembro"), mostrando o mês seguinte apenas após a resolução do anterior.
     ```
 
-
 ### 1.2 Execução Etapa 2 
 
 #### 1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais
@@ -226,9 +225,60 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
     </p>
 </font>
 
-##### 1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+##### 1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais:
 
+??? info "Resultados da Análise da Q1"
+    ### **1. Gestão de Universidades e Integração**
 
+    * RF001 — Cadastro de universidade *(implementado)*
+    * RF002 — Validação de CNPJ *(testado e funcionando)*
+    * RF004 — Integração com API da ANEEL *(funcionalidade presente e confirmada)*
+    * RF003 — Bloqueio de duplicidade de CNPJ *(testado e funcionando)*
+    * RF005 — Lista de solicitações *(não dava pra saber como eles recebiam a lista)*
+
+    ### **2. Gestão de Usuários e Permissões**
+
+    * RF006 — Níveis de acesso *(perfil “SYS Admin” validado no vídeo)*
+    * RF007 — Vínculo exclusivo *(testado e funcionando)*
+    * RF008 — Exclusão lógica *(testado e funcionando)*
+
+    ### **3. Unidades Consumidoras**
+
+    * RF009 — Unicidade da UC *(testado e funcionando)*
+    * RF010 — Campos técnicos obrigatórios *(cadastro de UC exige dados, confirmado)*
+    * RF011 — Imutabilidade de local *(testado e funcionando)*
+    * RF012 — Edição de dados cadastrais *(testado e funcionando)*
+    * RF013 — Desativação *(não testado)*
+
+    ## 4. Contratos
+
+    * RF014 — Vigência do Contrato *(testado e funcionando)*
+    * RF015 — Status de Expiração *(testado e funcionando)*
+    * RF016 — Renovação de Contrato *(testado e funcionando)*
+    * RF017 — Relacionamento Contrato-UC *(testado e funcionando)*
+
+    ## 5. Faturas
+
+    * RF018 — Métodos de Entrada (Manual e Importação) *(Confirmado)*
+    * RF019 — Campos Críticos da Fatura (Valores e Demandas) *(Confirmado)*
+    * RF020 — Validação de Valores (Bloqueio Negativo) *(Confirmado)*
+    * RF021 — Bloqueio de Duplicidade de Mês *(Confirmado)*
+    * RF022 — Identificação de Pendência *(Confirmado)*
+
+    ## 6. Inteligência e Recomendação
+
+    * RF023 — Janela de Análise (Últimas 12 Faturas) *(Confirmado)*
+    * RF024 — Aviso de Dados Insuficientes *(Confirmado)*
+    * RF025 — Simulação de Cenários (Verde e Azul) *(Confirmado)*
+    * RF026 — Geração Automática da Recomendação *(Confirmado)*
+    * RF027 — Exibição da Recomendação (Apenas se Mais Econômico) *(Confirmado)*
+
+    ### **7. Dashboards e Visualização**
+
+    * RF028 — Painel geral *(foi observado e nas análises tudo está ok)*
+    * RF029 — Ação rápida *(foi observado e nas análises tudo está ok)*
+    * RF030 — Painel específico da UC *(foi observado e nas análises tudo está ok)*
+    ```
 
 ---
 
@@ -248,38 +298,203 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
 
 ##### 1.2.4 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
 
+??? info "Resultados da Análise Q2 e Q3"
 
+    #### 1. **Análise de dados inexistentes**
+    * Ao acessar a unidade *Ceilândia*, o sistema exibiu **corretamente que não há dados lançados para 2025**.
+    * Na área de Análise, **nenhum gráfico foi gerado**, como esperado.
+    **Cenário correto.**
+
+    #### 2. **Inserção manual de dados e atualização dos gráficos**
+
+    * Após inserir valores em Janeiro e Fevereiro de 2025:
+
+      * Os gráficos foram exibidos imediatamente, com valores correspondentes.
+      * Tanto o consumo em **ponta** quanto em **fora de ponta** foram atualizados.
+    * O sistema demonstrou **correção nos cálculos e renderização imediata**.
+    **Cenário correto.**
+
+    #### 3. **Edição de dados da unidade consumidora**
+
+    * Alteração do nome “Campo Ceilândia” → “Campo Ceilândia Sul”:
+
+      * Alteração refletiu corretamente.
+    * Alteração numérica de campos diversos:
+
+      * Todos foram atualizados corretamente.
+    **Cenário correto.**
+
+    #### 4. **Criação de nova unidade consumidora**
+
+    * Cadastro com dados válidos funcionou.
+    * Cadastro com data futura exibiu corretamente o erro **“dados futuros não são permitidos”**.
+    **Validação correta.**
+
+    #### 5. **Gerenciamento de pessoas**
+
+    * Inclusão de usuário gera um **bug**: o sistema apresenta erro, mas **o usuário é criado mesmo assim**.
+    * Alterações de perfil, bloqueio e redefinição de senha funcionaram.
+    * Logando com perfil “SYS Admin”, os usuários cadastrados anteriormente aparecem corretamente.
+    **Um bug encontrado** (erro durante criação de usuário).
+
+        <font size="3">
+        <p style="text-align: center">
+            <b>Figura 1:</b> Bug
+            <br>
+        </p>
+    </font>
+
+    <div align="center">
+      <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo4/dados/bug.png" alt="bug" width="600">
+    </div>
+
+    <font size="3">
+        <p style="text-align: center">
+            <b>Autores:</b> 
+            Felipe das Neves e Mylena Mendonça
+        </p>
+    </font>
+
+    #### 6. **Distribuidoras e API da Neoenergia**
+
+    * A tela de distribuidoras exibe dados apenas para consulta, conforme informado:
+
+      * Não permite cadastro manual (dados vêm da API).
+    **Comportamento esperado.**
+
+    #### 7. **Grupos tarifários e painel**
+
+    * Telas exibem informações de taxa, horários e subgrupos conforme esperado.
+    **Cenário correto.**
+
+    #### 8. **Instituições**
+
+    * Cadastro requer **CNPJ válido**, conforme requisitos.
+    * Cadastro e edição funcionaram com dados válidos.
+    **Cenário correto.**
+    ```
 
 ---
 
+### 1.3 Conclusão da Medição da Adequação Funcional
 
-### 1.4 Execução Etapa 4 - Melhorias
+#### Q1 — *Functional Completeness (CR)*
 
+#### Cálculo da Q1 — Functional Completeness (CR)
 
+* Total de requisitos (RF001–RF030): **30**
+* Requisitos confirmados como implementados/funcionando: todos exceto **RF005** e **RF013**.
+  Requisitos confirmados = **28**
+
+1. Divisão: (28 ÷ 30)
+
+   * 28 ÷ 30 = 0,9333333333...
+
+2. Multiplicar por 100:
+
+   * (0,9333333333 ÷ 100 = 93,33333333...)
+
+3. Arredondamento para uma casa decimal:
+
+   * **CR = 93,3%**
+
+**Classificação segundo os níveis definidos**
+
+* Desejável: CR ≥ 90%
+* Resultado obtido: **93,3% portanto: Desejável**
 
 ---
 
-## 7. Conclusão
+####  Q2 — *Correctness* das Funcionalidades Críticas (SC)
 
-Dentro dos requisitos gerais discutidos, a **ferramenta MEPA apresenta as funcionalidades implementadas conforme o esperado**, incluindo:
+##### Avaliação SC (Sucesso em Cenários)
+* Total de cenários executados: **~14**
+* Cenários concluídos corretamente: **13**
+* Cenários com falha: **1** (bug na criação de usuários)
 
-* Gestão e níveis de acesso
-* Edição de unidades consumidoras
-* Módulo de faturas com:
+**SC = (13 ÷ 14) × 100 = 92,8%**
 
-  * bloqueio de duplicidade
-  * validação de campos obrigatórios
-  * identificação de pendências
-* Visualização geral funcionando corretamente
+#### Cálculo da Q2 — *Correctness* (SC)
 
-Todos os itens acessados durante a demonstração **estão implementados e operacionais**.
+##### Classificação segundo a métrica
+* Total de cenários executados: **14**
+* Cenários concluídos corretamente: **13**
+
+* **Resultado obtido:** 92,8%
+* **Classificação:** **Aceitável** (entre 85% e 95%)
+**Cálculo**
+
+1. Divisão: (13 ÷ 14)
+
+   * 13 ÷ 14 = 0,9285714286...
+
+2. Multiplicar por 100:
+
+   * 0,9285714286... × 100 = 92,85714286...
+
+3. Arredondamento:
+
+   * **SC = 92,8%**
+
+**Classificação segundo os níveis definidos**
+
+* Aceitável: 85% ≤ SC < 95%
+* Resultado obtido: **92,8%, portanto: Aceitável**
 
 ---
 
-Se quiser, posso também **transformar isso em relatório formal**, gerar **versão para PDF**, ou ainda produzir uma **tabela de requisitos x implementação**.
+####  Q3 — *Functional Conformity* (CF)
+
+##### Evidências de Conformidade
+
+A avaliação se deu pela comparação entre o comportamento observado e o comportamento especificado.
+
+##### Funcionalidades avaliadas e conformidade:
+
+| Funcionalidade                           | Conformidade Observada | Observações                                   |
+| ---------------------------------------- | ---------------------- | --------------------------------------------- |
+| Visualização de dados lançados           | ✔ Conforme             | Sem divergências                              |
+| Geração de gráficos                      | ✔ Conforme             | Atualização imediata                          |
+| Validação de dados futuros               | ✔ Conforme             | Mensagem correta                              |
+| Edição de unidades consumidoras          | ✔ Conforme             | Tudo atualizado                               |
+| Operar como SYS Admin                    | ✔ Conforme             | Usuários e instituições exibidos corretamente |
+| Cadastro de instituições com CNPJ válido | ✔ Conforme             | Respeita regra                                |
+| Exibição de grupos tarifários            | ✔ Conforme             | Coerente com requisitos                       |
+| Tela de distribuidoras com dados da API  | ✔ Conforme             | Funcionalidade declaradamente somente leitura |
+| Cadastro de usuários                     | ⚠ Parcial              | Bug: encontrado, mas usuário é criado     |
 
 
+##### Avaliação CF
 
+* Funcionalidades avaliadas: **9**
+* Requisitos atendidos integralmente: **8**
+* Requisitos atendidos parcialmente (bug): **1**
+
+CF = (8 ÷ 9) × 100 = **88,8%**
+
+#### Cálculo da Q3 — *Functional Conformity* (CF)
+
+##### Classificação segundo a métrica
+
+* Total de funcionalidades avaliadas: **9**
+* Funcionalidades em conformidade: **8**
+
+1. Divisão: (8 ÷ 9)
+
+   * 8 ÷ 9 = 0,8888888889...
+
+2. Multiplicar por 100:
+
+   * 0,8888888889... × 100 = 88,88888889...
+
+3. Arredondamento para uma casa decimal:
+
+   * **CF = 88,9%**
+
+**Classificação segundo os níveis definidos**
+
+* Aceitável: 75% ≤ CF < 90%
+* Resultado obtido: **88,9%, portanto: Aceitável**
 
 ---
 
