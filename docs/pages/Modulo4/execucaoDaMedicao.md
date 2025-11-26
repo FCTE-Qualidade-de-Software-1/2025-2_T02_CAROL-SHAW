@@ -407,22 +407,10 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
 
 ####  Q2 — *Correctness* das Funcionalidades Críticas (SC)
 
-##### Avaliação SC (Sucesso em Cenários)
-* Total de cenários executados: **~14**
-* Cenários concluídos corretamente: **13**
-* Cenários com falha: **1** (bug na criação de usuários)
-
-**SC = (13 ÷ 14) × 100 = 92,8%**
-
 #### Cálculo da Q2 — *Correctness* (SC)
 
-##### Classificação segundo a métrica
 * Total de cenários executados: **14**
 * Cenários concluídos corretamente: **13**
-
-* **Resultado obtido:** 92,8%
-* **Classificação:** **Aceitável** (entre 85% e 95%)
-**Cálculo**
 
 1. Divisão: (13 ÷ 14)
 
@@ -440,6 +428,8 @@ Após a entrevista modelamos a seguinte lista para os requisitos funcionais para
 
 * Aceitável: 85% ≤ SC < 95%
 * Resultado obtido: **92,8%, portanto: Aceitável**
+
+
 
 ---
 
@@ -463,18 +453,7 @@ A avaliação se deu pela comparação entre o comportamento observado e o compo
 | Tela de distribuidoras com dados da API  | ✔ Conforme             | Funcionalidade declaradamente somente leitura |
 | Cadastro de usuários                     | ⚠ Parcial              | Bug: encontrado, mas usuário é criado     |
 
-
-##### Avaliação CF
-
-* Funcionalidades avaliadas: **9**
-* Requisitos atendidos integralmente: **8**
-* Requisitos atendidos parcialmente (bug): **1**
-
-CF = (8 ÷ 9) × 100 = **88,8%**
-
 #### Cálculo da Q3 — *Functional Conformity* (CF)
-
-##### Classificação segundo a métrica
 
 * Total de funcionalidades avaliadas: **9**
 * Funcionalidades em conformidade: **8**
@@ -495,6 +474,43 @@ CF = (8 ÷ 9) × 100 = **88,8%**
 
 * Aceitável: 75% ≤ CF < 90%
 * Resultado obtido: **88,9%, portanto: Aceitável**
+
+
+<font size="3">
+    <p style="text-align: center">
+        <b>Tabela 2:</b> Resultado Final da Adequação Funcional
+    </p>
+</font>
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Métrica Avaliada</th>
+        <th>Resultado (%)</th>
+        <th>Classificação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Q1 — Functional Completeness (CR)</td>
+        <td>93,3%</td>
+        <td>Desejável</td>
+      </tr>
+      <tr>
+        <td>Q2 — Correctness das Funcionalidades Críticas (SC)</td>
+        <td>92,8%</td>
+        <td>Aceitável</td>
+      </tr>
+      <tr>
+        <td>Q3 — Functional Conformity (CF)</td>
+        <td>88,9%</td>
+        <td>Aceitável</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ---
 
