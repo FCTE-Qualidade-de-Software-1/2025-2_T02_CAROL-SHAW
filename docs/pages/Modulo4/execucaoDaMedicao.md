@@ -478,7 +478,7 @@ A avaliação se deu pela comparação entre o comportamento observado e o compo
 
 <font size="3">
     <p style="text-align: center">
-        <b>Tabela 2:</b> Resultado Final da Adequação Funcional
+        <b>Tabela 2:</b> Resultado Final
     </p>
 </font>
 
@@ -486,24 +486,24 @@ A avaliação se deu pela comparação entre o comportamento observado e o compo
   <table>
     <thead>
       <tr>
-        <th>Métrica Avaliada</th>
+        <th>Questão avaliada</th>
         <th>Resultado (%)</th>
         <th>Classificação</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Q1 — Functional Completeness (CR)</td>
+        <td>Q1 — Em que medida as funcionalidades priorizadas do MEPA foram implementadas</td>
         <td>93,3%</td>
         <td>Desejável</td>
       </tr>
       <tr>
-        <td>Q2 — Correctness das Funcionalidades Críticas (SC)</td>
+        <td>Q2 — Os resultados apresentados pelo sistema estão corretos</td>
         <td>92,8%</td>
         <td>Aceitável</td>
       </tr>
       <tr>
-        <td>Q3 — Functional Conformity (CF)</td>
+        <td>Q3 — As funcionalidades implementadas operam em conformidade com o esperado</td>
         <td>88,9%</td>
         <td>Aceitável</td>
       </tr>

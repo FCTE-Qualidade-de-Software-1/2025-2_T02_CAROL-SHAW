@@ -19,7 +19,8 @@
     - [Q10. O sistema possui proteção adequada contra regressão?](#q10-o-sistema-possui-proteção-adequada-contra-regressão-cobertura-de-testes-de-regressão---ctr)
 - [4. Ambiente de Testes](#4-ambiente-de-testes)
 - [5. Instrumentos de Medição](#5-instrumentos-de-medição)
-- [Localização dos Dados de Avaliação](#localização-dos-dados-de-avaliação)
+- [6. Localização dos Dados de Avaliação](#localização-dos-dados-de-avaliação)
+- [7. Cronograma](#cronograma)
 - [Uso de IA](#uso-de-ia)
 - [Referências Bibliográfica](#referências-bibliográfica)
 - [Histórico de Versões](#historico-de-versoes)
@@ -49,9 +50,9 @@ Aqui vamos descrever todo o passo a passo de como iremos realizar as medições 
 - Utilizaremos como insumos a lista de requisitos funcionais (obtida na entrevista) que será realizada na [Fase 4 - Execução da Medição](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo4/execucaoDaMedicao/#1-execucao-da-medicao-para-a-adequacao-funcional) e a análise dos documentos públicos: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/) para verificar se as funcionalidades especificadas estão implementadas.
 
 
-#### Q2. Os resultados apresentados pelo MEPA nas funcionalidades estão corretos?
+#### Q2. Os resultados apresentados pelo sistema estão corretos?
 
-- Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação online e offline, pois o ambiente offline possue os usuários de maior nível na aplicação ao invés só do convidado, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
+- Nesta análise, o foco é a precisão dos resultados. Realizaremos testes manuais na aplicação offline, pois o ambiente offline possue os usuários de maior nível na aplicação ao invés só do convidado, inserindo dados de faturas e comparando os resultados gerados pela plataforma com cálculos de referência.
 
 
 #### Q3. As funcionalidades implementadas operam em conformidade com o esperado?
@@ -176,7 +177,7 @@ Para a coleta de dados, foram utilizados os seguintes instrumentos:
 
 ---
 
-## Localização dos Dados de Avaliação
+## 6. Localização dos Dados de Avaliação
 
 Os dados coletados serão organizados e armazenados na seguinte estrutura neste repositório:
 
@@ -188,7 +189,21 @@ Os dados coletados serão organizados e armazenados na seguinte estrutura neste 
   - **`portabilidade/`**: Resultados das métricas de portabilidade
     - `Complexidade Ciclomática`: Dados do SonarQube
 
-  
+---
+
+## 7. Cronograma 
+
+| Atividade                                                             | Responsável(is)                  | Data       | Status        |
+|-----------------------------------------------------------------------|----------------------------------|------------|----------------|
+| Gravação com os desenvolvedores no MEPA para a Adq Funcional                             | Felipe das Neves e Mylena Mendonça | 18/11     | Concluído     |
+| Elicitação dos requisitos com base no vídeo para a Adq Funcional                           | Felipe das Neves e Mylena Mendonça                          | 19/11     | Concluído     |
+| Gravação dos vídeos de testes da adequação funcional                 | Felipe das Neves e Mylena Mendonça                          | 25/11     | Concluído     |
+| Análise das métricas para a Adq Funcional                                                 | Felipe das Neves e Mylena Mendonça                          | 25/11     | Concluído     |
+| Finalização da Adq Funcional                                                          | Felipe das Neves e Mylena Mendonça                          | 26/11     | Concluído     |
+
+
+---
+
 ## Uso de IA
  
 Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o **ChatGPT (OpenAI)** e o **Gemini (Google)**. O uso dessas tecnologias teve como principais objetivos:

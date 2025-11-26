@@ -12,7 +12,6 @@
   - [3. Manutenibilidade](#3-manutenibilidade)
     - [Questões e Métricas](#questoes-e-metricas-2)
     - [Diagrama GQM da Manutenibilidade](#diagrama-gqm-da-manutenibilidade)
-- [Apêndice — Tabela Resumo (Q→M)](#apendice-tabela-resumo-qm)
 - [Uso de IA](#uso-de-ia)
 - [Bibliografia](#bibliografia)
 - [Histórico de Versões](#historico-de-versoes)
@@ -53,7 +52,7 @@ Para verificar, utilizaremos a **Cobertura de Requisitos* (CR)*. Esta métrica a
       * **Aceitável:** 75% ≤ CR \< 90%
       * **Inaceitável:** CR \< 75%
 
-##### **Q2. Os resultados apresentados pelo MEPA nas funcionalidades críticas estão corretos?**
+##### **Q2. Os resultados apresentados pelo sistema estão corretos?**
 
 A corretude será avaliada através da **Sucesso em Cenários (SC)**, focando em cálculos de energia e geração de relatórios onde erros não são toleráveis.
 
@@ -290,23 +289,6 @@ A **Cobertura de Testes de Regressão (CTR)** verifica se as modificações no c
         Gustavo Gontijo Lima
     </p>
 </font>
-
----
-
-## Apêndice — Tabela Resumo (Q→M)
-
-| Objetivo | Questão | Métrica(s) | Fonte | Freq. |
-|---|---|---|---|---|
-| Adequação | Q1 | AF1, AF4 | Backlog/Homologação | por release |
-| Adequação | Q2 | AF2, AF3 | Testes | por release |
-| Adequação | Q3 | AF4, AF5 | Homologação | por release |
-| Confiabilidade | Q4 | CF1, CF3 | Monitoria/Issues | mensal |
-| Confiabilidade | Q5 | CF2 | Monitoria | mensal |
-| Confiabilidade | Q6 | CF4 | Monitoria/Issues | mensal |
-| Confiabilidade | Q7 | CF5 | Issues | mensal |
-| Manutenibilidade | Q8 | MN4, MN5 | Análise Estática | por release |
-| Manutenibilidade | Q9 | MN1, MN2 | Issues | por demanda |
-| Manutenibilidade | Q10 | MN3 | Testes | por release |
 
 ---
 
