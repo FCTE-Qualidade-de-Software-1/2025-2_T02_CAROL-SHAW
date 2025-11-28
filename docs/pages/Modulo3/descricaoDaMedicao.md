@@ -63,46 +63,46 @@ Aqui vamos descrever todo o passo a passo de como iremos realizar as medições 
 
 ## 2. Descrição da Medição Para a Confiabilidade
 
-A **Confiabilidade**, de acordo com a norma ISO/IEC 25010, é definida como a capacidade de um sistema, produto ou componente de manter seu nível de desempenho sob condições especificadas por um determinado período de tempo. Para a avaliação da qualidade do software, focaremos nas seguintes sub-características essenciais:
+A **Confiabilidade**, fundamentada na norma ISO/IEC 25010, refere-se à capacidade do produto de software de manter um nível de desempenho especificado quando usado sob condições especificadas.
 
-<font size="3">
-    <p style="text-align: center">
-        <b>Tabela 1:</b> Documentos e Artefatos Analisados para Manutenibilidade
-    </p>
-</font>
+Para esta avaliação do sistema **MEPA Energia**, a abordagem metodológica adotada é a de **Testes de Caixa Preta (Black Box Testing)**. Nesta abordagem, as medições são realizadas através da interface do usuário e ferramentas de inspeção de navegador (*Browser DevTools*), sem acesso intrusivo ao código-fonte ou banco de dados, auditando a resiliência do sistema sob a ótica da experiência real do usuário.
 
-| Sub-característica | Descrição Detalhada |
+Focaremos nas seguintes sub-características essenciais:
+
+| Sub-característica | Descrição Técnica (Abordagem Caixa Preta) |
 | :--- | :--- |
-| **Tolerância a Falhas (Fault Tolerance)** | Capacidade do sistema de operar corretamente e manter um nível de serviço especificado, mesmo na presença de falhas de hardware ou software. Isso inclui a habilidade de evitar a falha completa do sistema. |
-| **Recuperabilidade (Recoverability)** | Capacidade do sistema de restabelecer um nível de desempenho especificado e recuperar os dados afetados diretamente após uma falha. O foco é no tempo e na integridade da recuperação. |
-| **Disponibilidade (Availability)** | Grau em que um sistema, produto ou componente está operacional e acessível para uso quando solicitado. É frequentemente medida pela proporção de tempo em que o sistema está em um estado operacional. |
+| **Tolerância a Falhas (Fault Tolerance)** | Capacidade do *front-end* de validar entradas e gerenciar exceções de uso (erros humanos ou dados inválidos) sem colapso da interface ou exposição de erros críticos de execução (*Stack Trace*) no Console do navegador. |
+| **Recuperabilidade (Recoverability)** | Capacidade do sistema de preservar o estado da aplicação (*State Management*) e os dados inseridos pelo usuário em caso de interrupção abrupta da sessão (ex: atualização de página ou queda de rede momentânea) antes da submissão. |
+| **Disponibilidade (Availability)** | Verificação da latência de resposta inicial, status HTTP e tempo de carregamento da árvore crítica (*DOM*) em ambiente de produção, garantindo que o serviço esteja acessível quando solicitado. |
 
-Mais detalhes sobre o propósito e as perguntas de avaliação que guiam esta medição podem ser encontrados em: [Fase 1 - Proposito de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo1/propositoDeAvaliacao/) e [Fase 2 - Planejamento de Avaliação](https://fcte-qualidade-de-software-1.github.io/2025-2_T02_CAROL-SHAW/pages/Modulo2/planejamentoDaAvaliacao/#2-metodologia-e-diretrizes-de-medicao).
+Mais detalhes sobre o propósito e as perguntas de avaliação podem ser encontrados no planejamento da Fase 2.
 
 ### Procedimentos das Análises:
 
-A seguir, detalhamos o passo a passo de como as medições serão realizadas para responder às perguntas de avaliação definidas na etapa de planejamento.
+A seguir, detalhamos o passo a passo de como as medições serão realizadas via ferramentas de auditoria *Client-Side*.
 
-#### Tolerância a Falhas (Fault Tolerance): o sistema consegue manter a operação em caso de falhas?
-
-- **Procedimento:** Serão simuladas falhas controladas no ambiente de teste, como a interrupção da conexão com o banco de dados e a sobrecarga de requisições (teste de estresse). O objetivo é observar a resposta do sistema: se ele consegue tratar a exceção sem causar a interrupção total do serviço.
+#### Tolerância a Falhas: Validação de Entrada e Estabilidade
+- **Procedimento:** Execução de testes de submissão de formulários críticos com *payloads* vazios (entradas nulas). Utiliza-se o inspetor de elementos para monitorar a aba **Console** em busca de erros de execução (JavaScript Exceptions) e verifica-se o *feedback* visual imediato ao usuário.
 - **Métricas associadas:**
-    - **CF1 - Taxa de Sobrevivência a Falhas (TSF):** Número de falhas simuladas que não resultaram em interrupção total do serviço/Total de falhas simuladas
+    - **CF1 - Eficácia da Validação (EV):** Capacidade binária do sistema de impedir o envio de requisições inválidas e manter o console livre de erros críticos.
 
-#### Recuperabilidade (Recoverability): o sistema consegue se recuperar de uma falha e restaurar os dados?
-
-- **Procedimento:** Após a simulação de uma falha que cause a interrupção do serviço (e.g., reinicialização abrupta do servidor), serão medidos dois aspectos cruciais: o tempo necessário para o sistema retornar ao estado operacional completo e a integridade dos dados transacionais mais recentes.
+#### Recuperabilidade: Persistência de Rascunho
+- **Procedimento:** Simulação de falha de continuidade. O usuário preenche formulários transacionais e força o recarregamento da página (*Hard Refresh* - F5) antes da submissão. Monitora-se a aba **Application > Local Storage** do navegador para verificar se há salvamento temporário dos dados digitados.
 - **Métricas associadas:**
-    - **CF2 - Tempo Médio de Recuperação (TMR):** Tempo total gasto para recuperar o sistema após falhas/Número de falhas
-    - **CF3 - Índice de Perda de Dados (IPD):** Número de transações perdidas durante a falha/Total de transações no momento da falha
+    - **CF2 - Taxa de Recuperação de Sessão (TRS):** Proporção de campos recuperados após a atualização da página.
 
-#### Disponibilidade (Availability): o sistema está acessível e operacional quando necessário?
-
-- **Procedimento:** Será utilizado um script de monitoramento para registrar o tempo de atividade (*uptime*) e inatividade (*downtime*) do sistema em um período de 24 horas. A coleta de dados será realizada em intervalos regulares (e.g., a cada 5 minutos) para garantir a precisão da medição.
+#### Disponibilidade: Performance e Latência
+- **Procedimento:** Análise de performance via aba **Network** do DevTools. Mede-se o tempo total de *Load* (carregamento completo) e o código de status HTTP retornado pelo servidor principal após uma limpeza de cache.
 - **Métricas associadas:**
-    - **CF4 - Disponibilidade Percentual (DP):** Tempo total de operação - Tempo total de inatividade-Tempo total de operação/100
-    - **CF5 - Tempo Médio Entre Falhas (TMEF):** Tempo total de operação/Número de falhas
+    - **CF3 - Tempo de Carregamento (Load Time):** Tempo cronometrado em segundos até a interatividade total da interface.
 
+### Resumo dos Instrumentos de Medição:
+
+| Instrumento | Descrição |
+|---|---|
+| **Chrome DevTools (Network)** | Utilizado para aferir o Status Code (200 OK) e o tempo exato de carregamento dos recursos (*Waterfall*). |
+| **Chrome DevTools (Console)** | Utilizado para monitorar logs de erro, avisos e exceções de JavaScript durante a operação. |
+| **Chrome DevTools (Application)** | Utilizado para inspecionar o armazenamento local (*Local Storage*) e verificar a persistência de dados. |
 ---
 
 ## 3. Descrição da Medição Para a Manutenibilidade
