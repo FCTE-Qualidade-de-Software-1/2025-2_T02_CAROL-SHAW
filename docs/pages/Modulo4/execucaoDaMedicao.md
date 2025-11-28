@@ -516,76 +516,72 @@ A avaliação se deu pela comparação entre o comportamento observado e o compo
 
 ## 2. Execução da Medição Para a Confiabilidade
 
-A execução da medição de confiabilidade foi realizada no ambiente de teste previamente definido, seguindo rigorosamente os procedimentos detalhados na seção "Descrição da Medição Para a Confiabilidade" (Fase 3).
+A execução da medição de confiabilidade foi realizada no ambiente de produção do MEPA Energia, utilizando ferramentas de auditoria técnica em tempo real (*DevTools*). A validação seguiu os procedimentos de **Caixa Preta** definidos na etapa de descrição.
 
-### Resultados da Tolerância a Falhas (Fault Tolerance)
+### Vídeo
 
-**Objetivo:** Avaliar a capacidade do sistema de operar corretamente, mesmo na presença de falhas simuladas.
-
-| Falha Simulada | Resultado da Operação |  | Sobrevivência (Sim/Não) |
-| :--- | :--- | :--- | :--- |
-| Interrupção da Conexão com o Banco de Dados | O sistema exibiu uma tela de erro genérica e travou a operação. | "Erro de conexão com o servidor." | Não |
-| Sobrecarga de Requisições (500 req/s) |  | Nenhuma | Sim |
-| Reinicialização Abrupta do Servidor Web |  | Nenhuma | Não |
-
-**Métrica CF1 - Taxa de Sobrevivência a Falhas (TSF):**
-- Total de Falhas Simuladas: 3
-- Falhas que Sobreviveram: 1
-- **TSF = 1/3 ≈ 33.33%**
-
-**Análise:** A **Taxa de Sobrevivência a Falhas (TSF)** de 33.33% é considerada baixa. Este resultado indica que o sistema possui **Pontos Únicos de Falha (SPOF)**, especialmente na camada de persistência de dados. A falha na conexão com o banco de dados resultou em uma interrupção total da operação, demonstrando a ausência de um tratamento de exceção robusto ou de um mecanismo de *failover* para componentes críticos.
-
-### Resultados da Recuperabilidade (Recoverability)
-
-**Objetivo:** Avaliar o tempo e a integridade dos dados após uma falha que causou interrupção.
-
-**Cenário de Teste:** Falha simulada de Reinicialização Abrupta do Servidor Web.
-
-| Métrica | Valor Encontrado |
-| :--- | :--- |
-| **Tempo de Indisponibilidade (Downtime)** | 45 segundos |
-| **Tempo de Retorno à Operação (Recovery Time)** | 12 segundos (após o servidor estar online) |
-| **Total de Transações Perdidas** | 0 |
-| **Total de Transações no Momento da Falha** | 10 |
-
-**Métrica CF2 - Tempo Médio de Recuperação (TMR):**
-- **TMR = 12 segundos**
-
-**Métrica CF3 - Índice de Perda de Dados (IPD):**
-- **IPD = 0/10 = 0%**
-
-**Análise:** O sistema demonstrou uma excelente capacidade de **Recuperabilidade de Dados**, com um **Índice de Perda de Dados (IPD)** de 0%. Isso sugere que as transações são commitadas de forma eficiente ou que há um mecanismo de *rollback* eficaz. O **Tempo Médio de Recuperação (TMR)** de 12 segundos é aceitável, mas o tempo total de indisponibilidade (45 segundos) reforça a necessidade de melhorias na Tolerância a Falhas para evitar a interrupção inicial.
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=jT9DPa8jMK8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### Resultados da Disponibilidade (Availability)
 
-**Objetivo:** Avaliar o grau em que o sistema está operacional e acessível.
+**Objetivo:** Aferição técnica da resposta do servidor e renderização da interface.
 
-**Período de Monitoramento:** 24 horas (1440 minutos).
+* **Ferramenta:** DevTools > Network Tab.
+* **Cenário:** Recarregamento forçado da página principal e análise do gráfico de requisições.
 
-| Métrica | Valor Encontrado |
-| :--- | :--- |
-| **Tempo Total de Operação** | 1440 minutos |
-| **Tempo Total de Inatividade (Downtime)** | 45 segundos (0.75 minutos) |
-| **Número de Falhas** | 1 (a falha simulada de reinicialização) |
+| Métrica Coletada | Valor Obtido | Status |
+| :--- | :--- | :--- |
+| **Status Code HTTP** | 200 OK | ✅ Sucesso |
+| **Tempo de Load (Finish)** | **1.01 s** | ✅ Excelente |
 
-**Métrica CF4 - Disponibilidade Percentual (DP):**
-- $DP = \frac{1440 - 0.75}{1440} \times 100$
-- $DP = 99.95\%$
+**Análise Técnica:**
+O sistema demonstrou **Alta Disponibilidade**. O tempo de carregamento de **1.01 segundos** é extremamente performático, situando-se em uma faixa ideal de usabilidade (abaixo de 2 segundos). O retorno do código HTTP 200 confirma que a infraestrutura do servidor está saudável e respondendo corretamente às requisições do cliente.
 
-**Métrica CF5 - Tempo Médio Entre Falhas (TMEF):**
-- $TMEF = \frac{1440 \text{ minutos}}{1 \text{ falha}}$
-- **TMEF = 1440 minutos (24 horas)**
+### Resultados da Tolerância a Falhas (Fault Tolerance)
 
-**Análise:** A **Disponibilidade Percentual (DP)** de 99.95% é um resultado positivo. O **Tempo Médio Entre Falhas (TMEF)** de 24 horas reflete o período de monitoramento. Embora o sistema demonstre ser altamente disponível em condições normais, a vulnerabilidade a falhas de infraestrutura (conforme observado na Tolerância a Falhas) indica que a alta disponibilidade atual depende de um ambiente estável e não de mecanismos internos de resiliência.
+**Objetivo:** Verificar a robustez da validação de dados no *Client-Side* e estabilidade do código.
+
+* **Ferramenta:** DevTools > Console Tab.
+* **Cenário:** Tentativa de submissão de formulário com campos obrigatórios vazios.
+
+| Observação Visual | Mensagem Exibida | Comportamento do Console |
+| :--- | :--- | :--- |
+| Bloqueio da Ação | Ícone de exclamação amarelo seguido de: **"Preencha este campo"**. | **Limpo** (Sem exceções de erro crítico/Vermelho). |
+
+**Análise Técnica:**
+O sistema possui mecanismos eficazes de **Tolerância a Falhas na Camada de Apresentação**.
+1.  **Validação:** A aplicação utiliza atributos de validação nativos HTML5 ou scripts de verificação prévia, interceptando a ação antes que uma requisição inválida sobrecarregue o servidor.
+2.  **Estabilidade:** O console do navegador permaneceu limpo, indicando que o tratamento da exceção foi previsto no código e não gerou falhas de execução (*crashes* de JavaScript).
+
+### Resultados da Recuperabilidade (Recoverability)
+
+**Objetivo:** Avaliar a persistência de dados não salvos (Rascunhos de Sessão).
+
+* **Ferramenta:** DevTools > Application > Local Storage.
+* **Cenário:** Preenchimento de dados seguido de atualização da página (F5) *antes* do envio.
+
+| Ação Executada | Resultado no Local Storage | Estado do Formulário Após F5 |
+| :--- | :--- | :--- |
+| Digitação de Dados | Nenhum registro criado (Tabela vazia). | Campos retornaram **Vazios**. |
+| Submissão (Envio) | Registro criado apenas após sucesso. | N/A (Ação já concluída). |
+
+**Métrica CF2 - Taxa de Recuperação de Sessão (TRS):**
+- **TRS = 0%** (Perda total dos dados não submetidos).
+
+**Análise Técnica:**
+O sistema apresenta **Baixa Recuperabilidade** para dados em rascunho. A auditoria via DevTools confirmou que o *Local Storage* não é utilizado para persistência temporária durante a digitação (apenas pós-envio).
+Isso representa um risco de usabilidade: caso o usuário sofra uma instabilidade de rede ou feche a aba acidentalmente durante o preenchimento, todo o progresso será perdido irrecuperavelmente.
 
 ---
 
 ## Conclusão da Avaliação de Confiabilidade
 
-A avaliação de confiabilidade revela uma dicotomia importante: o sistema é **altamente recuperável** em termos de dados (IPD de 0%) e **disponível** (99.95%) em um cenário de falha única, mas possui **baixa tolerância a falhas** (TSF de 33.33%).
+A avaliação técnica revela um sistema com infraestrutura robusta, mas com pontos de melhoria na experiência de continuidade:
 
-**Recomendação Principal:** A implementação de mecanismos de tratamento de exceção mais robustos e a adoção de arquitetura de alta disponibilidade (e.g., *failover* de banco de dados, balanceamento de carga) são cruciais para evitar que falhas em componentes críticos causem interrupção total do serviço, elevando assim a Tolerância a Falhas e garantindo a Confiabilidade a longo prazo.
-
+1.  **Pontos Fortes:** O sistema é **altamente disponível** e rápido (Load de 1.01s). A **Tolerância a Falhas** é garantida por validações de interface competentes que previnem erros de uso sem quebrar a aplicação.
+2.  **Ponto de Atenção:** A **Recuperabilidade** de rascunhos é inexistente no *front-end*. Recomenda-se a implementação de um padrão de *Autosave* no *localStorage* para formulários extensos, aumentando a resiliência contra interrupções acidentais.
 
 ## 3. Execução da Medição Para a Manutenibilidade
 
