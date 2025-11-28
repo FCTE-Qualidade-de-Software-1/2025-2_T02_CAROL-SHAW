@@ -603,7 +603,7 @@ A análise estática foi realizada utilizando a ferramenta **SonarCloud**. O val
 Para obter a **Complexidade Ciclomática Média (CCM)**, foi realizada uma análise granular por módulo, excluindo os módulos `tests` e `mec_energia` (módulo administrativo do framework Django) por não representarem o código de negócio principal.
 
 <div style="text-align: center;">
-  <p><strong>Video 1:</strong> <a href="https://youtu.be/NerYpyylvd0">Coleta CCM</a></p>
+  <p><strong>Video 3:</strong> <a href="https://youtu.be/NerYpyylvd0">Coleta CCM</a></p>
   <iframe width="560" height="315" src="https://youtu.be/NerYpyylvd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
@@ -635,7 +635,7 @@ O Lead Time de Correção (LTC) mede a agilidade do processo de manutenção, se
 A coleta de dados foi realizada através de uma consulta estruturada no sistema de *Issues* do **GitLab**, utilizando um script em Python [4]. O LTC foi calculado como o tempo decorrido entre a **abertura do *Issue*** e o **fechamento (correção do bug)**, o que reflete o tempo total de resolução de defeitos.
 
 <div style="text-align: center;">
-  <p><strong>Video 1:</strong> <a href="https://youtu.be/fyOFL0s-LoU">Coleta LTC</a></p>
+  <p><strong>Video 4:</strong> <a href="https://youtu.be/fyOFL0s-LoU">Coleta LTC</a></p>
   <iframe width="560" height="315" src="https://youtu.be/fyOFL0s-LoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
