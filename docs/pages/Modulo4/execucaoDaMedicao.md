@@ -602,6 +602,12 @@ A análise estática foi realizada utilizando a ferramenta **SonarCloud**. O val
 
 Para obter a **Complexidade Ciclomática Média (CCM)**, foi realizada uma análise granular por módulo, excluindo os módulos `tests` e `mec_energia` (módulo administrativo do framework Django) por não representarem o código de negócio principal.
 
+<div style="text-align: center;">
+  <p><strong>Video 1:</strong> <a href="https://youtu.be/NerYpyylvd0">Coleta CCM</a></p>
+  <iframe width="560" height="315" src="https://youtu.be/NerYpyylvd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
 | Módulo | CC (Total) | CCM (Média por Módulo) |
 | :--- | :--- | :--- |
 | `contracts` | 132 | 10,15 |
@@ -621,12 +627,17 @@ O resultado de **CCM = 9,00** se enquadra na faixa **Desejável (CCM ≤ 10)**, 
 
 No entanto, a análise modular revela pontos de atenção: os módulos **`users` (CCM = 15,00)** e **`tariffs` (CCM = 14,09)** estão no limite superior da faixa **Aceitável** (10 < CCM ≤ 15), indicando que estes componentes específicos podem exigir maior esforço para manutenção e testes.
 
-### 3.3. Lead Time de Correção (LTC)
+### Lead Time de Correção (LTC)
 
 O Lead Time de Correção (LTC) mede a agilidade do processo de manutenção, sendo um indicador direto da Modificabilidade do sistema.
 
 **Execução da Medição:**
 A coleta de dados foi realizada através de uma consulta estruturada no sistema de *Issues* do **GitLab**, utilizando um script em Python [4]. O LTC foi calculado como o tempo decorrido entre a **abertura do *Issue*** e o **fechamento (correção do bug)**, o que reflete o tempo total de resolução de defeitos.
+
+<div style="text-align: center;">
+  <p><strong>Video 1:</strong> <a href="https://youtu.be/fyOFL0s-LoU">Coleta LTC</a></p>
+  <iframe width="560" height="315" src="https://youtu.be/fyOFL0s-LoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 **Amostra de Dados Coletados:**
 A tabela abaixo apresenta uma amostra dos dados utilizados no cálculo do LTC:
@@ -715,3 +726,4 @@ Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, edit
 | `1.2` | Inserção do que executamos para o artefato da confiabilidade. | [Gustavo Gontijo Lima](https://github.com/Guga301104) | 18/11/2025 | [Ana Luiza Komatsu](https://github.com/luluaroeira) | 18/11/2025 | Revisão da ideação do artefato. |
 | `1.3` | Inserção do CTR. | [Marcos Bittar](https://github.com/Bittarx) | | 23/11/2025 |  |
 | `1.4` | Inserção do que executamos para o artefato da Manuntenabilidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | | 23/11/2025 |  |
+| `1.5` | Inserção dos videos para o artefato da Manuntenabilidade | [Pedro Barbosa](https://github.com/pedrobarbosaocb) | | 28/11/2025 |  |
