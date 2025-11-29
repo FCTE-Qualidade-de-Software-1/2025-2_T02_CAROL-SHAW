@@ -195,8 +195,8 @@ Utilizaremos o **Tempo Médio para Reparo (MTTR)**, que indica a agilidade da eq
 
 <font size="3">
     <p style="text-align: center">
-        <b>Autor:</b> 
-        Gustavo Gontijo Lima
+        <b>Autores:</b> 
+        Gustavo Gontijo Lima, Felipe das Neves e Mylena Mendonça
     </p>
 </font>
 
