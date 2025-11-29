@@ -6,7 +6,7 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 
 # Participação na Fase 4
 
-| Nome do Membro | Contribuição | Porcentagem de Contribuição | Comprobatórios |
+| Nome do Membro | Contribuição | Porcentagem de Contribuição | 
 |----------------|--------------|----------------------------------------------|
 | [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | Desenvolvimento do planejamento e execução artefato da confiabilidade  | 17,66 | 
 | [Felipe das Neves](https://github.com/FelipeFreire-gf) | Desenvolvimento do planejamento e execução artefato da adequação funcional | 19,66 | 
