@@ -70,7 +70,7 @@ A corretude será avaliada através da **Sucesso em Cenários (SC)**, focando em
       * **Aceitável:** 85% ≤ SC \< 95%
       * **Inaceitável:** SC \< 85%
 
-##### **Q3. As funcionalidades implementadas operam em conformidade com o esperado na homologação?**
+##### **Q3. As funcionalidades implementadas operam em conformidade?**
 
 Avalia-se a **Conformidade Funcional (CF)**, que mede se as funcionalidades atendem exatamente o que foi projetado para fazer.
 
@@ -98,7 +98,7 @@ Avalia-se a **Conformidade Funcional (CF)**, que mede se as funcionalidades aten
 </font>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo2/assets/DiagramaGQM1.png" alt="Diagrama GQM da adequacao" width="600">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo2/assets/DiagramaGQM11.png" alt="Diagrama GQM da adequacao" width="600">
 </div>
 
 <font size="3">

@@ -6,14 +6,14 @@ Este documento tem como objetivo registrar as principais contribuições de cada
 
 # Participação na Fase 4
 
-| Nome do Membro | Contribuição | Porcentagem de Contribuição | Comprobatórios |
-|----------------|--------------|----------------------------------------------|-----------------------------------|
-| [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | Desenvolvimento do planejamento e execução artefato da confiabilidade  | 16,66 | |
-| [Felipe das Neves](https://github.com/FelipeFreire-gf) | Desenvolvimento do planejamento e execução artefato da adequação funcional | 16,66 | |
-| [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | Desenvolvimento do planejamento e execução artefato da confiabilidade | 16,66 | |
-| [Marcos Santos Bittar](https://github.com/Bittarx) | | ? | |
-| [Mylena Trindade de Mendonca](https://github.com/MateuSansete)|  Desenvolvimento do planejamento e execução artefato da adequação funcional | 16,66 | |
-| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | Desenvolvimento do planejamento e execução artefato da manutenibilidade| 16,66 | |
+| Nome do Membro | Contribuição | Porcentagem de Contribuição | 
+|----------------|--------------|----------------------------------------------|
+| [Ana Luiza Komatsu Aroeira](https://github.com/luluaroeira) | Desenvolvimento do planejamento e execução artefato da confiabilidade  | 17,66 | 
+| [Felipe das Neves](https://github.com/FelipeFreire-gf) | Desenvolvimento do planejamento e execução artefato da adequação funcional | 19,66 | 
+| [Gustavo Gontijo Lima](https://github.com/gabriel-lima258) | Desenvolvimento do planejamento e execução artefato da confiabilidade | 17,66 | 
+| [Marcos Santos Bittar](https://github.com/Bittarx) | | 5% | 
+| [Mylena Trindade de Mendonca](https://github.com/MateuSansete)|  Desenvolvimento do planejamento e execução artefato da adequação funcional | 18,66 | 
+| [Pedro de Oliveira Campos Barbosa](https://github.com/pfc15) | Desenvolvimento do planejamento e execução artefato da manutenibilidade| 21,36 | 
 | Total: | | 100 | |
 
 <div align="center"> 
