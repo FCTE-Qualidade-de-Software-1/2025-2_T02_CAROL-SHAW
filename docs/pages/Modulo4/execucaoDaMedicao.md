@@ -511,6 +511,9 @@ A avaliação se deu pela comparação entre o comportamento observado e o compo
   </table>
 </div>
 
+#### Melhorias Analisadas para a Adequação Funcional
+
+Os resultados da avaliação de Adequação Funcional para o MEPA indicam que o sistema está **principalmente saudável**, mas precisa de ajustes para atingir a excelência. O projeto tem uma **Completude Funcional Desejável** (93,3\%). No entanto, a principal correção reside na **Conformidade Funcional** (88,9\% - Aceitável). O sistema possui um **bug** no **Cadastro de Usuários**: ele cria o usuário corretamente no *backend*, mas exibe um erro visual no *front-end*. Sendo necessário a correção do **único cenário de teste que falhou** para garantir que todos os cálculos críticos estejam 100\% precisos.
 
 ---
 
