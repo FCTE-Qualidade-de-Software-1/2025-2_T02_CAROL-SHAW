@@ -527,6 +527,13 @@ A execução da medição de confiabilidade foi realizada no ambiente de produç
   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=jT9DPa8jMK8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+<font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        [Gustavo Gontijo Lima](https://github.com/Guga301104)
+    </p>
+</font>
+
 ### Resultados da Disponibilidade (Availability)
 
 **Objetivo:** Aferição técnica da resposta do servidor e renderização da interface.
