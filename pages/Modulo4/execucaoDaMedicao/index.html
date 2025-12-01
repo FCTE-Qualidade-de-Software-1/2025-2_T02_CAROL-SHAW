@@ -1,0 +1,3203 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação da Análise de Qualidade Mepa Energia">
+      
+      
+      
+      
+        <link rel="prev" href="../../Modulo3/partIntegrantesFase3/">
+      
+      
+        <link rel="next" href="../partIntegrantesFase4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/shawR2.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Execução da Medição - Análise de Qualidade Mepa Energia</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../overrides/styles.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="--md-primary-fg-color" data-md-color-accent="--md-primary-fg-color">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fase-4-execucao-da-medicao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Análise de Qualidade Mepa Energia" class="md-header__button md-logo" aria-label="Análise de Qualidade Mepa Energia" data-md-component="logo">
+      
+  <img src="../../../assets/shawR2I.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Análise de Qualidade Mepa Energia
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Execução da Medição
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="--md-primary-fg-color" data-md-color-accent="--md-primary-fg-color"  aria-label="Mude para o tema escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mude para o tema escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="--md-primary-fg-color" data-md-color-accent="--md-primary-fg-color"  aria-label="Mude para o tema claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mude para o tema claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.2-carolShaw
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Análise de Qualidade Mepa Energia" class="md-nav__button md-logo" aria-label="Análise de Qualidade Mepa Energia" data-md-component="logo">
+      
+  <img src="../../../assets/shawR2I.ico" alt="logo">
+
+    </a>
+    Análise de Qualidade Mepa Energia
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2025.2-carolShaw
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo1/propositoDeAvaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proposito de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo1/partIntegrantesFase1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participação Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo2/planejamentoDaAvaliacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo2/partIntegrantesFase2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participação Fase 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo3/descricaoDaMedicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Descrição da Medição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo3/partIntegrantesFase3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participação Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execução da Medição
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Execução da Medição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sumário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacao-da-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organização da Equipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-execucao-da-medicao-para-a-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Execução da Medição Para a Adequação Funcional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Execução da Medição Para a Adequação Funcional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-execucao-etapa-1-realizacao-da-entrevista-para-o-levantamento-dos-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Execução Etapa 1 - Realização da Entrevista Para o Levantamento dos Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-gestao-de-universidades-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Gestão de Universidades e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-gestao-de-usuarios-e-permissoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Gestão de Usuários e Permissões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-unidades-consumidoras-ucs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Unidades Consumidoras (UCs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-contratos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Contratos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-faturas-entrada-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Faturas (Entrada de Dados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-inteligencia-e-recomendacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Inteligência e Recomendação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-dashboards-e-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Dashboards e Visualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-execucao-etapa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Execução Etapa 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Execução Etapa 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#122-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-gestao-de-universidades-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Gestão de Universidades e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gestao-de-usuarios-e-permissoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gestão de Usuários e Permissões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-unidades-consumidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Unidades Consumidoras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contratos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contratos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Faturas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-inteligencia-e-recomendacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Inteligência e Recomendação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Inteligência e Recomendação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-dashboards-e-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Dashboards e Visualização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Dashboards e Visualização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#123-analise-se-as-funcionalidades-do-sistema-estao-corretas-e-se-sao-relevantes-para-o-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#124-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-analise-de-dados-inexistentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Análise de dados inexistentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-insercao-manual-de-dados-e-atualizacao-dos-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Inserção manual de dados e atualização dos gráficos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edicao-de-dados-da-unidade-consumidora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Edição de dados da unidade consumidora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criacao-de-nova-unidade-consumidora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Criação de nova unidade consumidora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gerenciamento-de-pessoas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gerenciamento de pessoas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-distribuidoras-e-api-da-neoenergia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Distribuidoras e API da Neoenergia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-grupos-tarifarios-e-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Grupos tarifários e painel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-instituicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Instituições
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-conclusao-da-medicao-da-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Conclusão da Medição da Adequação Funcional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Conclusão da Medição da Adequação Funcional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-functional-completeness-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 — Functional Completeness (CR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q1-functional-completeness-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q1 — Functional Completeness (CR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-correctness-das-funcionalidades-criticas-sc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 — Correctness das Funcionalidades Críticas (SC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q2-correctness-sc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q2 — Correctness (SC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-functional-conformity-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 — Functional Conformity (CF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q3 — Functional Conformity (CF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencias-de-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidências de Conformidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-avaliadas-e-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcionalidades avaliadas e conformidade:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q3-functional-conformity-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q3 — Functional Conformity (CF)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#melhorias-analisadas-para-a-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Melhorias Analisadas para a Adequação Funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-execucao-da-medicao-para-a-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Execução da Medição Para a Confiabilidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Execução da Medição Para a Confiabilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-disponibilidade-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Disponibilidade (Availability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-tolerancia-a-falhas-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Tolerância a Falhas (Fault Tolerance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-recuperabilidade-recoverability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Recuperabilidade (Recoverability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao-da-avaliacao-de-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão da Avaliação de Confiabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-execucao-da-medicao-para-a-manutenibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Execução da Medição Para a Manutenibilidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Execução da Medição Para a Manutenibilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complexidade-ciclomatica-ccm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complexidade Ciclomática (CCM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-time-de-correcao-ltc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lead Time de Correção (LTC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cobertura-de-testes-de-regressao-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobertura de testes de Regressão (CTR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências Bibliográfica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partIntegrantesFase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Participação Fase 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Atas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 1 - Fase 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../atas/ata2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ata 2 - Fase 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sumário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacao-da-equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organização da Equipe
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-execucao-da-medicao-para-a-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Execução da Medição Para a Adequação Funcional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Execução da Medição Para a Adequação Funcional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-execucao-etapa-1-realizacao-da-entrevista-para-o-levantamento-dos-requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Execução Etapa 1 - Realização da Entrevista Para o Levantamento dos Requisitos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-gestao-de-universidades-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Gestão de Universidades e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-gestao-de-usuarios-e-permissoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Gestão de Usuários e Permissões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-unidades-consumidoras-ucs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Unidades Consumidoras (UCs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-contratos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Contratos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-faturas-entrada-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Faturas (Entrada de Dados)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-inteligencia-e-recomendacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Inteligência e Recomendação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rf-modulo-de-dashboards-e-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RF. Módulo de Dashboards e Visualização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-execucao-etapa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Execução Etapa 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2 Execução Etapa 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#122-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-gestao-de-universidades-e-integracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Gestão de Universidades e Integração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-gestao-de-usuarios-e-permissoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gestão de Usuários e Permissões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-unidades-consumidoras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Unidades Consumidoras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-contratos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Contratos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-faturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Faturas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-inteligencia-e-recomendacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Inteligência e Recomendação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Inteligência e Recomendação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-dashboards-e-visualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Dashboards e Visualização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Dashboards e Visualização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#123-analise-se-as-funcionalidades-do-sistema-estao-corretas-e-se-sao-relevantes-para-o-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#124-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2.4 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-analise-de-dados-inexistentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Análise de dados inexistentes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-insercao-manual-de-dados-e-atualizacao-dos-graficos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Inserção manual de dados e atualização dos gráficos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edicao-de-dados-da-unidade-consumidora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Edição de dados da unidade consumidora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-criacao-de-nova-unidade-consumidora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Criação de nova unidade consumidora
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-gerenciamento-de-pessoas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gerenciamento de pessoas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-distribuidoras-e-api-da-neoenergia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Distribuidoras e API da Neoenergia
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-grupos-tarifarios-e-painel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Grupos tarifários e painel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-instituicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Instituições
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-conclusao-da-medicao-da-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Conclusão da Medição da Adequação Funcional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3 Conclusão da Medição da Adequação Funcional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q1-functional-completeness-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 — Functional Completeness (CR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q1-functional-completeness-cr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q1 — Functional Completeness (CR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q2-correctness-das-funcionalidades-criticas-sc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 — Correctness das Funcionalidades Críticas (SC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q2-correctness-sc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q2 — Correctness (SC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q3-functional-conformity-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q3 — Functional Conformity (CF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Q3 — Functional Conformity (CF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evidencias-de-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidências de Conformidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funcionalidades-avaliadas-e-conformidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funcionalidades avaliadas e conformidade:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calculo-da-q3-functional-conformity-cf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cálculo da Q3 — Functional Conformity (CF)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#melhorias-analisadas-para-a-adequacao-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Melhorias Analisadas para a Adequação Funcional
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-execucao-da-medicao-para-a-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Execução da Medição Para a Confiabilidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Execução da Medição Para a Confiabilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vídeo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-disponibilidade-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Disponibilidade (Availability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-tolerancia-a-falhas-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Tolerância a Falhas (Fault Tolerance)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados-da-recuperabilidade-recoverability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultados da Recuperabilidade (Recoverability)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao-da-avaliacao-de-confiabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão da Avaliação de Confiabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-execucao-da-medicao-para-a-manutenibilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Execução da Medição Para a Manutenibilidade
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Execução da Medição Para a Manutenibilidade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complexidade-ciclomatica-ccm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complexidade Ciclomática (CCM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lead-time-de-correcao-ltc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lead Time de Correção (LTC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cobertura-de-testes-de-regressao-ctr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobertura de testes de Regressão (CTR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de IA
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-bibliografica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências Bibliográfica
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histórico de Versões
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="fase-4-execucao-da-medicao">Fase 4 - Execução da Medição</h1>
+<h2 id="sumario">Sumário</h2>
+<ul>
+<li><a href="#Organização-da-Equipe">Organização da Equipe</a></li>
+<li><a href="#1-execucao-da-medicao-para-a-adequacao-funcional">1. Execução da Medição Para a Adequação Funcional</a></li>
+<li><a href="#11-execucao-etapa-1-realizacao-da-entrevista">1.1 Execução Etapa 1 - Realização da Entrevista</a></li>
+<li><a href="#12-execucao-etapa-2-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais">1.2 Execução Etapa 2 - Análise se o sistema possui tudo que foi listado nos requisitos funcionais</a><ul>
+<li><a href="#121-execucao-etapa-2-resultados-da-analise">1.2.1 Execução Etapa 2 - Resultados da análise</a></li>
+</ul>
+</li>
+<li><a href="#13-conclusao-da-medicao-da-adequacao-funcional">1.3 Conclusão da Medição da Adequação Funcional</a></li>
+<li><a href="#2-execucao-da-medicao-para-a-confiabilidade">2. Execução da Medição Para a Confiabilidade</a></li>
+<li><a href="#resultados-da-tolerancia-a-falhas-fault-tolerance">Resultados da Tolerância a Falhas (Fault Tolerance)</a></li>
+<li><a href="#resultados-da-recuperabilidade-recoverability">Resultados da Recuperabilidade (Recoverability)</a></li>
+<li><a href="#resultados-da-disponibilidade-availability">Resultados da Disponibilidade (Availability)</a></li>
+<li><a href="#conclusao-da-avaliacao-de-confiabilidade">Conclusão da Avaliação de Confiabilidade</a></li>
+<li><a href="#3-descricao-da-medicao-para-a-manutenibilidade">3. Descrição da Medição Para a Manutenibilidade</a></li>
+<li><a href="#uso-de-ia">Uso de IA</a></li>
+<li><a href="#referências-bibliográfica">Referências Bibliográfica</a></li>
+<li><a href="#historico-de-versoes">Histórico de Versões</a></li>
+</ul>
+<hr />
+<h2 id="organizacao-da-equipe">Organização da Equipe</h2>
+<p>Dividimos os trabalhos em duplas para a realização das tarefas, conforme pode ser observado na Tabela 1 a seguir:</p>
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Tabela 1:</b> Divisão de Tarefas por Dupla
+    </p>
+</font></p>
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Característica de Qualidade</th>
+        <th>Dupla Responsável</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Adequação Funcional</td>
+        <td>Felipe das Neves e Mylena Mendonça</td>
+      </tr>
+      <tr>
+        <td>Confiabilidade</td>
+        <td>Ana Luiza Komatsu e Gustavo Gontijo</td>
+      </tr>
+      <tr>
+        <td>Manutenibilidade</td>
+        <td>Pedro Barbosa e Marcos Bittar</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="1-execucao-da-medicao-para-a-adequacao-funcional">1. Execução da Medição Para a Adequação Funcional</h2>
+<h3 id="11-execucao-etapa-1-realizacao-da-entrevista-para-o-levantamento-dos-requisitos">1.1 Execução Etapa 1 - Realização da Entrevista Para o Levantamento dos Requisitos</h3>
+<p>Nessa primeira etapa fizemos a entrevista com os desenvolvedores para elaborarmos os requisitos funcionais da aplicação, segue as perguntas que utilizamos:</p>
+<div class="admonition tip">
+<p class="admonition-title">Atenção!</p>
+<p>Para visualizar as perguntas basta clicar na barra azul abaixo com o texto: "Perguntas utilizadas para a entrevista" nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.</p>
+</div>
+<details class="info">
+<summary>Perguntas utilizadas para a entrevista </summary>
+<p><a href="https://publuu.com/flip-book/1014636/2241863" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a></p>
+<p>No que consiste a aplicação mepa?</p>
+<p>Há a necessidade de cadastrar distribuidoras? Quem as faz?</p>
+<p><strong>Sobre Gestão de Universidades e Usuários</strong></p>
+<p>Qual é a diferença prática de permissão entre um 'Administrador da Universidade' e um 'Técnico'? Existe alguma tela ou botão que o Admin vê e o Técnico não?</p>
+<p>Um usuário pode estar vinculado a múltiplas universidades simultaneamente ou o vínculo é exclusivo (1 para 1)?</p>
+<p>A remoção de um usuário é 'lógica' (apenas desativa o login, mantendo o histórico) ou 'física' (apaga os dados do banco)? Se apagarmos uma instituição ece com as faturas que ele cadastrou?</p>
+<p>Quais são os campos obrigatórios para cadastrar uma Universidade? O sistema deve validar o formato do CNPJ automaticamente e impedir duplicatas?</p>
+<p><strong>Sobre Unidades Consumidoras</strong>    </p>
+<p>Qual dado garante que uma UC é única no sistema? É o 'Código da Unidade Consumidora' presente na conta de luz? O sistema deve bloquear se tentarem cadastrar o mesmo código duas vezes?</p>
+<p>Além do nome e endereço, precisamos cadastrar dados técnicos como 'Grupo Tarifário' (A ou B), 'Subgrupo', 'Tensão de Fornecimento' e 'Tipo de Medição'? Esses dados influenciam nos cálculos futuros?</p>
+<p>Se uma UC mudar de endereço ou de medidor, o sistema cria uma nova ou atualiza a existente mantendo o histórico de consumo?</p>
+<p><strong>Sobre Contratos e Renovação</strong></p>
+<p>Todo contrato tem obrigatoriamente uma 'Data de Início' e 'Data de Fim'? O sistema deve mudar o status do contrato para 'Expirado' automaticamente quando chegar a data final?</p>
+<p>Ao clicar em 'Renovar Contrato', o sistema deve criar um novo registro copiando os dados do contrato anterior (ex: Demanda Contratada) para agilizar o preenchimento? O sistema deve manter o histórico de todas as renovações passadas?</p>
+<p>Um contrato pertence a uma única UC ou pode ser um contrato 'guarda-chuva' que cobre várias unidades?</p>
+<p><strong>Sobre Faturas</strong> </p>
+<p>A entrada da fatura é manual campo a campo? Se sim, quais campos são críticos para os relatórios? (Ex: Consumo Ponta, Fora de Ponta, Demanda Medida, Demanda Faturada, Energia Reativa, Multas).</p>
+<p>O sistema deve alertar o usuário se ele digitar um consumo absurdamente alto ou negativo (validação de range)? O sistema deve impedir o cadastro de duas faturas para o mesmo mês de referência na mesma UC?</p>
+<p>Qual é a regra exata para o sistema marcar uma fatura como 'Pendente'? É quando passa do dia X do mês e a fatura ainda não foi cadastrada no sistema?</p>
+<p><strong>Sobre Distribuidoras e Tarifas</strong></p>
+<p>As tarifas de energia mudam anualmente. O sistema permite cadastrar a vigência da tarifa (De: Jan/2024 Até: Dez/2024)? Isso é essencial para que faturas antigas não tenham seus valores alterados quando a tarifa nova for cadastrada?</p>
+<p>O cadastro de tarifa deve suportar diferenciação por 'Posto Horário' (Ponta e Fora de Ponta) e 'Bandeiras Tarifárias' (Verde, Amarela, Vermelha)?</p>
+<p><strong>Sobre Inteligência e Dashboards</strong></p>
+<p>Como o sistema gera uma 'Recomendação'? Ele compara a 'Demanda Contratada' com a 'Demanda Medida' dos últimos 12 meses? Essa recomendação aparece automaticamente ou o usuário precisa solicitar a análise?</p>
+<p>No dashboard de pendências, o usuário deve conseguir filtrar por 'Tipo de Pendência' (ex: Fatura Atrasada vs. Tarifa não cadastrada)? Deve haver um link direto para resolver o problema (ex: clicar na pendência e ir para a tela de cadastro de fatura)?
+```</p>
+</details>
+<div style="text-align: center;">
+  <p><strong>Entrevista 1:</strong> <a href="https://youtu.be/9Z0V1nYTEcc">Com os devs para a elaboração dos requisitos funcionais</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Z0V1nYTEcc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p><a href="https://publuu.com/flip-book/1014636/2241858" target="_blank"> Clique aqui para visualizar a transcrição em uma nova aba e fazer o download .pdf</a></p>
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a> e <a href="https://github.com/MylenaTrindade">Mylena Mendonça</a>
+    </p>
+</font></p>
+<p>Após a entrevista modelamos a seguinte lista para os requisitos funcionais para o nosso estudo:</p>
+<div class="admonition tip">
+<p class="admonition-title">Atenção!</p>
+<p>Para visualizar os requisitos basta clicar na barra azul abaixo com o texto: "Lista de Requisitos Funcionais", nele também está disponível o link para visualizar em uma nova aba e fazer o download do pdf.</p>
+</div>
+<details class="info">
+<summary>Lista de Requisitos Funcionais</summary>
+<p><a href="https://publuu.com/flip-book/1014636/2241855" target="_blank"> Clique aqui para visualizar as perguntas em uma nova aba e fazer o download .pdf</a></p>
+<h3 id="rf-modulo-de-gestao-de-universidades-e-integracao">RF. Módulo de Gestão de Universidades e Integração</h3>
+<ul>
+<li><strong>RF001 - Cadastro de Universidade via Formulário:</strong> O sistema deve permitir o cadastro de novas universidades, processo que é iniciado através do recebimento de um formulário de interesse analisado pela equipe.</li>
+<li><strong>RF002 - Validação de CNPJ:</strong> No ato do cadastro da universidade, o sistema deve validar automaticamente os dígitos verificadores do CNPJ e impedir o cadastro se o número for inválido.</li>
+<li><strong>RF003 - Bloqueio de Duplicidade de CNPJ:</strong> O sistema deve verificar se o CNPJ já existe no banco de dados e impedir a criação de registros duplicados.</li>
+<li><strong>RF004 - Integração com API da ANEEL:</strong> O sistema deve conectar-se automaticamente à API da ANEEL para obter e atualizar a lista de distribuidoras de energia e suas respectivas tarifas em tempo real, eliminando o cadastro manual.</li>
+<li><strong>RF005 - Lista de Solicitações:</strong> O sistema deve possuir uma área administrativa onde a equipe do MEPA possa visualizar a lista de universidades que solicitaram acesso via formulário.</li>
+</ul>
+<h3 id="rf-modulo-de-gestao-de-usuarios-e-permissoes">RF. Módulo de Gestão de Usuários e Permissões</h3>
+<ul>
+<li><strong>RF006 - Níveis de Acesso:</strong> O sistema deve suportar quatro tipos de perfis de usuário com permissões distintas:<ol>
+<li><strong>Gestor:</strong> Pode gerenciar faturas, contratos e gerenciar outros usuários (adicionar/desativar).</li>
+<li><strong>Operacional:</strong> Pode apenas adicionar/gerenciar contratos e faturas, sem acesso à gestão de pessoas.</li>
+<li><strong>Convidado:</strong> Acesso apenas de leitura (visualização) para fins de validação/manutenção.</li>
+<li><strong>Demonstração:</strong> Acesso público a dados fictícios para conhecer o sistema, sem interagir com dados reais.</li>
+</ol>
+</li>
+<li><strong>RF007 - Vínculo Exclusivo:</strong> O sistema deve garantir que um usuário esteja vinculado a apenas uma universidade por vez.</li>
+<li><strong>RF008 - Exclusão Lógica de Usuário:</strong> O sistema não deve permitir a exclusão física de usuários do banco de dados. A remoção deve ser lógica (apenas desativação do login), mantendo o histórico de ações e integridade dos dados.</li>
+</ul>
+<h3 id="rf-modulo-de-unidades-consumidoras-ucs">RF. Módulo de Unidades Consumidoras (UCs)</h3>
+<ul>
+<li><strong>RF009 - Unicidade da UC:</strong> O sistema deve utilizar o "Código da Unidade Consumidora" (presente na conta de luz) como identificador único, bloqueando o cadastro se o código já existir.</li>
+<li><strong>RF010 - Dados Técnicos Obrigatórios:</strong> O cadastro da UC deve exigir dados essenciais que influenciam no cálculo, incluindo: Grupo Tarifário, Subgrupo, Tensão de Fornecimento e Distribuidora.</li>
+<li><strong>RF011 - Imutabilidade de Local:</strong> O sistema não deve permitir a alteração do endereço de uma UC (regra da ANEEL). Caso o local mude, a UC deve ser desativada e uma nova criada.</li>
+<li><strong>RF012 - Edição de Dados Cadastrais:</strong> O sistema deve permitir a edição de nome e outros dados não-críticos da UC, mantendo o histórico.</li>
+<li><strong>RF013 - Desativação de UC:</strong> O sistema deve permitir desativar uma UC, preservando todo o seu histórico de consumo.</li>
+</ul>
+<h3 id="rf-modulo-de-contratos">RF. Módulo de Contratos</h3>
+<ul>
+<li><strong>RF014 - Vigência do Contrato:</strong> O sistema deve registrar obrigatoriamente a data de início e fim de cada contrato.</li>
+<li><strong>RF015 - Status de Expiração:</strong> O sistema deve alterar automaticamente o status do contrato para "Expirado" quando a data final for atingida e alertar o usuário.</li>
+<li><strong>RF016 - Renovação de Contrato:</strong> O sistema deve possuir uma função de "Renovar" que cria um novo contrato copiando os dados do contrato anterior (preservando o histórico do antigo) e vinculando-o à mesma UC.</li>
+<li><strong>RF017 - Relacionamento Contrato-UC:</strong> O sistema deve restringir cada contrato a uma única Unidade Consumidora (relação 1 para 1).</li>
+</ul>
+<h3 id="rf-modulo-de-faturas-entrada-de-dados">RF. Módulo de Faturas (Entrada de Dados)</h3>
+<ul>
+<li><strong>RF018 - Métodos de Entrada:</strong> O sistema deve permitir o lançamento de faturas de duas formas:<ol>
+<li><strong>Manual:</strong> Preenchimento campo a campo.</li>
+<li><strong>Automática (Importação):</strong> Leitura de arquivos .CSV ou .XLSX.
+<em>Nota: Leitura de PDF não é suportada.</em></li>
+</ol>
+</li>
+<li><strong>RF019 - Campos Críticos da Fatura:</strong> O sistema deve capturar os seguintes dados para os cálculos:<ul>
+<li>Valor Total.</li>
+<li>Valor Ponta e Fora Ponta.</li>
+<li>Demanda Ponta e Fora Ponta (para tarifa Azul) ou Demanda Única (para tarifa Verde).</li>
+<li>Energia Injetada (Geração Fotovoltaica).</li>
+</ul>
+</li>
+<li><strong>RF020 - Validação de Valores:</strong> O sistema deve bloquear valores negativos, mas deve aceitar valores altos (variável conforme o tamanho da universidade).</li>
+<li><strong>RF021 - Bloqueio de Duplicidade de Mês:</strong> O sistema deve impedir o cadastro de mais de uma fatura para o mesmo mês de referência na mesma UC.</li>
+<li><strong>RF022 - Identificação de Pendência:</strong> O sistema deve marcar uma fatura como "Pendente" automaticamente a partir do dia 1º do mês subsequente.</li>
+</ul>
+<h3 id="rf-modulo-de-inteligencia-e-recomendacao">RF. Módulo de Inteligência e Recomendação</h3>
+<ul>
+<li><strong>RF023 - Janela de Análise:</strong> O sistema deve utilizar uma janela móvel das últimas 12 faturas lançadas para realizar os cálculos de recomendação.</li>
+<li><strong>RF024 - Aviso de Dados Insuficientes:</strong> Caso existam faturas pendentes dentro da janela de 12 meses, o sistema deve exibir um aviso (<em>warning</em>) informando que a recomendação pode estar imprecisa, mas não deve impedir o cálculo.</li>
+<li><strong>RF025 - Simulação de Cenários:</strong> O sistema deve simular cenários comparando o contrato atual com as modalidades Verde e Azul (Ponta/Fora Ponta), considerando a demanda medida.</li>
+<li><strong>RF026 - Geração Automática:</strong> A recomendação deve ser recalculada automaticamente em <em>background</em> sempre que uma nova fatura for lançada ou editada.</li>
+<li><strong>RF027 - Exibição da Recomendação:</strong> O sistema deve exibir uma recomendação apenas se o cenário simulado for mais econômico que o contrato atual.</li>
+</ul>
+<h3 id="rf-modulo-de-dashboards-e-visualizacao">RF. Módulo de Dashboards e Visualização</h3>
+<ul>
+<li><strong>RF028 - Painel Principal (Visão Geral):</strong> O sistema deve exibir um painel com todas as Unidades Consumidoras que possuem pendências (faturas atrasadas ou problemas de contrato).</li>
+<li><strong>RF029 - Ação Rápida no Painel Principal:</strong> No painel principal, deve haver um botão/link direto para resolver o problema (ex: abrir o modal de lançamento da fatura pendente).</li>
+<li><strong>RF030 - Painel Específico da UC:</strong> Ao acessar uma UC específica, o sistema deve listar as pendências em fila (ex: "Lançar Novembro"), mostrando o mês seguinte apenas após a resolução do anterior.
+```</li>
+</ul>
+</details>
+<h3 id="12-execucao-etapa-2">1.2 Execução Etapa 2</h3>
+<h4 id="121-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais">1.2.1 Análise se o sistema possui tudo que foi listado nos requisitos funcionais</h4>
+<div style="text-align: center;">
+  <p><strong>Video 1:</strong> <a href="https://youtu.be/FOx23tpugBY">Análise dos Requisitos</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FOx23tpugBY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a> e <a href="https://github.com/MylenaTrindade">Mylena Mendonça</a>
+    </p>
+</font></p>
+<h5 id="122-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais">1.2.2 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais:</h5>
+<details class="info">
+<summary>Resultados da Análise da Q1</summary>
+<h3 id="1-gestao-de-universidades-e-integracao"><strong>1. Gestão de Universidades e Integração</strong></h3>
+<ul>
+<li>RF001 — Cadastro de universidade <em>(implementado)</em></li>
+<li>RF002 — Validação de CNPJ <em>(testado e funcionando)</em></li>
+<li>RF004 — Integração com API da ANEEL <em>(funcionalidade presente e confirmada)</em></li>
+<li>RF003 — Bloqueio de duplicidade de CNPJ <em>(testado e funcionando)</em></li>
+<li>RF005 — Lista de solicitações <em>(não dava pra saber como eles recebiam a lista)</em></li>
+</ul>
+<h3 id="2-gestao-de-usuarios-e-permissoes"><strong>2. Gestão de Usuários e Permissões</strong></h3>
+<ul>
+<li>RF006 — Níveis de acesso <em>(perfil “SYS Admin” validado no vídeo)</em></li>
+<li>RF007 — Vínculo exclusivo <em>(testado e funcionando)</em></li>
+<li>RF008 — Exclusão lógica <em>(testado e funcionando)</em></li>
+</ul>
+<h3 id="3-unidades-consumidoras"><strong>3. Unidades Consumidoras</strong></h3>
+<ul>
+<li>RF009 — Unicidade da UC <em>(testado e funcionando)</em></li>
+<li>RF010 — Campos técnicos obrigatórios <em>(cadastro de UC exige dados, confirmado)</em></li>
+<li>RF011 — Imutabilidade de local <em>(testado e funcionando)</em></li>
+<li>RF012 — Edição de dados cadastrais <em>(testado e funcionando)</em></li>
+<li>RF013 — Desativação <em>(não testado)</em></li>
+</ul>
+<h2 id="4-contratos">4. Contratos</h2>
+<ul>
+<li>RF014 — Vigência do Contrato <em>(testado e funcionando)</em></li>
+<li>RF015 — Status de Expiração <em>(testado e funcionando)</em></li>
+<li>RF016 — Renovação de Contrato <em>(testado e funcionando)</em></li>
+<li>RF017 — Relacionamento Contrato-UC <em>(testado e funcionando)</em></li>
+</ul>
+<h2 id="5-faturas">5. Faturas</h2>
+<ul>
+<li>RF018 — Métodos de Entrada (Manual e Importação) <em>(Confirmado)</em></li>
+<li>RF019 — Campos Críticos da Fatura (Valores e Demandas) <em>(Confirmado)</em></li>
+<li>RF020 — Validação de Valores (Bloqueio Negativo) <em>(Confirmado)</em></li>
+<li>RF021 — Bloqueio de Duplicidade de Mês <em>(Confirmado)</em></li>
+<li>RF022 — Identificação de Pendência <em>(Confirmado)</em></li>
+</ul>
+<h2 id="6-inteligencia-e-recomendacao">6. Inteligência e Recomendação</h2>
+<ul>
+<li>RF023 — Janela de Análise (Últimas 12 Faturas) <em>(Confirmado)</em></li>
+<li>RF024 — Aviso de Dados Insuficientes <em>(Confirmado)</em></li>
+<li>RF025 — Simulação de Cenários (Verde e Azul) <em>(Confirmado)</em></li>
+<li>RF026 — Geração Automática da Recomendação <em>(Confirmado)</em></li>
+<li>RF027 — Exibição da Recomendação (Apenas se Mais Econômico) <em>(Confirmado)</em></li>
+</ul>
+<h3 id="7-dashboards-e-visualizacao"><strong>7. Dashboards e Visualização</strong></h3>
+<ul>
+<li>RF028 — Painel geral <em>(foi observado e nas análises tudo está ok)</em></li>
+<li>RF029 — Ação rápida <em>(foi observado e nas análises tudo está ok)</em></li>
+<li>RF030 — Painel específico da UC <em>(foi observado e nas análises tudo está ok)</em>
+```</li>
+</ul>
+</details>
+<hr />
+<h4 id="123-analise-se-as-funcionalidades-do-sistema-estao-corretas-e-se-sao-relevantes-para-o-usuario">1.2.3 Análise se as funcionalidades do sistema estão corretas e se são relevantes para o usuário</h4>
+<div style="text-align: center;">
+  <p><strong>Video 2:</strong> <a href="https://youtu.be/0lue5zYwr6Q">Funcionalidades do Sistema</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0lue5zYwr6Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        <a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a> e <a href="https://github.com/MylenaTrindade">Mylena Mendonça</a>
+    </p>
+</font></p>
+<h5 id="124-resultados-da-analise-se-o-sistema-possui-tudo-que-foi-listado-nos-requisitos-funcionais">1.2.4 Resultados da Análise se o sistema possui tudo que foi listado nos requisitos funcionais</h5>
+<details class="info">
+<summary>Resultados da Análise Q2 e Q3</summary>
+<h4 id="1-analise-de-dados-inexistentes">1. <strong>Análise de dados inexistentes</strong></h4>
+<ul>
+<li>Ao acessar a unidade <em>Ceilândia</em>, o sistema exibiu <strong>corretamente que não há dados lançados para 2025</strong>.</li>
+<li>Na área de Análise, <strong>nenhum gráfico foi gerado</strong>, como esperado.
+<strong>Cenário correto.</strong></li>
+</ul>
+<h4 id="2-insercao-manual-de-dados-e-atualizacao-dos-graficos">2. <strong>Inserção manual de dados e atualização dos gráficos</strong></h4>
+<ul>
+<li>
+<p>Após inserir valores em Janeiro e Fevereiro de 2025:</p>
+</li>
+<li>
+<p>Os gráficos foram exibidos imediatamente, com valores correspondentes.</p>
+</li>
+<li>Tanto o consumo em <strong>ponta</strong> quanto em <strong>fora de ponta</strong> foram atualizados.</li>
+<li>O sistema demonstrou <strong>correção nos cálculos e renderização imediata</strong>.
+<strong>Cenário correto.</strong></li>
+</ul>
+<h4 id="3-edicao-de-dados-da-unidade-consumidora">3. <strong>Edição de dados da unidade consumidora</strong></h4>
+<ul>
+<li>
+<p>Alteração do nome “Campo Ceilândia” → “Campo Ceilândia Sul”:</p>
+</li>
+<li>
+<p>Alteração refletiu corretamente.</p>
+</li>
+<li>
+<p>Alteração numérica de campos diversos:</p>
+</li>
+<li>
+<p>Todos foram atualizados corretamente.
+<strong>Cenário correto.</strong></p>
+</li>
+</ul>
+<h4 id="4-criacao-de-nova-unidade-consumidora">4. <strong>Criação de nova unidade consumidora</strong></h4>
+<ul>
+<li>Cadastro com dados válidos funcionou.</li>
+<li>Cadastro com data futura exibiu corretamente o erro <strong>“dados futuros não são permitidos”</strong>.
+<strong>Validação correta.</strong></li>
+</ul>
+<h4 id="5-gerenciamento-de-pessoas">5. <strong>Gerenciamento de pessoas</strong></h4>
+<ul>
+<li>Inclusão de usuário gera um <strong>bug</strong>: o sistema apresenta erro, mas <strong>o usuário é criado mesmo assim</strong>.</li>
+<li>Alterações de perfil, bloqueio e redefinição de senha funcionaram.</li>
+<li>
+<p>Logando com perfil “SYS Admin”, os usuários cadastrados anteriormente aparecem corretamente.
+<strong>Um bug encontrado</strong> (erro durante criação de usuário).</p>
+<p><font size="3">
+<p style="text-align: center">
+    <b>Figura 1:</b> Bug
+    <br>
+</p></p>
+</li>
+</ul>
+<p></font></p>
+<p><div align="center">
+  <img src="https://raw.githubusercontent.com/FCTE-Qualidade-de-Software-1/2025-2_T02_CAROL-SHAW/refs/heads/main/docs/pages/Modulo4/dados/bug.png" alt="bug" width="600">
+</div></p>
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        Felipe das Neves e Mylena Mendonça
+    </p>
+</font></p>
+<h4 id="6-distribuidoras-e-api-da-neoenergia">6. <strong>Distribuidoras e API da Neoenergia</strong></h4>
+<ul>
+<li>
+<p>A tela de distribuidoras exibe dados apenas para consulta, conforme informado:</p>
+</li>
+<li>
+<p>Não permite cadastro manual (dados vêm da API).
+<strong>Comportamento esperado.</strong></p>
+</li>
+</ul>
+<h4 id="7-grupos-tarifarios-e-painel">7. <strong>Grupos tarifários e painel</strong></h4>
+<ul>
+<li>Telas exibem informações de taxa, horários e subgrupos conforme esperado.
+<strong>Cenário correto.</strong></li>
+</ul>
+<h4 id="8-instituicoes">8. <strong>Instituições</strong></h4>
+<ul>
+<li>Cadastro requer <strong>CNPJ válido</strong>, conforme requisitos.</li>
+<li>Cadastro e edição funcionaram com dados válidos.
+<strong>Cenário correto.</strong>
+```</li>
+</ul>
+</details>
+<hr />
+<h3 id="13-conclusao-da-medicao-da-adequacao-funcional">1.3 Conclusão da Medição da Adequação Funcional</h3>
+<h4 id="q1-functional-completeness-cr">Q1 — <em>Functional Completeness (CR)</em></h4>
+<h4 id="calculo-da-q1-functional-completeness-cr">Cálculo da Q1 — Functional Completeness (CR)</h4>
+<ul>
+<li>Total de requisitos (RF001–RF030): <strong>30</strong></li>
+<li>
+<p>Requisitos confirmados como implementados/funcionando: todos exceto <strong>RF005</strong> e <strong>RF013</strong>.
+  Requisitos confirmados = <strong>28</strong></p>
+</li>
+<li>
+<p>Divisão: (28 ÷ 30)</p>
+</li>
+<li>
+<p>28 ÷ 30 = 0,9333333333...</p>
+</li>
+<li>
+<p>Multiplicar por 100:</p>
+</li>
+<li>
+<p>(0,9333333333 ÷ 100 = 93,33333333...)</p>
+</li>
+<li>
+<p>Arredondamento para uma casa decimal:</p>
+</li>
+<li>
+<p><strong>CR = 93,3%</strong></p>
+</li>
+</ul>
+<p><strong>Classificação segundo os níveis definidos</strong></p>
+<ul>
+<li>Desejável: CR ≥ 90%</li>
+<li>Resultado obtido: <strong>93,3% portanto: Desejável</strong></li>
+</ul>
+<hr />
+<h4 id="q2-correctness-das-funcionalidades-criticas-sc">Q2 — <em>Correctness</em> das Funcionalidades Críticas (SC)</h4>
+<h4 id="calculo-da-q2-correctness-sc">Cálculo da Q2 — <em>Correctness</em> (SC)</h4>
+<ul>
+<li>Total de cenários executados: <strong>14</strong></li>
+<li>
+<p>Cenários concluídos corretamente: <strong>13</strong></p>
+</li>
+<li>
+<p>Divisão: (13 ÷ 14)</p>
+</li>
+<li>
+<p>13 ÷ 14 = 0,9285714286...</p>
+</li>
+<li>
+<p>Multiplicar por 100:</p>
+</li>
+<li>
+<p>0,9285714286... × 100 = 92,85714286...</p>
+</li>
+<li>
+<p>Arredondamento:</p>
+</li>
+<li>
+<p><strong>SC = 92,8%</strong></p>
+</li>
+</ul>
+<p><strong>Classificação segundo os níveis definidos</strong></p>
+<ul>
+<li>Aceitável: 85% ≤ SC &lt; 95%</li>
+<li>Resultado obtido: <strong>92,8%, portanto: Aceitável</strong></li>
+</ul>
+<hr />
+<h4 id="q3-functional-conformity-cf">Q3 — <em>Functional Conformity</em> (CF)</h4>
+<h5 id="evidencias-de-conformidade">Evidências de Conformidade</h5>
+<p>A avaliação se deu pela comparação entre o comportamento observado e o comportamento especificado.</p>
+<h5 id="funcionalidades-avaliadas-e-conformidade">Funcionalidades avaliadas e conformidade:</h5>
+<table>
+<thead>
+<tr>
+<th>Funcionalidade</th>
+<th>Conformidade Observada</th>
+<th>Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visualização de dados lançados</td>
+<td>✔ Conforme</td>
+<td>Sem divergências</td>
+</tr>
+<tr>
+<td>Geração de gráficos</td>
+<td>✔ Conforme</td>
+<td>Atualização imediata</td>
+</tr>
+<tr>
+<td>Validação de dados futuros</td>
+<td>✔ Conforme</td>
+<td>Mensagem correta</td>
+</tr>
+<tr>
+<td>Edição de unidades consumidoras</td>
+<td>✔ Conforme</td>
+<td>Tudo atualizado</td>
+</tr>
+<tr>
+<td>Operar como SYS Admin</td>
+<td>✔ Conforme</td>
+<td>Usuários e instituições exibidos corretamente</td>
+</tr>
+<tr>
+<td>Cadastro de instituições com CNPJ válido</td>
+<td>✔ Conforme</td>
+<td>Respeita regra</td>
+</tr>
+<tr>
+<td>Exibição de grupos tarifários</td>
+<td>✔ Conforme</td>
+<td>Coerente com requisitos</td>
+</tr>
+<tr>
+<td>Tela de distribuidoras com dados da API</td>
+<td>✔ Conforme</td>
+<td>Funcionalidade declaradamente somente leitura</td>
+</tr>
+<tr>
+<td>Cadastro de usuários</td>
+<td>⚠ Parcial</td>
+<td>Bug: encontrado, mas usuário é criado</td>
+</tr>
+</tbody>
+</table>
+<h4 id="calculo-da-q3-functional-conformity-cf">Cálculo da Q3 — <em>Functional Conformity</em> (CF)</h4>
+<ul>
+<li>Total de funcionalidades avaliadas: <strong>9</strong></li>
+<li>
+<p>Funcionalidades em conformidade: <strong>8</strong></p>
+</li>
+<li>
+<p>Divisão: (8 ÷ 9)</p>
+</li>
+<li>
+<p>8 ÷ 9 = 0,8888888889...</p>
+</li>
+<li>
+<p>Multiplicar por 100:</p>
+</li>
+<li>
+<p>0,8888888889... × 100 = 88,88888889...</p>
+</li>
+<li>
+<p>Arredondamento para uma casa decimal:</p>
+</li>
+<li>
+<p><strong>CF = 88,9%</strong></p>
+</li>
+</ul>
+<p><strong>Classificação segundo os níveis definidos</strong></p>
+<ul>
+<li>Aceitável: 75% ≤ CF &lt; 90%</li>
+<li>Resultado obtido: <strong>88,9%, portanto: Aceitável</strong></li>
+</ul>
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Tabela 2:</b> Resultado Final
+    </p>
+</font></p>
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Questão avaliada</th>
+        <th>Resultado (%)</th>
+        <th>Classificação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Q1 — Em que medida as funcionalidades priorizadas do MEPA foram implementadas</td>
+        <td>93,3%</td>
+        <td>Desejável</td>
+      </tr>
+      <tr>
+        <td>Q2 — Os resultados apresentados pelo sistema estão corretos</td>
+        <td>92,8%</td>
+        <td>Aceitável</td>
+      </tr>
+      <tr>
+        <td>Q3 — As funcionalidades implementadas operam em conformidade com o esperado</td>
+        <td>88,9%</td>
+        <td>Aceitável</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h4 id="melhorias-analisadas-para-a-adequacao-funcional">Melhorias Analisadas para a Adequação Funcional</h4>
+<p>Os resultados da avaliação de Adequação Funcional para o MEPA indicam que o sistema está <strong>principalmente saudável</strong>, mas precisa de ajustes para atingir a excelência. O projeto tem uma <strong>Completude Funcional Desejável</strong> (93,3\%). No entanto, a principal correção reside na <strong>Conformidade Funcional</strong> (88,9\% - Aceitável). O sistema possui um <strong>bug</strong> no <strong>Cadastro de Usuários</strong>: ele cria o usuário corretamente no <em>backend</em>, mas exibe um erro visual no <em>front-end</em>. Sendo necessário a correção do <strong>único cenário de teste que falhou</strong> para garantir que todos os cálculos críticos estejam 100\% precisos.</p>
+<hr />
+<h2 id="2-execucao-da-medicao-para-a-confiabilidade">2. Execução da Medição Para a Confiabilidade</h2>
+<p>A execução da medição de confiabilidade foi realizada no ambiente de produção do MEPA Energia, utilizando ferramentas de auditoria técnica em tempo real (<em>DevTools</em>). A validação seguiu os procedimentos de <strong>Caixa Preta</strong> definidos na etapa de descrição.</p>
+<h3 id="video">Vídeo</h3>
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=jT9DPa8jMK8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Autores:</b> 
+        <a href="https://github.com/Guga301104">Gustavo Gontijo Lima</a>
+    </p>
+</font></p>
+<h3 id="resultados-da-disponibilidade-availability">Resultados da Disponibilidade (Availability)</h3>
+<p><strong>Objetivo:</strong> Aferição técnica da resposta do servidor e renderização da interface.</p>
+<ul>
+<li><strong>Ferramenta:</strong> DevTools &gt; Network Tab.</li>
+<li><strong>Cenário:</strong> Recarregamento forçado da página principal e análise do gráfico de requisições.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica Coletada</th>
+<th style="text-align: left;">Valor Obtido</th>
+<th style="text-align: left;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Status Code HTTP</strong></td>
+<td style="text-align: left;">200 OK</td>
+<td style="text-align: left;">✅ Sucesso</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tempo de Load (Finish)</strong></td>
+<td style="text-align: left;"><strong>1.01 s</strong></td>
+<td style="text-align: left;">✅ Excelente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Análise Técnica:</strong>
+O sistema demonstrou <strong>Alta Disponibilidade</strong>. O tempo de carregamento de <strong>1.01 segundos</strong> é extremamente performático, situando-se em uma faixa ideal de usabilidade (abaixo de 2 segundos). O retorno do código HTTP 200 confirma que a infraestrutura do servidor está saudável e respondendo corretamente às requisições do cliente.</p>
+<h3 id="resultados-da-tolerancia-a-falhas-fault-tolerance">Resultados da Tolerância a Falhas (Fault Tolerance)</h3>
+<p><strong>Objetivo:</strong> Verificar a robustez da validação de dados no <em>Client-Side</em> e estabilidade do código.</p>
+<ul>
+<li><strong>Ferramenta:</strong> DevTools &gt; Console Tab.</li>
+<li><strong>Cenário:</strong> Tentativa de submissão de formulário com campos obrigatórios vazios.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Observação Visual</th>
+<th style="text-align: left;">Mensagem Exibida</th>
+<th style="text-align: left;">Comportamento do Console</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bloqueio da Ação</td>
+<td style="text-align: left;">Ícone de exclamação amarelo seguido de: <strong>"Preencha este campo"</strong>.</td>
+<td style="text-align: left;"><strong>Limpo</strong> (Sem exceções de erro crítico/Vermelho).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Análise Técnica:</strong>
+O sistema possui mecanismos eficazes de <strong>Tolerância a Falhas na Camada de Apresentação</strong>.
+1.  <strong>Validação:</strong> A aplicação utiliza atributos de validação nativos HTML5 ou scripts de verificação prévia, interceptando a ação antes que uma requisição inválida sobrecarregue o servidor.
+2.  <strong>Estabilidade:</strong> O console do navegador permaneceu limpo, indicando que o tratamento da exceção foi previsto no código e não gerou falhas de execução (<em>crashes</em> de JavaScript).</p>
+<h3 id="resultados-da-recuperabilidade-recoverability">Resultados da Recuperabilidade (Recoverability)</h3>
+<p><strong>Objetivo:</strong> Avaliar a persistência de dados não salvos (Rascunhos de Sessão).</p>
+<ul>
+<li><strong>Ferramenta:</strong> DevTools &gt; Application &gt; Local Storage.</li>
+<li><strong>Cenário:</strong> Preenchimento de dados seguido de atualização da página (F5) <em>antes</em> do envio.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ação Executada</th>
+<th style="text-align: left;">Resultado no Local Storage</th>
+<th style="text-align: left;">Estado do Formulário Após F5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Digitação de Dados</td>
+<td style="text-align: left;">Nenhum registro criado (Tabela vazia).</td>
+<td style="text-align: left;">Campos retornaram <strong>Vazios</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Submissão (Envio)</td>
+<td style="text-align: left;">Registro criado apenas após sucesso.</td>
+<td style="text-align: left;">N/A (Ação já concluída).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Métrica CF2 - Taxa de Recuperação de Sessão (TRS):</strong>
+- <strong>TRS = 0%</strong> (Perda total dos dados não submetidos).</p>
+<p><strong>Análise Técnica:</strong>
+O sistema apresenta <strong>Baixa Recuperabilidade</strong> para dados em rascunho. A auditoria via DevTools confirmou que o <em>Local Storage</em> não é utilizado para persistência temporária durante a digitação (apenas pós-envio).
+Isso representa um risco de usabilidade: caso o usuário sofra uma instabilidade de rede ou feche a aba acidentalmente durante o preenchimento, todo o progresso será perdido irrecuperavelmente.</p>
+<hr />
+<h2 id="conclusao-da-avaliacao-de-confiabilidade">Conclusão da Avaliação de Confiabilidade</h2>
+<p>A avaliação técnica revela um sistema com infraestrutura robusta, mas com pontos de melhoria na experiência de continuidade:</p>
+<ol>
+<li><strong>Pontos Fortes:</strong> O sistema é <strong>altamente disponível</strong> e rápido (Load de 1.01s). A <strong>Tolerância a Falhas</strong> é garantida por validações de interface competentes que previnem erros de uso sem quebrar a aplicação.</li>
+<li><strong>Ponto de Atenção:</strong> A <strong>Recuperabilidade</strong> de rascunhos é inexistente no <em>front-end</em>. Recomenda-se a implementação de um padrão de <em>Autosave</em> no <em>localStorage</em> para formulários extensos, aumentando a resiliência contra interrupções acidentais.</li>
+</ol>
+<h2 id="3-execucao-da-medicao-para-a-manutenibilidade">3. Execução da Medição Para a Manutenibilidade</h2>
+<p>A execução da medição para a Manutenibilidade concentrou-se na análise estática do código-fonte e na coleta de dados de processo do sistema de gestão de projetos (GitLab Issues), conforme detalhado na Fase 3.</p>
+<h3 id="complexidade-ciclomatica-ccm">Complexidade Ciclomática (CCM)</h3>
+<p>A Complexidade Ciclomática (CC) é uma métrica que indica a complexidade estrutural do código, sendo um fator chave para a Analisabilidade e Modificabilidade.</p>
+<p><strong>Execução da Medição:</strong>
+A análise estática foi realizada utilizando a ferramenta <strong>SonarCloud</strong>. O valor total da Complexidade Ciclomática para o projeto foi de <strong>1.295</strong>.</p>
+<p><strong>Análise Modular e Julgamento:</strong></p>
+<p>Para obter a <strong>Complexidade Ciclomática Média (CCM)</strong>, foi realizada uma análise granular por módulo, excluindo os módulos <code>tests</code> e <code>mec_energia</code> (módulo administrativo do framework Django) por não representarem o código de negócio principal.</p>
+<div style="text-align: center;">
+  <p><strong>Video 3:</strong> <a href="https://youtu.be/NerYpyylvd0">Coleta CCM</a></p>
+  <iframe width="560" height="315" src="https://youtu.be/NerYpyylvd0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Módulo</th>
+<th style="text-align: left;">CC (Total)</th>
+<th style="text-align: left;">CCM (Média por Módulo)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contracts</code></td>
+<td style="text-align: left;">132</td>
+<td style="text-align: left;">10,15</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>users</code></td>
+<td style="text-align: left;">195</td>
+<td style="text-align: left;">15,00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>global_search_recommendation</code></td>
+<td style="text-align: left;">71</td>
+<td style="text-align: left;">11,83</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>recommendation</code></td>
+<td style="text-align: left;">99</td>
+<td style="text-align: left;">9,00</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>recommendation_commons</code></td>
+<td style="text-align: left;">49</td>
+<td style="text-align: left;">5,44</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>scripts</code></td>
+<td style="text-align: left;">47</td>
+<td style="text-align: left;">5,22</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tariffs</code></td>
+<td style="text-align: left;">155</td>
+<td style="text-align: left;">14,09</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>universities</code></td>
+<td style="text-align: left;">101</td>
+<td style="text-align: left;">8,41</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>utils</code></td>
+<td style="text-align: left;">102</td>
+<td style="text-align: left;">7,84</td>
+</tr>
+</tbody>
+</table>
+<p>O <strong>CCM geral</strong> a partir dos módulos coletados foi de <strong>9,00</strong>.</p>
+<p><strong>Conclusão da CCM:</strong>
+O resultado de <strong>CCM = 9,00</strong> se enquadra na faixa <strong>Desejável (CCM ≤ 10)</strong>, conforme o critério de julgamento estabelecido no Módulo 2. Isso sugere que, em média, o código do projeto MEPA apresenta uma baixa complexidade estrutural, favorecendo a <strong>Analisabilidade</strong> e a <strong>Modificabilidade</strong>.</p>
+<p>No entanto, a análise modular revela pontos de atenção: os módulos <strong><code>users</code> (CCM = 15,00)</strong> e <strong><code>tariffs</code> (CCM = 14,09)</strong> estão no limite superior da faixa <strong>Aceitável</strong> (10 &lt; CCM ≤ 15), indicando que estes componentes específicos podem exigir maior esforço para manutenção e testes.</p>
+<h3 id="lead-time-de-correcao-ltc">Lead Time de Correção (LTC)</h3>
+<p>O Lead Time de Correção (LTC) mede a agilidade do processo de manutenção, sendo um indicador direto da Modificabilidade do sistema.</p>
+<p><strong>Execução da Medição:</strong>
+A coleta de dados foi realizada através de uma consulta estruturada no sistema de <em>Issues</em> do <strong>GitLab</strong>, utilizando um script em Python [4]. O LTC foi calculado como o tempo decorrido entre a <strong>abertura do <em>Issue</em></strong> e o <strong>fechamento (correção do bug)</strong>, o que reflete o tempo total de resolução de defeitos.</p>
+<div style="text-align: center;">
+  <p><strong>Video 4:</strong> <a href="https://youtu.be/fyOFL0s-LoU">Coleta LTC</a></p>
+  <iframe width="560" height="315" src="https://youtu.be/fyOFL0s-LoU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<p><strong>Amostra de Dados Coletados:</strong>
+A tabela abaixo apresenta uma amostra dos dados utilizados no cálculo do LTC:</p>
+<p><font size="3">
+    <p style="text-align: center">
+        <b>Tabela 2:</b> Amostra de Lead Time de Correção (LTC)
+    </p>
+</font></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">ID</th>
+<th style="text-align: left;">Issue</th>
+<th style="text-align: center;">Created</th>
+<th style="text-align: center;">Closed</th>
+<th style="text-align: center;">LTC_dias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">490</td>
+<td style="text-align: left;">Fix campo "Nome da Unidade Consumidora"</td>
+<td style="text-align: center;">2025-05-17</td>
+<td style="text-align: center;">2025-06-01</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;">480</td>
+<td style="text-align: left;">Tratamento de erro para plot de gráficos</td>
+<td style="text-align: center;">2025-05-12</td>
+<td style="text-align: center;">2025-05-14</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">479</td>
+<td style="text-align: left;">Refatorar a mensagem para faturas</td>
+<td style="text-align: center;">2025-05-12</td>
+<td style="text-align: center;">2025-05-14</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">477</td>
+<td style="text-align: left;">Relatório detalhado faltando dados</td>
+<td style="text-align: center;">2025-05-09</td>
+<td style="text-align: center;">2025-05-14</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">475</td>
+<td style="text-align: left;">Tarifa vencida mesmo dentro da validade</td>
+<td style="text-align: center;">2025-05-08</td>
+<td style="text-align: center;">2025-05-14</td>
+<td style="text-align: center;">5</td>
+</tr>
+</tbody>
+</table>
+<p>| Fonte: Resultados em CSV da Extração Pipeline LTC [5]</p>
+<p><strong>Resultado da Medição:</strong>
+O <strong>LTC médio</strong> encontrado na amostra analisada foi de <strong>64 dias</strong>.</p>
+<p><strong>Análise e Julgamento:</strong>
+O critério de julgamento estabelecido no Módulo 2 para o LTC é:
+*   <strong>Desejável:</strong> LTC ≤ 3 dias
+*   <strong>Aceitável:</strong> 4 ≤ LTC ≤ 7 dias
+*   <strong>Inaceitável:</strong> LTC &gt; 7 dias</p>
+<p>Com um LTC médio de <strong>64 dias</strong>, o resultado se enquadra na faixa <strong>Inaceitável</strong>. Este valor é significativamente superior ao limite de 7 dias, indicando um processo de manutenção lento.</p>
+<p><strong>Implicações:</strong>
+O alto LTC sugere que a <strong>Modificabilidade</strong> do sistema está comprometida. As causas podem estar relacionadas a:
+1.  <strong>Complexidade do Código:</strong> O alto LTC pode ser uma consequência da alta Complexidade Ciclomática em módulos críticos (como visto na CCM).
+2.  <strong>Processo de Desenvolvimento:</strong> Gargalos no processo de <em>review</em>, testes ou <em>deploy</em> que atrasam a entrega da correção.</p>
+<p>Este resultado é um ponto crítico que deve ser destacado na conclusão da avaliação de Manutenibilidade.</p>
+<h2 id="cobertura-de-testes-de-regressao-ctr">Cobertura de testes de Regressão (CTR)</h2>
+<p>Para calcular o CTR, como descrito na etapa 3, fizemos manualmente o cálculo dos últimos 3 Merge Requests aceitos, seguindo a fórmula descrita na etapa 2. a tabela a baixa mostra os resultados.
+|MR|Linhas cobertas por Testes|Linhas Alteradas|CTR|
+|:------:|------------------|------------|:----------------:|
+|!435|50|60|83%|
+|!433|236|264|89%|
+|!432|569|572|99%|
+|!431|437|493|88%|
+|!430|574|583|98%|</p>
+<p>Assim, como todos os CTRs foram maiores ou iguais à 80% concluimos, conforme estabelecido na etapa 2, que o CTR é <strong>desejável</strong>.</p>
+<hr />
+<h2 id="uso-de-ia">Uso de IA</h2>
+<p>Para a elaboração deste documento e de outros artefatos do projeto, foram utilizadas ferramentas de Inteligência Artificial, como o <strong>ChatGPT (OpenAI)</strong> e o <strong>Gemini (Google)</strong>. O uso dessas tecnologias teve como principais objetivos:</p>
+<ul>
+<li><strong>Aprimoramento da Escrita:</strong> Melhorar a clareza, coesão e correção gramatical dos textos, garantindo uma comunicação mais eficaz.</li>
+<li><strong>Geração de Estruturas:</strong> Auxiliar na criação de estruturas iniciais para seções e tabelas, otimizando o tempo de desenvolvimento.</li>
+<li><strong>Refinamento de Ideias:</strong> Servir como ferramenta de brainstorming para refinar conceitos e justificativas apresentadas no documento.</li>
+<li><strong>Consistência Terminológica:</strong> Ajudar a manter a consistência dos termos técnicos utilizados ao longo da documentação.</li>
+</ul>
+<p>Ressaltamos que todo o conteúdo gerado por IA foi cuidadosamente revisado, editado e validado pelos membros da equipe para assegurar sua precisão, relevância e alinhamento com os objetivos da avaliação de qualidade. As ferramentas foram empregadas como um suporte ao processo de criação, e a responsabilidade final pelo conteúdo permanece com os autores do projeto.</p>
+<hr />
+<h2 id="referencias-bibliografica">Referências Bibliográfica</h2>
+<blockquote>
+<p>[1] REQUISITOS NÃO FUNCIONAIS. Canal Fatto Consultoria e Sistemas. Publicado em 06 de ago. de 2015. Disponível em: <a href="https://www.youtube.com/watch?v=Gv5H9XgWOJ0">https://www.youtube.com/watch?v=Gv5H9XgWOJ0</a>. Acesso em: 17 de nov. de 2025.</p>
+<p>[2] RODRIGUES, Renato. ISO/IEC 25010: Functional Suitability. LinkedIn, 2 de fev. de 2024. Disponível em: <a href="https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues">https://pt.linkedin.com/pulse/isoiec-25010-functional-suitability-renato-rodrigues</a>. Acesso em: 17 de nov. de 2025.</p>
+<p>[3] Notas de aula da disciplina de Qualidade de Software: <strong>Conceitos GQM (introdução, planejamento, definição, coleta e interpretação)</strong>.</p>
+<p>[4] Script Implementação da Pipeline LTC. Disponível em: <a href="../dados/extratorIssuesLTC.py">Script - Extrator de LTC - Issues GitLab</a></p>
+<p>[5] Resultados em CSV da Extração Pipeline LTC. Disponível em: <a href="../dados/issues_ltc.csv">Dados de Saída - Extrator de LTC - Issues GitLab</a></p>
+</blockquote>
+<hr />
+<h2 id="historico-de-versoes">Histórico de Versões</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+<th style="text-align: center;">Data de Produção</th>
+<th>Revisor(es)</th>
+<th style="text-align: center;">Data de Revisão</th>
+<th>Observações / Incrementos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>1.0</code></td>
+<td>Desenvolvimento dos objetivos do GQM.</td>
+<td><a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a></td>
+<td style="text-align: center;">17/11/2025</td>
+<td>—</td>
+<td style="text-align: center;">—</td>
+<td>Versão inicial do documento.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.1</code></td>
+<td>Inserção do que executamos para o artefato da adequação funcional.</td>
+<td><a href="https://github.com/FelipeFreire-gf">Felipe das Neves</a></td>
+<td style="text-align: center;">17/11/2025</td>
+<td><a href="https://github.com/MylenaTrindade">Mylena Mendonça</a></td>
+<td style="text-align: center;">17/11/2025</td>
+<td>Revisão da ideação do artefato.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.2</code></td>
+<td>Inserção do que executamos para o artefato da confiabilidade.</td>
+<td><a href="https://github.com/Guga301104">Gustavo Gontijo Lima</a></td>
+<td style="text-align: center;">18/11/2025</td>
+<td><a href="https://github.com/luluaroeira">Ana Luiza Komatsu</a></td>
+<td style="text-align: center;">18/11/2025</td>
+<td>Revisão da ideação do artefato.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.3</code></td>
+<td>Inserção do CTR.</td>
+<td><a href="https://github.com/Bittarx">Marcos Bittar</a></td>
+<td style="text-align: center;"></td>
+<td>23/11/2025</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.4</code></td>
+<td>Inserção do que executamos para o artefato da Manuntenabilidade</td>
+<td><a href="https://github.com/pedrobarbosaocb">Pedro Barbosa</a></td>
+<td style="text-align: center;"></td>
+<td>23/11/2025</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1.5</code></td>
+<td>Inserção dos videos para o artefato da Manuntenabilidade</td>
+<td><a href="https://github.com/pedrobarbosaocb">Pedro Barbosa</a></td>
+<td style="text-align: center;"></td>
+<td>28/11/2025</td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.instant", "navigation.top", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
